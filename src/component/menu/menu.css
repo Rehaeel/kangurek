@@ -1,5 +1,5 @@
 .menu {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     display: flex;
@@ -8,6 +8,7 @@
     background-color: var(--orange-color);
     justify-content: center;
     overflow: visible;
+    z-index: 999;
 }
 
 .menu * { 
