@@ -44,7 +44,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
-    row-gap: 5%;
+    gap: 2% 5%;
     justify-items: center;
     max-width: 100%;
 }
@@ -56,7 +56,8 @@
     transition: all .5s ease;
     padding: 0;
     margin: 0;
-    max-width: 100%;
+    width: 100%;
+    height: calc(100% - 8px);
     max-height: 333px;
 }
 
@@ -102,6 +103,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: fit-content;
+    justify-self: center;
 }
 
 .contact-info p {

@@ -107,8 +107,7 @@ export default class HomePage extends React.Component {
                     </div>
                 </Sections>
 
-                <Sections width={70}>
-                    <h1>Kontakt</h1>
+                <Sections width={70} name="Kontakt">
                     <div className="contact">
                         <div className="contact-info">
                             <h3>Dane kontaktowe</h3>
@@ -129,7 +128,7 @@ export default class HomePage extends React.Component {
 
 
                         </div>
-                        <iframe title="google maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2393.3631980881983!2d18.0299779!3d53.139576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470313e4298cd6bd%3A0x26e0e0577a21e6d9!2sCentrum+Kangurek!5e0!3m2!1spl!2spl!4v1504606219610" width="800" height="400" frameborder="0" allowfullscreen>
+                        <iframe title="google maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2393.3631980881983!2d18.0299779!3d53.139576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470313e4298cd6bd%3A0x26e0e0577a21e6d9!2sCentrum+Kangurek!5e0!3m2!1spl!2spl!4v1504606219610" width="100%" height="400" frameborder="0" allowfullscreen>
 
                         </iframe>
                     </div>
