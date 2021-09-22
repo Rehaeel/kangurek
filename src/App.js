@@ -5,6 +5,7 @@ import HomePage from './component/pages/home-page/home-page';
 import Menu from './component/menu/menu';
 import Terapieuci from './component/pages/terapeuci/terapeuci-page';
 import Footer from './component/footer/footer';
+import GalleryPage from './component/pages/gallery-page/gallery-page';
 
 export default class App extends React.Component {
   render() {
@@ -16,6 +17,9 @@ export default class App extends React.Component {
         </Route>
         <Route path="/terapeuci">
           <Terapieuci />
+        </Route>
+        <Route path="/galeria">
+          <GalleryPage />
         </Route>
         <Footer />
       </div>
