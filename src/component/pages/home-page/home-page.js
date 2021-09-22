@@ -50,7 +50,7 @@ export default class HomePage extends React.Component {
 
                 <Sections width={100} name="Aktualności">
                     <a href="https://www.facebook.com/centrumkangurek/" target="_blank" style={{ textDecoration: 'none' }} rel="noreferrer">
-                        <div className="facebook-cta" >
+                        <div className="facebook-cta" id={'aktualnosci'} >
                             <h1>znajdź nas na Facebooku!</h1>
                         </div>
                     </a>
