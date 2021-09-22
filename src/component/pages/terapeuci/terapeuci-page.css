@@ -1,0 +1,58 @@
+.terapeuci {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 3% 4%;
+}
+
+.terapeuta {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    height: fit-content;
+    border: 2px solid #c6c6c6;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    background-color: #fcfcfc;
+    text-align: left;
+    overflow: hidden;
+}
+
+.terapeuta>img { border-radius: 50%; }
+
+.terapeuta>h4 { text-decoration: underline; }
+
+.business-experience {
+transition: opacity .5s ease;
+}
+
+.show-more {
+    color: var(--orange-color);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.show-more:hover {
+    text-decoration: underline;
+}
+
+/************ Tablet ************/
+
+@media screen and (min-width: 765px) and (max-width: 980px) {
+    .terapeuci {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/************ Mobile ************/
+
+@media screen and (max-width: 765px) {
+    .terapeuci {
+        grid-template-columns: 1fr;
+    }
+}
