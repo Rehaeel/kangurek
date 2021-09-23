@@ -29,10 +29,6 @@
 }
 
 /********** menu tabs *********/
-.menu-selected li{
-  border-bottom: 2px solid hsl(41, 100%, 30%);
-}
-
 .menu-tabs {
     display: flex;
     margin: 0;
@@ -42,6 +38,10 @@
 
 .menu-tabs * {
     list-style-type: none;
+}
+
+.menu-selected li{
+  background:hsl(41, 100%, 47%)
 }
 
 .menu-tabs>a li,
@@ -54,19 +54,34 @@
     background-color: hsl(41, 100%, 50%);
 } 
 
+.menu-tabs>li:after {
+    content: 'v';
+    font-size: 1em;
+    display: inline-block;
+    transform: translate(10px, -2px);
+    font-weight: 400;
+    color: hsl(0, 0%, 95%);
+}
+
 .menu-tabs>li div {
     position: absolute;
-    top: 60px;
-    transform: translateX(-28px);
-    display: flex;
-    justify-content: flex-start;
+    top: -500px;
+    transform: translateX(-40px);
     background: var(--orange-color);
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.menu-tabs>li:hover div {
+    opacity: 1;
+    top: 60px;
 }
 
 .menu-oferta {
-    padding: 30px;
+    border-top:2px solid hsl(41, 100%, 30%);
+    padding: 20px 30px;
 }
 
 .menu-oferta li {
-    padding-bottom: 20px;
+    padding: 10px;
 }

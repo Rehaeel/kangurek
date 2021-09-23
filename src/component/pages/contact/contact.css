@@ -1,3 +1,43 @@
+
+.contact {
+    position:relative;
+    display: grid;
+    grid-template-columns: min(220px, 95%) 1fr;
+    align-items: center;
+    gap: 7%;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    justify-self: center;
+}
+
+.contact-info p {
+    margin-top: 25px;
+}
+
+.contact-info img {
+    max-width: 80px;
+    opacity: 1;
+    transform: scale(1);
+    transition: all .5s ease;
+}
+
+.contact-info img:hover {
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+
+.contact-info *:link {
+    text-decoration: none;
+    color: var(--orange-color);
+}
+
+
 .bank-bearings {
     display: inline-flex;
     justify-content: center;
@@ -10,4 +50,12 @@
 
 .bank-bearings strong:last-of-type {
     color: var(--orange-color);
+}
+
+/**************** MOBILE ****************/
+
+@media screen and (max-width: 765px) {
+    .contact {
+            grid-template-columns: 1fr;
+        }
 }

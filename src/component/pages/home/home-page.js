@@ -44,7 +44,7 @@ export default class HomePage extends React.Component {
                     </div>
                 </Sections>
 
-                <Sections width={100} name="Aktualności">
+                <Sections width={100} name="Aktualności" id='aktualnosci'>
                     <a href="https://www.facebook.com/centrumkangurek/" target="_blank" style={{ textDecoration: 'none' }} rel="noreferrer">
                         <div className="facebook-cta">
                             <h1>znajdź nas na Facebooku!</h1>
@@ -52,8 +52,8 @@ export default class HomePage extends React.Component {
                     </a>
                 </Sections>
 
-                <Sections name="Oferta">
-                    <div className="oferta-box">
+                <Sections name="Oferta" id='oferta'>
+                    <div className="oferta-box" >
                         <Offert link='/integracja-sensoryczna' image={SI}>
                             Na zajęciach <b>SI</b> poprzez specjalnie dobrane ćwiczenia wpływamy
                             na właściwy odbiór wrażeń sensorycznych, które warunkują

@@ -12,7 +12,8 @@ export default class Menu extends React.Component {
                         <img src={home} alt="strona domowa" className="menu-home" />
                     </NavLink>
                     <ul className="menu-tabs">
-                        <li>Oferta
+                        <a href="/#aktualnosci" alt=""><li>Aktualności</li ></a>
+                        <li style={{ cursor: 'pointer' }}><a href="/#oferta" alt="">Oferta</a>
                             <div style={{ display: 'block' }}>
                                 <ul className="menu-oferta">
                                     <NavLink activeClassName="menu-selected" to="/integracja-sensoryczna"><li>Integracja Sensoryczna</li></NavLink>
