@@ -13,11 +13,7 @@ import RR from './photos/offer/Rehabilitacja-Ruchowa.jpg';
 import STW from './photos/offer/Sensomotoryczna-Terapia-Widzenia.jpg';
 import TP from './photos/offer/Terapia-Pedagogiczna.jpg';
 import TR from './photos/offer/Terapia-Reki.jpg';
-
-import tel from '../../icons/tel.svg';
-import map from '../../icons/map.svg';
-import mail from '../../icons/mail.svg';
-
+import { ContactComponent } from '../contact/contact';
 
 export default class HomePage extends React.Component {
     render() {
@@ -28,7 +24,7 @@ export default class HomePage extends React.Component {
                 <h3 className="home-page-cytat">„Czego nie ma najpierw w zmysłach, tego nie ma później w umyśle”<br />
                     ~B. Pascal</h3>
 
-                <Sections width={70} name="O nas">
+                <Sections name="O nas">
                     <p>W CENTRUM TERAPII I ROZWOJU DZIECKA KANGUREK  łączymy  naukę z  zabawą,
                         pomagając w ten sposób dzieciom, które przeżywają   trudności rozwojowe, edukacyjne,
                         związane z  integracją zmysłów, z koordynacją wzrokowo-ruchową.</p>
@@ -50,13 +46,13 @@ export default class HomePage extends React.Component {
 
                 <Sections width={100} name="Aktualności">
                     <a href="https://www.facebook.com/centrumkangurek/" target="_blank" style={{ textDecoration: 'none' }} rel="noreferrer">
-                        <div className="facebook-cta" id={'aktualnosci'} >
+                        <div className="facebook-cta">
                             <h1>znajdź nas na Facebooku!</h1>
                         </div>
                     </a>
                 </Sections>
 
-                <Sections width={70} name="Oferta">
+                <Sections name="Oferta">
                     <div className="oferta-box">
                         <Offert link='/integracja-sensoryczna' image={SI}>
                             Na zajęciach <b>SI</b> poprzez specjalnie dobrane ćwiczenia wpływamy
@@ -107,32 +103,7 @@ export default class HomePage extends React.Component {
                     </div>
                 </Sections>
 
-                <Sections width={70} name="Kontakt">
-                    <div className="contact">
-                        <div className="contact-info">
-                            <h3>Dane kontaktowe</h3>
-
-                            <p>tel.: <a href="tel:+48505776121">505-665-121</a> i <a href="tel:+48600216870">600-216-870</a></p>
-                            <a href="tel:+48505776121"><img src={tel} alt="" /></a>
-
-                            <p>Mail: <a href="mailto:info@centrum-kangurek.pl">info @centrum-kangurek.pl</a></p>
-                            <a href="mailto:info@centrum-kangurek.pl"><img src={mail} img alt="" /></a>
-
-                            <p><a href="https://www.google.pl/maps/place/Centrum+Kangurek/@53.1317883,18.0174391,15z/data=!4m8!1m2!2m1!1scentrum+kangurek!3m4!1s0x470313e4298cd6bd:0x26e0e0577a21e6d9!8m2!3d53.139576!4d18.0299779">
-                                ul.Czerkaska 11 lok.2A (piętro),<br />
-                                85-637 Bydgoszcz
-                            </a></p>
-                            <a href="https://www.google.pl/maps/place/Centrum+Kangurek/@53.1317883,18.0174391,15z/data=!4m8!1m2!2m1!1scentrum+kangurek!3m4!1s0x470313e4298cd6bd:0x26e0e0577a21e6d9!8m2!3d53.139576!4d18.0299779">
-                                <img src={map} alt="" />
-                            </a>
-
-
-                        </div>
-                        <iframe title="google maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2393.3631980881983!2d18.0299779!3d53.139576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470313e4298cd6bd%3A0x26e0e0577a21e6d9!2sCentrum+Kangurek!5e0!3m2!1spl!2spl!4v1504606219610" width="100%" height="400" frameborder="0" allowfullscreen>
-
-                        </iframe>
-                    </div>
-                </Sections >
+                <ContactComponent />
             </div >
         )
     }

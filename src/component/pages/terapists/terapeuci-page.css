@@ -16,11 +16,9 @@
     height: fit-content;
     border: 2px solid #c6c6c6;
     padding: 30px;
-    margin-bottom: 30px;
     border-radius: 50px;
     background-color: #fcfcfc;
     text-align: left;
-    overflow: hidden;
 }
 
 .terapeuta>img { border-radius: 50%; }
@@ -29,6 +27,7 @@
 
 .business-experience {
 transition: opacity .5s ease;
+overflow: hidden;
 }
 
 .show-more {
@@ -46,6 +45,7 @@ transition: opacity .5s ease;
 @media screen and (min-width: 765px) and (max-width: 980px) {
     .terapeuci {
         grid-template-columns: 1fr 1fr;
+        gap: 1% 2%;
     }
 }
 
@@ -54,5 +54,6 @@ transition: opacity .5s ease;
 @media screen and (max-width: 765px) {
     .terapeuci {
         grid-template-columns: 1fr;
+        gap: 1%;
     }
 }

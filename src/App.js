@@ -1,26 +1,46 @@
 import React from 'react';
 import './App.css';
-import { Route } from 'react-router';
-import HomePage from './component/pages/home-page/home-page';
+import { Route, Switch } from 'react-router';
+import HomePage from './component/pages/home/home-page';
 import Menu from './component/menu/menu';
-import Terapieuci from './component/pages/terapeuci/terapeuci-page';
+import Terapieuci from './component/pages/terapists/terapeuci-page';
 import Footer from './component/footer/footer';
-import GalleryPage from './component/pages/gallery-page/gallery-page';
+import GalleryPage from './component/pages/gallery/gallery-page';
+import GoodToKnow from './component/pages/good-to-know/good-to-know';
+import PriceList from './component/pages/price-list/price-list';
+import Contact from './component/pages/contact/contact';
 
 export default class App extends React.Component {
   render() {
     return (
       <div className="App" >
         <Menu />
-        <Route exact path="/">
-          <HomePage />
-        </Route>
-        <Route path="/terapeuci">
-          <Terapieuci />
-        </Route>
-        <Route path="/galeria">
-          <GalleryPage />
-        </Route>
+        <Switch>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+
+          <Route path="/terapeuci">
+            <Terapieuci />
+          </Route>
+
+          <Route path="/galeria">
+            <GalleryPage />
+          </Route>
+
+          <Route path="/warto-wiedziec">
+            <GoodToKnow />
+          </Route>
+
+          <Route path="/cennik">
+            <PriceList />
+          </Route>
+
+          <Route path="/kontakt">
+            <Contact />
+          </Route>
+        </Switch>
+
         <Footer />
       </div>
     );

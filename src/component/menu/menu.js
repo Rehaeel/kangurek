@@ -12,7 +12,6 @@ export default class Menu extends React.Component {
                         <img src={home} alt="strona domowa" className="menu-home" />
                     </NavLink>
                     <div className="menu-tabs">
-                        <NavLink to="/#aktualnosci">Aktualnosci</NavLink>
                         <NavLink to="/integracja-sensoryczna">Integracja Sensoryczna</NavLink>
                         <NavLink to="/klub-kangurka">Klub Kangurka</NavLink>
                         <NavLink to="/sensomotoryczna-terapia-widzenia">Sensomotoryczna Terapia Widzenia</NavLink>

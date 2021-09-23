@@ -11,7 +11,7 @@ export default class Sections extends React.Component {
     render() {
         return (
             <div className={`sections-overlay ${this.props.name ? this.convertToDashes() : ''} `}>
-                <div className="sections" style={{ width: `${this.props.width}% ` }}>
+                <div className="sections" style={{ width: `${this.props.width ?? 70}% ` }}>
                     <h1>{this.props.name}</h1>
                     {this.props.children}
                 </div>

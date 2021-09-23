@@ -1,0 +1,13 @@
+.bank-bearings {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2%;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.bank-bearings strong:last-of-type {
+    color: var(--orange-color);
+}
