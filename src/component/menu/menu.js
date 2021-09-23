@@ -11,25 +11,31 @@ export default class Menu extends React.Component {
                     <NavLink to="/">
                         <img src={home} alt="strona domowa" className="menu-home" />
                     </NavLink>
-                    <div className="menu-tabs">
-                        <NavLink to="/integracja-sensoryczna">Integracja Sensoryczna</NavLink>
-                        <NavLink to="/klub-kangurka">Klub Kangurka</NavLink>
-                        <NavLink to="/sensomotoryczna-terapia-widzenia">Sensomotoryczna Terapia Widzenia</NavLink>
-                        <NavLink to="/rechabilitacja-ruchowa">Rechabilitacja ruchowa</NavLink>
-                        <NavLink to="/terapia-pedagogiczna">Terapia pedagogiczna</NavLink>
-                        <NavLink to="/terapia-logopedyczna">Terapia logopedyczna</NavLink>
-                        <NavLink to="/terapia-reki">Terapia ręki</NavLink>
-                        <NavLink to="/kreatywnosc">Kreatywność</NavLink>
-                        <NavLink to="/kynoterapia">Kynoterapia (dogoterapia)</NavLink>
-                        <NavLink to="/terapeuci">Terapeuci</NavLink>
-                        <NavLink to="/galeria">Galeria</NavLink>
-                        <NavLink to="/warto-wiedziec">Warto wiedzieć</NavLink>
-                        <NavLink to="/cennik">Cennik</NavLink>
-                        <NavLink to="/szkolenia">Szkolenia</NavLink>
-                        <NavLink to="/kontakt">Kontakt</NavLink>
-                    </div>
+                    <ul className="menu-tabs">
+                        <li>Oferta
+                            <div style={{ display: 'block' }}>
+                                <ul className="menu-oferta">
+                                    <NavLink activeClassName="menu-selected" to="/integracja-sensoryczna"><li>Integracja Sensoryczna</li></NavLink>
+                                    <NavLink activeClassName="menu-selected" to="/klub-kangurka"><li>Klub Kangurka</li></NavLink>
+                                    <NavLink activeClassName="menu-selected" to="/sensomotoryczna-terapia-widzenia"><li>Sensomotoryczna Terapia Widzenia</li></NavLink>
+                                    <NavLink activeClassName="menu-selected" to="/rechabilitacja-ruchowa"><li>Rechabilitacja ruchowa</li></NavLink>
+                                    <NavLink activeClassName="menu-selected" to="/terapia-pedagogiczna"><li>Terapia pedagogiczna</li ></NavLink>
+                                    <NavLink activeClassName="menu-selected" to="/terapia-logopedyczna"><li>Terapia logopedyczna</li ></NavLink>
+                                    <NavLink activeClassName="menu-selected" to="/terapia-reki"><li>Terapia ręki</li ></NavLink>
+                                    <NavLink activeClassName="menu-selected" to="/kreatywnosc"><li>Kreatywność</li ></NavLink>
+                                    <NavLink activeClassName="menu-selected" to="/kynoterapia"><li>Kynoterapia (dogoterapia)</li ></NavLink>
+                                </ul>
+                            </div>
+                        </li>
+                        <NavLink activeClassName="menu-selected" to="/terapeuci"><li>Terapeuci</li ></NavLink>
+                        <NavLink activeClassName="menu-selected" to="/galeria"><li>Galeria</li ></NavLink>
+                        <NavLink activeClassName="menu-selected" to="/warto-wiedziec"><li>Warto wiedzieć</li ></NavLink>
+                        <NavLink activeClassName="menu-selected" to="/cennik"><li>Cennik</li ></NavLink>
+                        <NavLink activeClassName="menu-selected" to="/szkolenia"><li>Szkolenia</li ></NavLink>
+                        <NavLink activeClassName="menu-selected" to="/kontakt"><li>Kontakt</li ></NavLink>
+                    </ul>
                 </div>
-            </div>
+            </div >
         )
     }
 }
