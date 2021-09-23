@@ -19,3 +19,9 @@
     align-items: center;
     margin: 45px auto;
 }
+
+.offer-sites>h1{
+font-size: 40px;
+text-shadow: 2px 2px var(--orange-color);
+font-weight: 300;
+}

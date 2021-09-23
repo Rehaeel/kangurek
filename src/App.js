@@ -10,6 +10,7 @@ import GoodToKnow from './component/pages/good-to-know/good-to-know';
 import PriceList from './component/pages/price-list/price-list';
 import Contact from './component/pages/contact/contact';
 import Workshops from './component/pages/workshops/workshops';
+import Si from './component/pages/offer/SI/si';
 
 export default class App extends React.Component {
   render() {
@@ -40,9 +41,13 @@ export default class App extends React.Component {
           <Route path="/kontakt">
             <Contact />
           </Route>
-          
+
           <Route path="/szkolenia">
             <Workshops />
+          </Route>
+
+          <Route path="/integracja-sensoryczna">
+            <Si />
           </Route>
 
         </Switch>
