@@ -4,6 +4,7 @@ import './offer-template.css'
 import Sections from '../../../sections/sections'
 
 export default class OfferTemplate extends React.Component {
+    
     render() {
         return (
             <SiteWrapper header={this.props.header} img={this.props.img} offer={true} height={370}>

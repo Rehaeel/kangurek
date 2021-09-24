@@ -25,6 +25,7 @@ align-items: center;
 @media screen and (max-width: 980px) {
 .site-section-si>div {
 grid-template-columns: 1fr;
+gap: 0;
 }
 
 .site-section-si>div>div {

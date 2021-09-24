@@ -16,5 +16,6 @@
 @media screen and (max-width: 980px) {
     .sections {
         width: 90% !important;
+        margin: 40px 0 !important;
     }
 }
