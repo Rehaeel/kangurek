@@ -25,3 +25,9 @@ font-size: 40px;
 text-shadow: 2px 2px var(--orange-color);
 font-weight: 300;
 }
+
+@media screen and (max-width: 980px) {
+    .rest-of-site {
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,27 @@
+.kangoroo-club-site * {
+    text-align: left;
+}
+
+.kangoroo-club-site>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.kangoroo-club-site>div>div {
+    max-width: 90%;
+}
+
+@media screen and (max-width: 980px) {
+    .kangoroo-club-site>div {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .kangoroo-club-site img {
+        justify-self: center;
+        width: 100%;
+    }
+}

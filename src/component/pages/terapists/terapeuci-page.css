@@ -54,6 +54,7 @@ overflow: hidden;
 @media screen and (max-width: 765px) {
     .terapeuci {
         grid-template-columns: 1fr;
-        gap: 1%;
+        gap:1%;
+        margin-bottom: 20%;
     }
 }

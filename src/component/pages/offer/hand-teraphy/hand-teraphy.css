@@ -1,0 +1,28 @@
+.site-section-terapia-reki * {
+    text-align: left;
+}
+
+.site-section-terapia-reki>div:first-of-type>div>p:first-of-type,
+.site-section-terapia-reki>div:nth-of-type(2)>div:nth-of-type(2)>p:first-of-type
+{
+    text-decoration: underline;
+}
+
+.site-section-terapia-reki>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 980px) {
+    .site-section-terapia-reki>div {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .site-section-terapia-reki>div img {
+        justify-self: center;
+    }
+}

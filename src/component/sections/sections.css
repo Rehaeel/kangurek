@@ -10,12 +10,12 @@
 
 .sections {
     display: block;
-    margin: 80px 0;
     text-align: center;
 }
 
 @media screen and (max-width: 980px) {
     .sections {
         width: 90% !important;
+        margin: 40px 0 !important;
     }
 }
