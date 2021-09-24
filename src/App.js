@@ -11,7 +11,7 @@ import PriceList from './component/pages/price-list/price-list';
 import Contact from './component/pages/contact/contact';
 import Workshops from './component/pages/workshops/workshops';
 import SI from './component/pages/offer/SI/si';
-import STW from './component/pages/offer/STW/stw';
+import STW from './component/pages/offer/STW/stw'
 import MovementRehabilitation from './component/pages/offer/movement-rehabilitation/movement-rehabilitation';
 import PedagogicTeraphy from './component/pages/offer/pedagogic-teraphy/pedagogic-teraphy';
 import LogopedicTeraphy from './component/pages/offer/logopedic-teraphy/logopedic-teraphy';
