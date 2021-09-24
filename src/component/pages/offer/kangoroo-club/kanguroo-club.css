@@ -20,3 +20,10 @@
     padding-inline-start: 0;
     list-style-position: inside;
 }
+
+@media screen and (max-width:980px) {
+    .kangoroo-club-site>div {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
