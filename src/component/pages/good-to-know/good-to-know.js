@@ -1,8 +1,13 @@
 import React from 'react';
 import Sections from '../../sections/sections';
 import './good-to-know.css';
+import ReactGA from 'react-ga';
 
 export default class GoodToKnow extends React.Component {
+    componentDidMount() {
+        ReactGA.pageview(window.location.pathname);
+    }
+
     render() {
         return (
             <div className='good-to-know-page'>

@@ -3,8 +3,13 @@ import './kynoteraphy.css'
 import KTCover from './photos/Dogoterapia_zakladka_kangurek.jpg';
 import OfferTemplate from '../offer-template/offer-template';
 import kyno from './photos/Dogoterapia.jpg'
+import ReactGA from 'react-ga';
 
 export default class Kynoteraphy extends React.Component {
+    componentDidMount() {
+        ReactGA.pageview(window.location.pathname);
+    }
+
     render() {
         return (
             <OfferTemplate header="KYNOTERAPIA (DOGOTERAPIA)" img={KTCover} name="kynoterapia" margin={0}>

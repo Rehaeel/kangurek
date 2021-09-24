@@ -4,6 +4,7 @@ import homePagePoster from './photos/Centrum-Terapii-i-Rozwoju-Dziecka-Kangurek.
 import maleLapki from './photos/male_lapki.jpg';
 import { Link } from 'react-router-dom';
 import Sections from '../../sections/sections';
+import ReactGA from 'react-ga';
 
 import SI from './photos/offer/Kafelek_integracja_sensoryczna.jpg';
 import Kreatywnosc from './photos/offer/Kreatywnosc.jpg';
@@ -16,6 +17,10 @@ import TR from './photos/offer/Terapia-Reki.jpg';
 import { ContactComponent } from '../contact/contact';
 
 export default class HomePage extends React.Component {
+    componentDidMount() {
+        ReactGA.pageview(window.location.pathname);
+    }
+
     render() {
         return (
             <div className="home-page">

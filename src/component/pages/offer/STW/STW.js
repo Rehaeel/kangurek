@@ -3,7 +3,13 @@ import './STW.css'
 import STWCover from './photos/Sensomotoryczna_terapia_widzenia_zakladka_kangurek.jpg';
 import OfferTemplate from '../offer-template/offer-template';
 import stw from './photos/STW_chlopiec.jpg'
+import ReactGA from 'react-ga';
+
 export default class STW extends React.Component {
+    componentDidMount() {
+        ReactGA.pageview(window.location.pathname);
+    }
+
     render() {
         return (
             <OfferTemplate header="SENSOMOTORYCZNA TERAPIA WIDZENIA (STW)" img={STWCover} name="stw" margin={0}>

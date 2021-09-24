@@ -3,6 +3,7 @@ import SiteWrapper from '../../site-wrapper/site-wrapper'
 import './contact.css'
 import Kontakt from './photos/Kontakt_kangurek.jpg';
 import Sections from '../../sections/sections';
+import ReactGA from 'react-ga';
 
 import tel from '../../icons/tel.svg';
 import map from '../../icons/map.svg';
@@ -11,6 +12,10 @@ import mail from '../../icons/mail.svg';
 import bank from './photos/Konto-bankowe.jpg';
 
 export default class Contact extends React.Component {
+    componentDidMount() {
+        ReactGA.pageview(window.location.pathname);
+    }
+
     render() {
         return (
             <SiteWrapper header='Kontakt' img={Kontakt} height={300}>

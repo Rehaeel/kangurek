@@ -3,8 +3,13 @@ import './creativity.css'
 import cCover from './photos/Kreatywnosc_zakladka_kangurek.jpg';
 import OfferTemplate from '../offer-template/offer-template';
 import creativity from './photos/Kreatywnosc.jpg'
+import ReactGA from 'react-ga';
 
 export default class Creativity extends React.Component {
+    componentDidMount() {
+        ReactGA.pageview(window.location.pathname);
+    }
+
     render() {
         return (
             <OfferTemplate header="KREATYWNOŚĆ" img={cCover} name="kreatywnosc" margin={0}>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './terapeuci-page.css';
 import Section from '../../sections/sections';
+import ReactGA from 'react-ga';
 
 import { terapeuciList } from './terapeuci-list';
 
@@ -18,6 +19,10 @@ export default class Terapieuci extends React.Component {
         this.setState({ showMore: !this.state.showMore, height: this.state.height === 0 ? 800 : 0, opacity: this.state.opacity === 0 ? 1 : 0 })
         console.log(this.state.height)
         console.log(this.state.opacity)
+    }
+
+    componentDidMount() {
+        ReactGA.pageview(window.location.pathname);
     }
 
     render() {

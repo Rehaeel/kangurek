@@ -3,8 +3,13 @@ import './hand-teraphy.css'
 import HTCover from './photos/Terapia_reki_zakladka_kangurek.jpg';
 import OfferTemplate from '../offer-template/offer-template';
 import hand from './photos/Terapia_reki.jpg'
+import ReactGA from 'react-ga';
 
 export default class HandTeraphy extends React.Component {
+    componentDidMount() {
+        ReactGA.pageview(window.location.pathname);
+    }
+
     render() {
         return (
             <OfferTemplate header="TERAPIA RĘKI" img={HTCover} name="terapia-reki" margin={0}>

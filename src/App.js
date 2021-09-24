@@ -21,6 +21,7 @@ import Kynoteraphy from './component/pages/offer/kynoteraphy/kynoteraphy';
 import KangurooClub from './component/pages/offer/kangoroo-club/kangoroo-club';
 
 export default class App extends React.Component {
+
   render() {
     return (
       <div className="App" >

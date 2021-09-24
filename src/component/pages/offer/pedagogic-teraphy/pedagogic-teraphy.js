@@ -3,8 +3,13 @@ import './pedagogic-teraphy.css'
 import PHCover from './photos/Terapia_pedagogiczna_zakladka_kangurek.jpg';
 import OfferTemplate from '../offer-template/offer-template';
 import teraphy from './photos/Terapia-pedagogiczna-1.jpg'
+import ReactGA from 'react-ga';
 
 export default class PedagogicTeraphy extends React.Component {
+    componentDidMount() {
+        ReactGA.pageview(window.location.pathname);
+    }
+
     render() {
         return (
             <OfferTemplate header="TERAPIA PEDAGOGICZNA" img={PHCover} name="terapia-pedagogiczna" margin={0}>

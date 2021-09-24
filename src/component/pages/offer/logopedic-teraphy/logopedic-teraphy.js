@@ -3,8 +3,13 @@ import './logopedic-teraphy.css'
 import LTCover from './photos/Terapia_logopedyczna_zakladka_kangurek.jpg';
 import OfferTemplate from '../offer-template/offer-template';
 import teraphy from './photos/Terapia_logopedyczna.jpg'
+import ReactGA from 'react-ga';
 
 export default class LogopedicTeraphy extends React.Component {
+    componentDidMount() {
+        ReactGA.pageview(window.location.pathname);
+    }
+
     render() {
         return (
             <OfferTemplate header="TERAPIA LOGOPEDYCZNA" img={LTCover} name="terapia-logopedyczna" margin={0}>

@@ -2,8 +2,13 @@ import React from 'react'
 import './movement-rehabilitation.css'
 import MRCover from './photos/Zajecia_ogolnorozwojowe_zakladka_kangurek.jpg';
 import OfferTemplate from '../offer-template/offer-template';
+import ReactGA from 'react-ga';
 
 export default class MovementRehabilitation extends React.Component {
+    componentDidMount() {
+        ReactGA.pageview(window.location.pathname);
+    }
+
     render() {
         return (
             <OfferTemplate header="REHABILITACJA RUCHOWA" img={MRCover} name='rehabilitacja-ruchowa' margin={0}>
