@@ -4,7 +4,7 @@
     left: 0;
     display: flex;
     width: 100%;
-    height: 60px;
+    height: 50px;
     background-color: var(--orange-color);
     justify-content: center;
     overflow: visible;
@@ -25,36 +25,44 @@
 }
 
 .menu-home {
+    align-self: center;
     max-width: 30px;
+    transform: translateY(2px);
+}
+
+.menu-button {
+    position:absolute;
+    right: 8%;
+    font-size: 1.8em;
+    cursor: pointer;
 }
 
 /********** menu tabs *********/
 .menu-tabs {
-    display: flex;
+    display: inline-flex;
     margin: 0;
     padding: 0;
-    display: inline-flex;
 }
 
-.menu-tabs * {
-    list-style-type: none;
-}
+.menu-selected p{background:hsl(41, 100%, 47%)}
 
-.menu-selected li{
-  background:hsl(41, 100%, 47%)
-}
-
-.menu-tabs>a li,
-.menu-tabs>li {
+.menu-tabs>a p,
+.menu-tabs>p {
     display: inline-block;
-    padding: 1.1em 1.8em;
+    padding: 0.75em 1.6em;
 }
 
-.menu-tabs li:hover {
-    background-color: hsl(41, 100%, 50%);
-} 
+.menu-tabs>a {z-index:999;}
 
-.menu-tabs>li:after {
+.menu-tabs p {
+    background-color: hsl(41, 100%, 44%);
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.menu-tabs p:hover {background-color: hsl(41, 100%, 50%);} 
+
+.menu-tabs>a:nth-of-type(2)>p:after {
     content: 'v';
     font-size: 1em;
     display: inline-block;
@@ -63,25 +71,84 @@
     color: hsl(0, 0%, 95%);
 }
 
-.menu-tabs>li div {
+.menu-oferta {
     position: absolute;
-    top: -500px;
-    transform: translateX(-40px);
+    top: -630px;
+    transform: translateX(40px);
     background: var(--orange-color);
     opacity: 0;
     transition: all .5s ease;
-}
-
-.menu-tabs>li:hover div {
-    opacity: 1;
-    top: 60px;
-}
-
-.menu-oferta {
+    z-index: 1;
     border-top:2px solid hsl(41, 100%, 30%);
     padding: 20px 30px;
 }
 
-.menu-oferta li {
-    padding: 10px;
+.oferta-opened {
+    opacity: 1;
+    top: 50px;
+}
+
+.menu-oferta p {padding: 10px;}
+
+
+/********** menu width *********/
+
+@media screen and (min-width: 1150px) and (max-width: 1200px) {
+    .menu-container {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1150px) {
+    .menu-container {
+        width: 95%;
+    }
+}
+
+/********** mobile *********/
+
+@media screen and (max-width: 980px) {
+    .menu-button {display: block !important;}
+    
+    .menu-tabs {
+        position: fixed;
+        top: 50px;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        overflow-y: auto;
+        height: calc(100vh - 50px);
+        width: 100%;
+        transition: all .5s ease;
+    }
+
+    .otwarte-menu {
+        left: 0;
+    }
+
+    .menu-tabs p {
+        background-color: #fff;
+        color: #333;
+        width: 100%;
+    }
+    
+    .menu-tabs p:hover {background-color: hsl(0, 0%, 95%)};
+    
+    .oferta-opened {
+        display: block;
+        top: 0;
+    }
+     
+    .menu-oferta {
+        position: relative;
+        top: 0;
+        display: block;
+        transform: translateX(0);
+        background-color: #fff;
+        padding: 20px 30px;
+        opacity: 1;
+        border-top: none;
+    }
+
 }
