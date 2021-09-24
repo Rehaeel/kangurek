@@ -1,14 +1,14 @@
 import React from 'react'
-import SiteWrapper from '../../../site-wrapper/site-wrapper'
-import './si.css'
-import SI from './photos/Integracja_Sensoryczna_zakladka_kangurek.jpg'
+import './SI.css'
+import SiCover from './photos/Integracja_Sensoryczna_zakladka_kangurek.jpg';
+import OfferTemplate from '../offer-template/offer-template';
 
-export default class Si extends React.Component {
+export default class SI extends React.Component {
     render() {
         return (
-            <SiteWrapper header="INTEGRACJA SENSORYCZNA (SI)" img={SI} offer={true} height={370}>
-
-            </SiteWrapper>
+            <OfferTemplate header="INTEGRACJA SENSORYCZNA (SI)" img={SiCover}>
+                <h1>coś</h1>
+            </OfferTemplate>
         )
     }
 }
