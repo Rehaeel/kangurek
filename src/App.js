@@ -10,7 +10,7 @@ import GoodToKnow from './component/pages/good-to-know/good-to-know';
 import PriceList from './component/pages/price-list/price-list';
 import Contact from './component/pages/contact/contact';
 import Workshops from './component/pages/workshops/workshops';
-import SI from './component/pages/offer/SI/si';
+import SI from './component/pages/offer/SI/SI';
 import STW from './component/pages/offer/STW/STW';
 import MovementRehabilitation from './component/pages/offer/movement-rehabilitation/movement-rehabilitation';
 import PedagogicTeraphy from './component/pages/offer/pedagogic-teraphy/pedagogic-teraphy';

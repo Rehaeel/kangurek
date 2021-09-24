@@ -59,12 +59,12 @@ export default class Menu extends React.Component {
                             <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/integracja-sensoryczna"><p >Integracja Sensoryczna</p ></NavLink>
                             <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/klub-kangurka"><p >Klub Kangurka</p ></NavLink>
                             <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/sensomotoryczna-terapia-widzenia"><p >Sensomotoryczna Terapia Widzenia</p ></NavLink>
-                            <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/rechabilitacja-ruchowa"><p >Rechabilitacja ruchowa</p ></NavLink>
+                            <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/rehabilitacja-ruchowa"><p >Rehabilitacja ruchowa</p ></NavLink>
                             <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/terapia-pedagogiczna"><p >Terapia pedagogiczna</p ></NavLink>
                             <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/terapia-logopedyczna"><p >Terapia logopedyczna</p ></NavLink>
                             <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/terapia-reki"><p >Terapia ręki</p ></NavLink>
                             <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/kreatywnosc"><p >Kreatywność</p ></NavLink>
-                            <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/kynoterapia"><p >Kynoterapia (dogoterapia)</p ></NavLink>
+                            <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/kynoterapia-dogoterapia"><p >Kynoterapia (dogoterapia)</p ></NavLink>
                         </div>
                         <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/terapeuci"><p >Terapeuci</p ></NavLink>
                         <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/galeria"><p >Galeria</p ></NavLink>

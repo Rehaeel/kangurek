@@ -1,5 +1,5 @@
 import React from 'react'
-import './si.css'
+import './SI.css'
 import SiCover from './photos/Integracja_Sensoryczna_zakladka_kangurek.jpg';
 import OfferTemplate from '../offer-template/offer-template';
 import si from './photos/SI.jpg'
