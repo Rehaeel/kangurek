@@ -4,37 +4,75 @@ import './menu.css';
 import home from '../icons/home.png'
 
 export default class Menu extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            menuOfertaOpen: false,
+            burgerMenuOpen: false
+        }
+    }
+
+    toggleBurgerMenu = () => {
+        this.setState({ burgerMenuOpen: !this.state.burgerMenuOpen })
+    }
+
+    closeBurgerMenu = () => {
+        this.setState({ burgerMenuOpen: false })
+    }
+
+    menuOfertaOpener = () => {
+        this.setState({ menuOfertaOpen: true })
+    }
+
+    menuOfertaCloser = () => {
+        this.setState({ menuOfertaOpen: false })
+    }
+
     render() {
         return (
             <div className="menu">
                 <div className="menu-container">
-                    <NavLink to="/">
+                    <NavLink to="/" onClick={this.closeBurgerMenu} >
                         <img src={home} alt="strona domowa" className="menu-home" />
                     </NavLink>
-                    <ul className="menu-tabs">
-                        <a href="/#aktualnosci" alt=""><li>Aktualności</li ></a>
-                        <li style={{ cursor: 'pointer' }}><a href="/#oferta" alt="">Oferta</a>
-                            <div style={{ display: 'block' }}>
-                                <ul className="menu-oferta">
-                                    <NavLink activeClassName="menu-selected" to="/integracja-sensoryczna"><li>Integracja Sensoryczna</li></NavLink>
-                                    <NavLink activeClassName="menu-selected" to="/klub-kangurka"><li>Klub Kangurka</li></NavLink>
-                                    <NavLink activeClassName="menu-selected" to="/sensomotoryczna-terapia-widzenia"><li>Sensomotoryczna Terapia Widzenia</li></NavLink>
-                                    <NavLink activeClassName="menu-selected" to="/rehabilitacja-ruchowa"><li>Rehabilitacja ruchowa</li></NavLink>
-                                    <NavLink activeClassName="menu-selected" to="/terapia-pedagogiczna"><li>Terapia pedagogiczna</li ></NavLink>
-                                    <NavLink activeClassName="menu-selected" to="/terapia-logopedyczna"><li>Terapia logopedyczna</li ></NavLink>
-                                    <NavLink activeClassName="menu-selected" to="/terapia-reki"><li>Terapia ręki</li ></NavLink>
-                                    <NavLink activeClassName="menu-selected" to="/kreatywnosc"><li>Kreatywność</li ></NavLink>
-                                    <NavLink activeClassName="menu-selected" to="/kynoterapia-dogoterapia"><li>Kynoterapia (dogoterapia)</li ></NavLink>
-                                </ul>
-                            </div>
-                        </li>
-                        <NavLink activeClassName="menu-selected" to="/terapeuci"><li>Terapeuci</li ></NavLink>
-                        <NavLink activeClassName="menu-selected" to="/galeria"><li>Galeria</li ></NavLink>
-                        <NavLink activeClassName="menu-selected" to="/warto-wiedziec"><li>Warto wiedzieć</li ></NavLink>
-                        <NavLink activeClassName="menu-selected" to="/cennik"><li>Cennik</li ></NavLink>
-                        <NavLink activeClassName="menu-selected" to="/szkolenia"><li>Szkolenia</li ></NavLink>
-                        <NavLink activeClassName="menu-selected" to="/kontakt"><li>Kontakt</li ></NavLink>
-                    </ul>
+                    <p
+                        className="menu-button"
+                        style={{ display: this.state.burgerMenuOpen ? 'block' : 'none' }}
+                        onClick={this.toggleBurgerMenu}>
+                        {this.state.burgerMenuOpen ? 'X' : '☰'}
+                    </p>
+                    <div className={`menu-tabs ${this.state.burgerMenuOpen ? 'otwarte-menu' : ''}`}>
+                        <a onClick={this.closeBurgerMenu} href="/#aktualnosci" alt=""><p>Aktualności</p></a>
+                        <a onClick={this.closeBurgerMenu} href="/#oferta" alt="">
+                            <p
+                                onMouseEnter={this.menuOfertaOpener}
+                                onMouseLeave={this.menuOfertaCloser}
+                                onClick={this.closeBurgerMenu} >
+                                Oferta
+                            </p>
+                        </a>
+                        <div
+                            style={{ cursor: 'pointer', display: 'block' }}
+                            className={`menu-oferta ${this.state.menuOfertaOpen ? 'oferta-opened' : ''}`}
+                            onMouseEnter={this.menuOfertaOpener}
+                            onMouseLeave={this.menuOfertaCloser}>
+                            <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/integracja-sensoryczna"><p >Integracja Sensoryczna</p ></NavLink>
+                            <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/klub-kangurka"><p >Klub Kangurka</p ></NavLink>
+                            <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/sensomotoryczna-terapia-widzenia"><p >Sensomotoryczna Terapia Widzenia</p ></NavLink>
+                            <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/rechabilitacja-ruchowa"><p >Rechabilitacja ruchowa</p ></NavLink>
+                            <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/terapia-pedagogiczna"><p >Terapia pedagogiczna</p ></NavLink>
+                            <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/terapia-logopedyczna"><p >Terapia logopedyczna</p ></NavLink>
+                            <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/terapia-reki"><p >Terapia ręki</p ></NavLink>
+                            <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/kreatywnosc"><p >Kreatywność</p ></NavLink>
+                            <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/kynoterapia"><p >Kynoterapia (dogoterapia)</p ></NavLink>
+                        </div>
+                        <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/terapeuci"><p >Terapeuci</p ></NavLink>
+                        <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/galeria"><p >Galeria</p ></NavLink>
+                        <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/warto-wiedziec"><p >Warto wiedzieć</p ></NavLink>
+                        <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/cennik"><p >Cennik</p ></NavLink>
+                        <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/szkolenia"><p >Szkolenia</p ></NavLink>
+                        <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/kontakt"><p >Kontakt</p ></NavLink>
+                    </div>
                 </div>
             </div >
         )
