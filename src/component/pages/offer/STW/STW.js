@@ -1,5 +1,5 @@
 import React from 'react'
-import './STW.css'
+import './stw.css';
 import STWCover from './photos/Sensomotoryczna_terapia_widzenia_zakladka_kangurek.jpg';
 import OfferTemplate from '../offer-template/offer-template';
 import stw from './photos/STW_chlopiec.jpg'
