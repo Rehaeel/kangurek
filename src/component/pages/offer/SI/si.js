@@ -5,7 +5,7 @@ import OfferTemplate from '../offer-template/offer-template';
 import si from './photos/SI.jpg'
 import ReactGA from 'react-ga';
 
-export default class SI extends React.Component {
+export default class Si extends React.Component {
     componentDidMount() {
         ReactGA.pageview(window.location.pathname);
     }

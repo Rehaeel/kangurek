@@ -5,7 +5,7 @@ import OfferTemplate from '../offer-template/offer-template';
 import stw from './photos/STW_chlopiec.jpg'
 import ReactGA from 'react-ga';
 
-export default class STW extends React.Component {
+export default class Stw extends React.Component {
     componentDidMount() {
         ReactGA.pageview(window.location.pathname);
     }

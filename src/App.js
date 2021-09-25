@@ -17,8 +17,8 @@ import HandTeraphy from './component/pages/offer/hand-teraphy/hand-teraphy';
 import Creativity from './component/pages/offer/creativity/creativity';
 import Kynoteraphy from './component/pages/offer/kynoteraphy/kynoteraphy';
 import KangurooClub from './component/pages/offer/kangoroo-club/kangoroo-club';
-import SI from './component/pages/offer/si/si';
-import STW from './component/pages/offer/stw/stw';
+import Si from './component/pages/offer/si/si';
+import Stw from './component/pages/offer/stw/stw';
 
 export default class App extends React.Component {
 
@@ -78,11 +78,11 @@ const PageList = [
   },
   {
     path: '/integracja-sensoryczna',
-    child: <SI />
+    child: <Si />
   },
   {
     path: '/sensomotoryczna-terapia-widzenia',
-    child: <STW />
+    child: <Stw />
   },
   {
     path: '/rehabilitacja-ruchowa',
