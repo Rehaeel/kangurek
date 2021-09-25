@@ -28,7 +28,9 @@ font-weight: 300;
 
 @media screen and (max-width: 980px) {
     .site-header>h1 {
+        width: 100%;
         text-align: center;
+        line-height: 1.4em;
     }
     
     .rest-of-site {
