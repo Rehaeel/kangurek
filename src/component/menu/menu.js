@@ -58,7 +58,7 @@ export default class Menu extends React.Component {
                         {this.state.burgerMenuOpen ? 'X' : '☰'}
                     </p>
                     <div className={`menu-tabs ${this.state.burgerMenuOpen ? 'otwarte-menu' : ''}`}>
-                        <a onClick={this.closeBurgerMenu} href="/#aktualnosci" alt=""><p>Aktualności</p></a>
+                        <a onClick={this.closeBurgerMenu} href="/#wydarzenia" alt=""><p>Wydarzenia</p></a>
                         <a onClick={this.closeBurgerMenu} href="/#oferta" alt="">
                             <p
                                 onMouseEnter={this.menuOfertaOpener}
@@ -98,7 +98,6 @@ export default class Menu extends React.Component {
                         <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/galeria"><p >Galeria</p ></NavLink>
                         <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/warto-wiedziec"><p >Warto wiedzieć</p ></NavLink>
                         <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/cennik"><p >Cennik</p ></NavLink>
-                        <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/szkolenia"><p >Szkolenia</p ></NavLink>
                         <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/kontakt"><p >Kontakt</p ></NavLink>
                     </div>
                 </div>

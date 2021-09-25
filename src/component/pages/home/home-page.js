@@ -1,6 +1,6 @@
 import React from 'react';
 import './home-page.css';
-import homePagePoster from './photos/Centrum-Terapii-i-Rozwoju-Dziecka-Kangurek.jpg';
+
 import maleLapki from './photos/male_lapki.jpg';
 import { Link } from 'react-router-dom';
 import Sections from '../../sections/sections';
@@ -24,8 +24,7 @@ export default class HomePage extends React.Component {
     render() {
         return (
             <div className="home-page">
-                <img src={homePagePoster} alt="" className="home-page-poster" />
-
+                <div id='home-page-poster'></div>
                 <h3 className="home-page-cytat">„Czego nie ma najpierw w zmysłach, tego nie ma później w umyśle”<br />
                     ~B. Pascal</h3>
 
@@ -47,9 +46,17 @@ export default class HomePage extends React.Component {
                         </p>
                         <img src={maleLapki} alt="" style={{ justifySelf: 'center' }} />
                     </div>
+                    <iframe
+                        src="https://www.youtube.com/embed/P6esjoeunP0"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen>
+
+                    </iframe>
                 </Sections>
 
-                <Sections width={100} name="Aktualności" id='aktualnosci'>
+                <Sections width={100} name="Wydarzenia" id='wydarzenia'>
                     <a href="https://www.facebook.com/centrumkangurek/" target="_blank" style={{ textDecoration: 'none' }} rel="noreferrer">
                         <div className="facebook-cta">
                             <h1>znajdź nas na Facebooku!</h1>

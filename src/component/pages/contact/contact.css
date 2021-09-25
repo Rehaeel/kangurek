@@ -34,7 +34,11 @@
 
 .contact-info *:link {
     text-decoration: none;
-    color: var(--orange-color);
+    color:var(--text-color);
+}
+
+.contact-info *:visited {
+    color: var(--text-color);
 }
 
 

@@ -13,7 +13,7 @@ export default class GoodToKnow extends React.Component {
             <div className='good-to-know-page'>
                 <Sections width={70}>
                     <b>Sprawdź, czy Twoje dziecko ma zaburzenia integracji sensorycznej.<br />
-                        Jeżeli  Twoje  odpowiedzi są  na TAK, zgłoś dziecko na diagnozę i ocenę procesów integracji sensorycznej:</b>
+                        Jeżeli  Twoje  odpowiedzi są  na TAK, zgłoś dziecko na diagnozę i ocenę rozwoju procesów integracji sensorycznej:</b>
                     <ol>
                         <li>ma kłopoty z cięciem nożyczkami, rysowaniem po śladzie, pisaniem,</li>
                         <li> ma trudności w przepisywaniu, przerysowywaniu z tablicy,</li>

@@ -16,12 +16,7 @@ export const tariff = [
                 serviceName: 'Terapia integracji sensorycznej',
                 duration: '45 min.',
                 cost: '80 zł'
-            },
-            {
-                serviceName: <><a href="/klub-kangurka"><b>KLUB KANGURKA</b></a> zajęcia grupowe dla mam z maluszkami (do 3 r.ż.)</>,
-                duration: '45 min.',
-                cost: '30 zł'
-            },
+            }
         ]
     },
     {
@@ -39,8 +34,8 @@ export const tariff = [
             },
             {
                 serviceName: 'STW realizowana niezależnie',
-                duration: '30 min.',
-                cost: '50 zł'
+                duration: '45 min.',
+                cost: '80 zł'
             }
         ]
     },
@@ -104,11 +99,11 @@ export const tariff = [
         body: [
             {
                 serviceName: 'Diagnoza',
-                duration: '2x 45 min.',
-                cost: '120 zł'
+                duration: '1 spotkanie',
+                cost: '100 zł'
             },
             {
-                serviceName: 'Logopedia',
+                serviceName: 'Zajęcia logopedyczne',
                 duration: '45 min.',
                 cost: '80 zł'
             },
@@ -146,10 +141,6 @@ export const tariff = [
                 serviceName: 'Konsultacje',
                 duration: '1 spotkanie',
                 cost: '100 zł'
-            }, {
-                serviceName: 'Badanie profilu Psychoedukacyjnego dziecka testem PEP-R',
-                duration: '2-3 spotkania',
-                cost: '350 zł'
             }
         ]
     }

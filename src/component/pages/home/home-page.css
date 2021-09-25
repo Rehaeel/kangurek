@@ -1,10 +1,8 @@
-.home-page-poster { width: 100%; }
-
-.home-about-us {
-  display: grid;
-  grid-template-columns: 1fr 0.8fr;
-  margin: 0 auto;
-  align-items: center;
+#home-page-poster { 
+    width: 100vw; 
+    height: 31vw;
+    background: url('./photos/Centrum-Terapii-i-Rozwoju-Dziecka-Kangurek.jpg') no-repeat;
+    background-size: cover;
 }
 
 .home-page-cytat { 
@@ -13,6 +11,19 @@
     color: #667;
 }
 
+.home-about-us {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.o-nas-section iframe {
+    max-width: 100%;
+    width: 900px;
+    transform:translateY(80px);
+    aspect-ratio: 16 / 9;
+}
 
 /**************** FACEBOOK ****************/
 
@@ -104,6 +115,16 @@
     .home-about-us {
         grid-template-columns: 1fr;
     }
+
+    .home-about-us img {
+        padding: 30px 0;
+        order: 1;
+    }
+
+    .home-about-us p {
+        order: 2;
+    }
+
 }
 
 /**************** TABLET ****************/
@@ -112,5 +133,18 @@
     .oferta-box {
         grid-template-columns: 1fr 1fr;
     }
+
+    .o-nas-section iframe {
+        transform:translateY(40px);
+    }
+}
+
+@media screen and (max-width: 765px) {
+    #home-page-poster { 
+    width: 100vw; 
+    height: 78.7vw;
+    background: url('./photos/kangurek-mobile.jpg') no-repeat;
+    background-size: cover;
+}
 }
 

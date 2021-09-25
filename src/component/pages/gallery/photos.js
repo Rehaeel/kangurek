@@ -1,3 +1,11 @@
+import z from './photos/20180206_180222.jpg';
+import zz from './photos/20180206_180833.jpg';
+import zzz from './photos/20180206_181242.jpg';
+import zzzz from './photos/20180206_183346.jpg';
+import zzzzz from './photos/20180223_173219.jpg';
+import zzzzzz from './photos/20180309_175439.jpg';
+import zzzzzzz from './photos/20180309_175511.jpg';
+
 import a from './photos/20170801_181649.jpg';
 import aa from './photos/20170801_183622.jpg';
 import aaa from './photos/20170801_183824.jpg';
@@ -76,6 +84,34 @@ import ooooo from './photos/IMG_0244.jpg';
 
 export const photos = [
     {
+        src: z,
+        width: 3,
+        height: 4
+    }, {
+        src: zz,
+        width: 3,
+        height: 4
+    }, {
+        src: zzz,
+        width: 3,
+        height: 4
+    }, {
+        src: zzzz,
+        width: 3,
+        height: 4
+    }, {
+        src: zzzzz,
+        width: 3,
+        height: 4
+    }, {
+        src: zzzzzz,
+        width: 4,
+        height: 3
+    }, {
+        src: zzzzzzz,
+        width: 4,
+        height: 3
+    }, {
         src: a,
         width: 3,
         height: 4

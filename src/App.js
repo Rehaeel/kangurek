@@ -9,7 +9,6 @@ import GalleryPage from './component/pages/gallery/gallery-page';
 import GoodToKnow from './component/pages/good-to-know/good-to-know';
 import PriceList from './component/pages/price-list/price-list';
 import Contact from './component/pages/contact/contact';
-import Workshops from './component/pages/workshops/workshops';
 import MovementRehabilitation from './component/pages/offer/movement-rehabilitation/movement-rehabilitation';
 import PedagogicTeraphy from './component/pages/offer/pedagogic-teraphy/pedagogic-teraphy';
 import LogopedicTeraphy from './component/pages/offer/logopedic-teraphy/logopedic-teraphy';
@@ -74,10 +73,6 @@ const PageList = [
   {
     path: '/kontakt',
     child: <Contact />
-  },
-  {
-    path: '/szkolenia',
-    child: <Workshops />
   },
   {
     path: '/integracja-sensoryczna',
