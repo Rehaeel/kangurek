@@ -10,15 +10,17 @@ export default class Terapieuci extends React.Component {
         super(props);
         this.state = {
             showMore: false,
-            height: 0,
-            opacity: 0
+            height: false,
+            opacity: false
         }
     }
 
-    showMoreClick = () => {
-        this.setState({ showMore: !this.state.showMore, height: this.state.height === 0 ? 800 : 0, opacity: this.state.opacity === 0 ? 1 : 0 })
-        console.log(this.state.height)
-        console.log(this.state.opacity)
+    showMoreClick(index) {
+        if (this.state.showMore !== index) {
+            this.setState({ showMore: index, height: index, opacity: index })
+        } else {
+            this.setState({ showMore: false, height: false, opacity: false })
+        }
     }
 
     componentDidMount() {
@@ -40,11 +42,15 @@ export default class Terapieuci extends React.Component {
                                             return (<li key={index}>{educationList}</li>)
                                         })}
                                     </ul>
-                                    <div style={{ maxHeight: this.state.height, opacity: this.state.opacity, transition: 'max-height 0.5s ease' }} className="business-experience">
+                                    <div style={{
+                                        maxHeight: this.state.height === index ? 800 : 0,
+                                        opacity: this.state.opacity === index ? 1 : 0,
+                                        transition: 'max-height 0.5s ease'
+                                    }} className="business-experience">
                                         <h4>DOŚWIADCZENIE ZAWODOWE</h4>
                                         <p>{terapist.expirience}</p>
                                     </div>
-                                    <p onClick={this.showMoreClick} className="show-more">
+                                    <p onClick={() => this.showMoreClick(index)} className="show-more">
                                         {this.state.showMore ? 'Zobacz mniej ...' : 'Zobacz więcej ...'}
                                     </p>
                                 </div>
