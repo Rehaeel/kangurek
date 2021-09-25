@@ -123,9 +123,7 @@
         transition: all .5s ease;
     }
 
-    .otwarte-menu {
-        left: 0;
-    }
+    .otwarte-menu {left: 0;}
 
     .menu-tabs p {
         background-color: #fff;
@@ -133,13 +131,16 @@
         width: 100%;
     }
 
-    .menu-tabs>a:nth-of-type(2)>p:after {
-        color: #333;
-    }
+    .menu-tabs>a:nth-of-type(2)>p:after {color: #333;}
 
     
     .menu-tabs p:hover {background-color: hsl(0, 0%, 95%)};
     
+    .oferta-opened {
+        display: block;
+        top: 0;
+        z-index:999;
+    }
     
     .menu-oferta {
         position: relative;
@@ -152,8 +153,4 @@
         border-top: none;
     }
     
-    .oferta-opened {
-        display: block;
-        top: 0;
-    }
 }
