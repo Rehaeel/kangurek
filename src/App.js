@@ -19,6 +19,7 @@ import Kynoteraphy from './component/pages/offer/kynoteraphy/kynoteraphy';
 import KangurooClub from './component/pages/offer/kangoroo-club/kangoroo-club';
 import IntegracjaSensoryczna from './component/pages/offer/integracja-sensoryczna/integracja-sensoryczna';
 import SensomotorycznaTerapiaWidzenia from './component/pages/offer/sensomotoryczna-terapia-widzenia/sensomotoryczna-terapia-widzenia';
+import ScrollToTop from './component/scroll-to-top';
 
 export default class App extends React.Component {
 
@@ -26,20 +27,22 @@ export default class App extends React.Component {
     return (
       <div className="App" >
         <Menu />
-        <Switch>
-          <Route exact path="/">
-            <HomePage />
-          </Route>
+        <ScrollToTop>
+          <Switch>
+            <Route exact path="/">
+              <HomePage />
+            </Route>
 
-          {PageList.map((page, index) => {
-            return (
-              <Route path={page.path} key={index}>
-                {page.child}
-              </Route>
-            )
-          })}
+            {PageList.map((page, index) => {
+              return (
+                <Route path={page.path} key={index}>
+                  {page.child}
+                </Route>
+              )
+            })}
 
-        </Switch>
+          </Switch>
+        </ScrollToTop>
 
         <Footer />
       </div>
