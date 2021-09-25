@@ -10,15 +10,15 @@
 }
 
 .cennik tr:first-of-type{
-    background-color: var(--orange-color);
+    position:sticky;
+    top: 50px;
+    background-color: hsl(41, 100%, 47%);
     color: #fff;
     border-bottom: 2px solid hsl(41, 100%, 20%);
     font-size: 1.2em;
 }
 
-.cennik td {
-    padding: 5px 10px;
-}
+.cennik td {padding: 5px 10px;}
 
 .cennik tr:nth-child(even) {
     background-color: #F0CC80;
