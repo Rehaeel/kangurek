@@ -1,11 +1,11 @@
 import React from 'react'
-import './si.css'
+import './integracja-sensoryczna.css';
 import SiCover from './photos/Integracja_Sensoryczna_zakladka_kangurek.jpg';
 import OfferTemplate from '../offer-template/offer-template';
 import si from './photos/SI.jpg'
 import ReactGA from 'react-ga';
 
-export default class Si extends React.Component {
+export default class IntegracjaSensoryczna extends React.Component {
     componentDidMount() {
         ReactGA.pageview(window.location.pathname);
     }
