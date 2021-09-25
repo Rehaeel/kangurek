@@ -25,6 +25,7 @@
     }
 
     .site-section-terapia-logopedyczna>img {
+        width: 100%;
         justify-self: center;
     }
 }
