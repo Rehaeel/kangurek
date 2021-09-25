@@ -27,6 +27,10 @@ font-weight: 300;
 }
 
 @media screen and (max-width: 980px) {
+    .site-header>h1 {
+        text-align: center;
+    }
+    
     .rest-of-site {
         margin: 0 auto;
     }
