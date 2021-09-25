@@ -36,7 +36,7 @@ export default class Terapieuci extends React.Component {
                             return (
                                 <div key={index} className="terapeuta">
                                     <img src={terapist.image} alt={`${terapist.name}-terapeuta`} />
-                                    <h2>{terapist.name}</h2>
+                                    <h3>{terapist.name}</h3>
                                     <ul>
                                         {terapist.education.map((educationList, index) => {
                                             return (<li key={index}>{educationList}</li>)

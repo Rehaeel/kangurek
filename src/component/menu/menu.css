@@ -47,7 +47,7 @@
 .menu-tabs>a p,
 .menu-tabs>p {
     display: inline-block;
-    padding: 0.75em 1.6em;
+    padding: 0.5em 1.6em;
 }
 
 .menu-tabs>a {z-index:999;}

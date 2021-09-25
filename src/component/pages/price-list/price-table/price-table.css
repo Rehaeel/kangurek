@@ -1,7 +1,7 @@
 .cennik {
     color: #222;
     border: 1px solid var(--orange-color);
-    font-size: 1.2em;
+    font-size: 1em;
     max-width: min(850px, 100%);
 }
 
