@@ -34,7 +34,12 @@ export const terapeuciList = [
             'PEDAGOG PRZEDSZKOLNY',
             'NIEDŁUGO NEUROLOGOPEDA'
         ],
-        expirience: ''
+        expirience: <>
+            <p>Od zawsze pracuje z dziećmi, nawet bardzo małymi. Z powodzeniem prowadzi też terapię z dorosłymi.</p>
+            <p>Od 2018  logopeda w Centrum Kangurek oraz Poradni Psychologiczno- Pedagogicznej. Bierze udział  w projekcie rządowym „Za życiem” pracuje z małymi dziećmi zagrożony niepełnosprawnością.</p>
+            <p>2017 pracowała w przedszkolu Motylek jako terapeuta behawioralny.</p>
+            <p>Obecnie studiuje neurologopedię we Wrocławiu.</p>
+        </>
     },
     {
         name: 'Beata Cholewczyńska',
