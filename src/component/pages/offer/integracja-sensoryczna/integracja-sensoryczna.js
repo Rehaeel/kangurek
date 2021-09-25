@@ -32,7 +32,7 @@ export default class IntegracjaSensoryczna extends React.Component {
                     </div>
                     <img src={si} alt="integracja sensoryczna" />
                 </div>
-                <p>Dla dzieci do lat 3 opracowaliśmy specjalny program <a href="/klub-klub-kangurka">KLUB KANGURKA</a> wspierający rozwój procesu integracji sensorycznej.</p>
+                <p>Dla dzieci do lat 3 opracowaliśmy specjalny program <a href="/klub-kangurka">KLUB KANGURKA</a> wspierający rozwój procesu integracji sensorycznej.</p>
                 <p>Przeprowadzamy  diagnozę oceny rozwoju procesów integracji sensorycznej dziecka, które obejmują:</p>
                 <ul>
                     <li>wywiad z rodzicami</li>
