@@ -8,7 +8,8 @@ export default class Footer extends React.Component {
     render() {
         return (
             <div className="footer">
-                <p>Centrum Kangurek © 2017-{this.thisYear()}    Powered by <a href="https://www.facebook.com/rafalprokopiak.visuals" >Rafał Prokopiak</a></p>
+                <p>Centrum Kangurek © 2017-{this.thisYear()}</p>
+                <p>Powered by <a href="https://www.facebook.com/rafalprokopiak.visuals" >Rafał Prokopiak</a></p>
             </div>
         )
     }
