@@ -132,23 +132,28 @@
         color: #333;
         width: 100%;
     }
+
+    .menu-tabs>a:nth-of-type(2)>p:after {
+        color: #333;
+    }
+
     
     .menu-tabs p:hover {background-color: hsl(0, 0%, 95%)};
     
-    .oferta-opened {
-        display: block;
-        top: 0;
-    }
-     
+    
     .menu-oferta {
         position: relative;
         top: 0;
         display: block;
         transform: translateX(0);
         background-color: #fff;
-        padding: 20px 30px;
+        padding: 5px 30px;
         opacity: 1;
         border-top: none;
     }
-
+    
+    .oferta-opened {
+        display: block;
+        top: 0;
+    }
 }
