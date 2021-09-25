@@ -83,7 +83,7 @@ export default class HomePage extends React.Component {
                             pisaniem i liczeniem poprzez specjalne metody.
                         </Offert>
 
-                        <Offert link='/logopeda' image={Logopedia}>
+                        <Offert link='/terapia-logopedyczna' image={Logopedia}>
                             Na <b>logopedii</b> usuwamy wady wymowy. Wprowadzamy także
                             komunikację wspomagającą i alternatywną (AAC),
                             która uczy porozumiewania się dzieci niemówiących.
@@ -100,7 +100,7 @@ export default class HomePage extends React.Component {
                             twórcze myślenie, zainteresowanie sztuką.
                         </Offert>
 
-                        <Offert link='/kynoterapia' image={Kynoterapia}>
+                        <Offert link='/kynoterapia-dogoterapia' image={Kynoterapia}>
                             Podczas zajęć <b>kynoterapii</b> ze specjalnie szkolonymi psami
                             dzieci wyciszają się, poprawiają koncentrację uwagi
                             i wszechstronnie rozwijają się.
