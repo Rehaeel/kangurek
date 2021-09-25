@@ -58,7 +58,7 @@ export default class Menu extends React.Component {
                         {this.state.burgerMenuOpen ? 'X' : '☰'}
                     </p>
                     <div className={`menu-tabs ${this.state.burgerMenuOpen ? 'otwarte-menu' : ''}`}>
-                        <a onClick={this.closeBurgerMenu} href="/#wydarzenia" alt=""><p>Wydarzenia</p></a>
+                        <a onClick={this.closeBurgerMenu} href="https://www.facebook.com/centrumkangurek/" target="_blank" rel="noreferrer" alt=""><p>Wydarzenia [FB]</p></a>
                         <a onClick={this.closeBurgerMenu} href="/#oferta" alt="">
                             <p
                                 onMouseEnter={this.menuOfertaOpener}
