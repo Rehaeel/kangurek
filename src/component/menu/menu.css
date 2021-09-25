@@ -44,8 +44,6 @@
     padding: 0;
 }
 
-.menu-selected p{background:hsl(41, 100%, 47%)}
-
 .menu-tabs>a p,
 .menu-tabs>p {
     display: inline-block;
@@ -90,6 +88,31 @@
 
 .menu-oferta p {padding: 10px;}
 
+/********** klub kangurka *********/
+
+.menu-oferta>a:first-of-type p:after {
+content: 'v';
+    font-size: 1em;
+    display: inline-block;
+    transform: translate(10px, -2px);
+    font-weight: 400;
+    color: hsl(0, 0%, 95%);
+}
+
+.klub-kangurka {
+opacity: 0;
+max-height: 0;
+transition: all .5s ease;
+overflow: hidden;
+}
+
+.klub-kangurka-opened {
+opacity: 1;
+max-height: 100px;
+padding-left: 20px;
+}
+
+.menu-selected p{background:hsl(41, 100%, 47%)}
 
 /********** menu width *********/
 
@@ -152,5 +175,14 @@
         opacity: 1;
         border-top: none;
     }
+
+    .klub-kangurka {
+        opacity: 1;
+        max-height: 100px;
+        padding-left: 30px;
+    }
     
+.menu-oferta>a:first-of-type p:after {
+ color: #333;   
+}
 }
