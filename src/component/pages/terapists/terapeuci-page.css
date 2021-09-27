@@ -28,6 +28,8 @@
     text-align: left;
 }
 
+.terapeuta>ul { align-self: flex-start;}
+
 .terapeuta>img { border-radius: 50%; }
 
 .terapeuta>h4 { text-decoration: underline; }
