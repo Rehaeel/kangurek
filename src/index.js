@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import ReactGA from 'react-ga';
 
-ReactGA.initialize('UA-105607402-1')
+ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS_KEY);
 
 ReactDOM.render(
   <BrowserRouter>

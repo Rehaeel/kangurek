@@ -28,6 +28,10 @@
     text-align: left;
 }
 
+.terapeuta>ul {
+    align-self: flex-start;
+}
+
 .terapeuta>img { border-radius: 50%; }
 
 .terapeuta>h4 { text-decoration: underline; }
@@ -45,4 +49,14 @@ overflow: hidden;
 
 .show-more:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 765px) {
+    .masonry-terapeuci-column {
+        padding-left: 0;
+    }
+    
+    .terapeuta {
+        padding: 20px;
+    }
 }
