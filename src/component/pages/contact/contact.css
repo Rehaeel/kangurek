@@ -2,7 +2,7 @@
 .contact {
     position:relative;
     display: grid;
-    grid-template-columns: min(220px, 95%) 1fr;
+    grid-template-columns: min(280px, 95%) 1fr;
     align-items: center;
     gap: 7%;
 }
@@ -34,7 +34,11 @@
 
 .contact-info *:link {
     text-decoration: none;
-    color: var(--orange-color);
+    color:var(--text-color);
+}
+
+.contact-info *:visited {
+    color: var(--text-color);
 }
 
 

@@ -9,9 +9,6 @@ import GalleryPage from './component/pages/gallery/gallery-page';
 import GoodToKnow from './component/pages/good-to-know/good-to-know';
 import PriceList from './component/pages/price-list/price-list';
 import Contact from './component/pages/contact/contact';
-import Workshops from './component/pages/workshops/workshops';
-import SI from './component/pages/offer/SI/SI';
-import STW from './component/pages/offer/STW/STW';
 import MovementRehabilitation from './component/pages/offer/movement-rehabilitation/movement-rehabilitation';
 import PedagogicTeraphy from './component/pages/offer/pedagogic-teraphy/pedagogic-teraphy';
 import LogopedicTeraphy from './component/pages/offer/logopedic-teraphy/logopedic-teraphy';
@@ -19,6 +16,9 @@ import HandTeraphy from './component/pages/offer/hand-teraphy/hand-teraphy';
 import Creativity from './component/pages/offer/creativity/creativity';
 import Kynoteraphy from './component/pages/offer/kynoteraphy/kynoteraphy';
 import KangurooClub from './component/pages/offer/kangoroo-club/kangoroo-club';
+import IntegracjaSensoryczna from './component/pages/offer/integracja-sensoryczna/integracja-sensoryczna';
+import SensomotorycznaTerapiaWidzenia from './component/pages/offer/sensomotoryczna-terapia-widzenia/sensomotoryczna-terapia-widzenia';
+import ScrollToTop from './component/scroll-to-top';
 
 export default class App extends React.Component {
 
@@ -26,20 +26,22 @@ export default class App extends React.Component {
     return (
       <div className="App" >
         <Menu />
-        <Switch>
-          <Route exact path="/">
-            <HomePage />
-          </Route>
+        <ScrollToTop>
+          <Switch>
+            <Route exact path="/">
+              <HomePage />
+            </Route>
 
-          {PageList.map((page, index) => {
-            return (
-              <Route path={page.path} key={index}>
-                {page.child}
-              </Route>
-            )
-          })}
+            {PageList.map((page, index) => {
+              return (
+                <Route path={page.path} key={index}>
+                  {page.child}
+                </Route>
+              )
+            })}
 
-        </Switch>
+          </Switch>
+        </ScrollToTop>
 
         <Footer />
       </div>
@@ -73,16 +75,12 @@ const PageList = [
     child: <Contact />
   },
   {
-    path: '/szkolenia',
-    child: <Workshops />
-  },
-  {
     path: '/integracja-sensoryczna',
-    child: <SI />
+    child: <IntegracjaSensoryczna />
   },
   {
     path: '/sensomotoryczna-terapia-widzenia',
-    child: <STW />
+    child: <SensomotorycznaTerapiaWidzenia />
   },
   {
     path: '/rehabilitacja-ruchowa',

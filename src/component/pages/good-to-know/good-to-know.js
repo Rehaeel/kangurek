@@ -13,7 +13,7 @@ export default class GoodToKnow extends React.Component {
             <div className='good-to-know-page'>
                 <Sections width={70}>
                     <b>Sprawdź, czy Twoje dziecko ma zaburzenia integracji sensorycznej.<br />
-                        Jeżeli  Twoje  odpowiedzi są  na TAK, zgłoś dziecko na diagnozę i ocenę procesów integracji sensorycznej:</b>
+                        Jeżeli  Twoje  odpowiedzi są  na TAK, zgłoś dziecko na diagnozę i ocenę rozwoju procesów integracji sensorycznej:</b>
                     <ol>
                         <li>ma kłopoty z cięciem nożyczkami, rysowaniem po śladzie, pisaniem,</li>
                         <li> ma trudności w przepisywaniu, przerysowywaniu z tablicy,</li>
@@ -35,7 +35,7 @@ export default class GoodToKnow extends React.Component {
                         <li>często chodzi na palcach,</li >
                         <li>nabycie nowej umiejętności wymaga od dziecka wielu prób i powtórzeń,</li >
                         <li>nie lubi dziecięcego baraszkowania, nie lubi turlać się po podłodze, podskakiwać, robić fikołków,</li >
-                        <li>Dziecko wydaje się niezdarne, często przytrafiają rozlanie napoju, strącenie wazonu, rozsypanie cukru,</li >
+                        <li>dziecko wydaje się niezdarne, często przytrafiają rozlanie napoju, strącenie wazonu, rozsypanie cukru,</li >
                         <li>wiele czynności samoobsługowych wykonuje z trudem, powoli, niezdarnie, do końca ich nie opanowało,</li >
                         <li>nieumyślnie wchodzi lub wpada na meble, ściany, inne dzieci,</li >
                         <li>długo uczy się nowych aktywności fizycznych tj.: jazda na rowerze, pływanie, a czasem mimo wysiłku nie udaje mu się ich opanować,</li >

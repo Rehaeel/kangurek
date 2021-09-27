@@ -8,6 +8,7 @@ export default class Menu extends React.Component {
         super();
         this.state = {
             menuOfertaOpen: false,
+            menuKlubOpen: false,
             burgerMenuOpen: false
         }
     }
@@ -20,6 +21,8 @@ export default class Menu extends React.Component {
         this.setState({ burgerMenuOpen: false })
     }
 
+    /******* menu oferta *******/
+
     menuOfertaOpener = () => {
         this.setState({ menuOfertaOpen: true })
     }
@@ -27,6 +30,19 @@ export default class Menu extends React.Component {
     menuOfertaCloser = () => {
         this.setState({ menuOfertaOpen: false })
     }
+
+    /******* menu oferta *******/
+
+    menuKlubOpener = () => {
+        this.setState({ menuKlubOpen: true })
+    }
+
+    menuKlubCloser = () => {
+        this.setState({ menuKlubOpen: false })
+
+    }
+
+
 
     render() {
         return (
@@ -42,7 +58,7 @@ export default class Menu extends React.Component {
                         {this.state.burgerMenuOpen ? 'X' : '☰'}
                     </p>
                     <div className={`menu-tabs ${this.state.burgerMenuOpen ? 'otwarte-menu' : ''}`}>
-                        <a onClick={this.closeBurgerMenu} href="/#aktualnosci" alt=""><p>Aktualności</p></a>
+                        <a onClick={this.closeBurgerMenu} href="https://www.facebook.com/centrumkangurek/" target="_blank" rel="noreferrer" alt=""><p>Wydarzenia [FB]</p></a>
                         <a onClick={this.closeBurgerMenu} href="/#oferta" alt="">
                             <p
                                 onMouseEnter={this.menuOfertaOpener}
@@ -56,8 +72,20 @@ export default class Menu extends React.Component {
                             className={`menu-oferta ${this.state.menuOfertaOpen ? 'oferta-opened' : ''}`}
                             onMouseEnter={this.menuOfertaOpener}
                             onMouseLeave={this.menuOfertaCloser}>
-                            <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/integracja-sensoryczna"><p >Integracja Sensoryczna</p ></NavLink>
-                            <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/klub-kangurka"><p >Klub Kangurka</p ></NavLink>
+                            <NavLink
+                                onClick={this.closeBurgerMenu}
+                                activeClassName="menu-selected"
+                                to="/integracja-sensoryczna"
+                                onMouseEnter={this.menuKlubOpener}
+                                onMouseLeave={this.menuKlubCloser}>
+                                <p >Integracja Sensoryczna</p >
+                            </NavLink>
+                            <div
+                                className={`klub-kangurka ${this.state.menuKlubOpen ? 'klub-kangurka-opened' : ''}`}
+                                onMouseEnter={this.menuKlubOpener}
+                                onMouseLeave={this.menuKlubCloser}>
+                                <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/klub-kangurka"><p >Klub Kangurka</p ></NavLink>
+                            </div>
                             <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/sensomotoryczna-terapia-widzenia"><p >Sensomotoryczna Terapia Widzenia</p ></NavLink>
                             <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/rehabilitacja-ruchowa"><p >Rehabilitacja ruchowa</p ></NavLink>
                             <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/terapia-pedagogiczna"><p >Terapia pedagogiczna</p ></NavLink>
@@ -70,7 +98,6 @@ export default class Menu extends React.Component {
                         <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/galeria"><p >Galeria</p ></NavLink>
                         <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/warto-wiedziec"><p >Warto wiedzieć</p ></NavLink>
                         <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/cennik"><p >Cennik</p ></NavLink>
-                        <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/szkolenia"><p >Szkolenia</p ></NavLink>
                         <NavLink onClick={this.closeBurgerMenu} activeClassName="menu-selected" to="/kontakt"><p >Kontakt</p ></NavLink>
                     </div>
                 </div>

@@ -1,11 +1,11 @@
 import React from 'react'
-import './SI.css'
+import './integracja-sensoryczna.css';
 import SiCover from './photos/Integracja_Sensoryczna_zakladka_kangurek.jpg';
 import OfferTemplate from '../offer-template/offer-template';
 import si from './photos/SI.jpg'
 import ReactGA from 'react-ga';
 
-export default class SI extends React.Component {
+export default class IntegracjaSensoryczna extends React.Component {
     componentDidMount() {
         ReactGA.pageview(window.location.pathname);
     }
@@ -32,7 +32,7 @@ export default class SI extends React.Component {
                     </div>
                     <img src={si} alt="integracja sensoryczna" />
                 </div>
-                <p>Dla dzieci do lat 3 opracowaliśmy specjalny program <a href="/klub-klub-kangurka">KLUB KANGURKA</a> wspierający rozwój procesu integracji sensorycznej.</p>
+                <p>Dla dzieci do lat 3 opracowaliśmy specjalny program <a href="/klub-kangurka">KLUB KANGURKA</a> wspierający rozwój procesu integracji sensorycznej.</p>
                 <p>Przeprowadzamy  diagnozę oceny rozwoju procesów integracji sensorycznej dziecka, które obejmują:</p>
                 <ul>
                     <li>wywiad z rodzicami</li>

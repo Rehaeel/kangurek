@@ -7,6 +7,7 @@
 }
 
 :root {
+  --text-color: #6e6e6e;
   --orange-color: #e09900;
 }
 
@@ -15,16 +16,17 @@ body {
   font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.8em;
-  color: #6e6e6e;
+  color: var(--text-color);
 }
 
 h1, h2, h3, h4 {
   font-family: 'Lora', serif;
 }
 
-a:link {
+a:link,
+a:visited {
   color: var(--orange-color);
   text-decoration: none;
 }

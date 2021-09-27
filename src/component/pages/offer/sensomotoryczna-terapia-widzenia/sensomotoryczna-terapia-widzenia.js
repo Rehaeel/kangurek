@@ -1,11 +1,11 @@
 import React from 'react'
-import './STW.css'
+import './sensomotoryczna-terapia-widzenia.css';
 import STWCover from './photos/Sensomotoryczna_terapia_widzenia_zakladka_kangurek.jpg';
 import OfferTemplate from '../offer-template/offer-template';
 import stw from './photos/STW_chlopiec.jpg'
 import ReactGA from 'react-ga';
 
-export default class STW extends React.Component {
+export default class SensomotorycznaTerapiaWidzenia extends React.Component {
     componentDidMount() {
         ReactGA.pageview(window.location.pathname);
     }

@@ -44,12 +44,10 @@
     padding: 0;
 }
 
-.menu-selected p{background:hsl(41, 100%, 47%)}
-
 .menu-tabs>a p,
 .menu-tabs>p {
     display: inline-block;
-    padding: 0.75em 1.6em;
+    padding: 0.5em 1.6em;
 }
 
 .menu-tabs>a {z-index:999;}
@@ -90,6 +88,31 @@
 
 .menu-oferta p {padding: 10px;}
 
+/********** klub kangurka *********/
+
+.menu-oferta>a:first-of-type p:after {
+content: 'v';
+    font-size: 1em;
+    display: inline-block;
+    transform: translate(10px, -2px);
+    font-weight: 400;
+    color: hsl(0, 0%, 95%);
+}
+
+.klub-kangurka {
+opacity: 0;
+max-height: 0;
+transition: all .5s ease;
+overflow: hidden;
+}
+
+.klub-kangurka-opened {
+opacity: 1;
+max-height: 100px;
+padding-left: 20px;
+}
+
+.menu-selected p{background:hsl(41, 100%, 47%)}
 
 /********** menu width *********/
 
@@ -123,32 +146,43 @@
         transition: all .5s ease;
     }
 
-    .otwarte-menu {
-        left: 0;
-    }
+    .otwarte-menu {left: 0;}
 
     .menu-tabs p {
         background-color: #fff;
         color: #333;
         width: 100%;
     }
+
+    .menu-tabs>a:nth-of-type(2)>p:after {color: #333;}
+
     
     .menu-tabs p:hover {background-color: hsl(0, 0%, 95%)};
     
     .oferta-opened {
         display: block;
         top: 0;
+        z-index:999;
     }
-     
+    
     .menu-oferta {
         position: relative;
         top: 0;
         display: block;
         transform: translateX(0);
         background-color: #fff;
-        padding: 20px 30px;
+        padding: 5px 30px;
         opacity: 1;
         border-top: none;
     }
 
+    .klub-kangurka {
+        opacity: 1;
+        max-height: 100px;
+        padding-left: 30px;
+    }
+    
+.menu-oferta>a:first-of-type p:after {
+ color: #333;   
+}
 }
