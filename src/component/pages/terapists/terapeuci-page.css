@@ -46,3 +46,8 @@ overflow: hidden;
 .show-more:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 980px) {
+    .masonry-terapeuci-column {padding-left: 0px;}
+    .terapeuta {padding: 20px;}
+}
