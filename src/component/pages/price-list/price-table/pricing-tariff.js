@@ -40,7 +40,7 @@ export const tariff = [
         ]
     },
     {
-        header: 'KREATYWNOSC',
+        header: 'KREATYWNOŚĆ',
         body: [
             {
                 serviceName: 'Zajęcia grupowe',
@@ -108,7 +108,7 @@ export const tariff = [
                 cost: '80 zł'
             },
             {
-                serviceName: 'Wystawienia zaświadczenia na studia o braku przeciwskazań do wykonywania zawodu nauczyciela/logopedy',
+                serviceName: 'Wystawienie zaświadczenia na studia o braku przeciwskazań do wykonywania zawodu nauczyciela/logopedy',
                 duration: '1 spotkanie',
                 cost: '80 zł'
             }

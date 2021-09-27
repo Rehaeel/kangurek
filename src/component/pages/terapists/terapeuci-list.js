@@ -65,7 +65,7 @@ export const terapeuciList = [
         name: 'Alicja Wenda',
         image: Ala,
         education: [
-            'SPECJALISTA DO WSPOMAGANIA TERAPII PRZY UDZIALE PSA'
+            'DOGOTERAPEUTA'
         ],
         expirience: 'Dogoterapią zajmuje się od 13 lat. Satysfakcje daje jej praca z dziećmi i psami. Dogoterapia to idealne połączenie tych dwóch pasji. Wraz z psem Albertem należy do fundacji dogoterapeutycznej "Cane pro hubamo". Obecnie jest w trakcie studiów na kierunku "Pedagogika przedszkolna i wczesnoszkolna". Specjalista do wspomagania terapii przy udziale psa.'
     }

@@ -35,7 +35,7 @@ export default class GoodToKnow extends React.Component {
                         <li>często chodzi na palcach,</li >
                         <li>nabycie nowej umiejętności wymaga od dziecka wielu prób i powtórzeń,</li >
                         <li>nie lubi dziecięcego baraszkowania, nie lubi turlać się po podłodze, podskakiwać, robić fikołków,</li >
-                        <li>Dziecko wydaje się niezdarne, często przytrafiają rozlanie napoju, strącenie wazonu, rozsypanie cukru,</li >
+                        <li>dziecko wydaje się niezdarne, często przytrafiają rozlanie napoju, strącenie wazonu, rozsypanie cukru,</li >
                         <li>wiele czynności samoobsługowych wykonuje z trudem, powoli, niezdarnie, do końca ich nie opanowało,</li >
                         <li>nieumyślnie wchodzi lub wpada na meble, ściany, inne dzieci,</li >
                         <li>długo uczy się nowych aktywności fizycznych tj.: jazda na rowerze, pływanie, a czasem mimo wysiłku nie udaje mu się ich opanować,</li >

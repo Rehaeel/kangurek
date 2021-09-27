@@ -1,9 +1,16 @@
 .terapeuci {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    gap: 3% 4%;
+    display: flex;
+    width: auto;
+    padding-left: -30px;
+}
+
+.masonry-terapeuci-column {
+    padding-left: 30px;
+    background-clip: padding-box;
+}
+
+.masonry-terapeuci-column > div {
+    margin-bottom: 30px;
 }
 
 .terapeuta {
@@ -38,23 +45,4 @@ overflow: hidden;
 
 .show-more:hover {
     text-decoration: underline;
-}
-
-/************ Tablet ************/
-
-@media screen and (min-width: 765px) and (max-width: 980px) {
-    .terapeuci {
-        grid-template-columns: 1fr 1fr;
-        gap: 1% 2%;
-    }
-}
-
-/************ Mobile ************/
-
-@media screen and (max-width: 765px) {
-    .terapeuci {
-        grid-template-columns: 1fr;
-        gap:1%;
-        margin-bottom: 20%;
-    }
 }

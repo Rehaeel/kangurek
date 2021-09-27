@@ -38,14 +38,14 @@ export class ContactComponent extends React.Component {
                     <div className="contact-info">
                         <h3>Dane kontaktowe</h3>
 
-                        <p>tel.: <a href="tel:+48505776121">505-665-121</a> i <a href="tel:+48600216870">600-216-870</a></p>
+                        <p>tel.: <a href="tel:+48505776121">505-776-121</a> i <a href="tel:+48600216870">600-216-870</a></p>
                         <a href="tel:+48505776121"><img src={tel} alt="" /></a>
 
-                        <p>Mail: <a href="mailto:info@centrum-kangurek.pl">info @centrum-kangurek.pl</a></p>
+                        <p>Mail: <a href="mailto:info@centrum-kangurek.pl">info@centrum-kangurek.pl</a></p>
                         <a href="mailto:info@centrum-kangurek.pl"><img src={mail} alt="" /></a>
 
                         <p><a href="https://www.google.pl/maps/place/Centrum+Kangurek/@53.1317883,18.0174391,15z/data=!4m8!1m2!2m1!1scentrum+kangurek!3m4!1s0x470313e4298cd6bd:0x26e0e0577a21e6d9!8m2!3d53.139576!4d18.0299779">
-                            ul.Czerkaska 11 lok.2A (piętro),<br />
+                            ul. Czerkaska 11 lok.2A (piętro),<br />
                             85-637 Bydgoszcz
                         </a></p>
                         <a href="https://www.google.pl/maps/place/Centrum+Kangurek/@53.1317883,18.0174391,15z/data=!4m8!1m2!2m1!1scentrum+kangurek!3m4!1s0x470313e4298cd6bd:0x26e0e0577a21e6d9!8m2!3d53.139576!4d18.0299779">
