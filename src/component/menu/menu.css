@@ -156,14 +156,20 @@ padding-left: 20px;
 
     .menu-tabs>a:nth-of-type(2)>p:after {color: #333;}
 
-    
-    .menu-tabs p:hover {background-color: hsl(0, 0%, 95%)};
-    
     .oferta-opened {
         display: block;
         top: 0;
         z-index:999;
     }
+
+    .otwarte-menu a:nth-of-type(even)>p {
+        background-color: hsl(0, 0%, 95%);   
+     }
+
+     .otwarte-menu>a>p {
+         font-weight: 900;
+         font-size: 110%;
+     }
     
     .menu-oferta {
         position: relative;
