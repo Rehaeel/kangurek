@@ -52,7 +52,7 @@ export default class Terapieuci extends React.Component {
                                         })}
                                     </ul>
                                     <div style={{
-                                        maxHeight: this.state.height === index ? 1000 : 0,
+                                        maxHeight: this.state.height === index ? 5000 : 0,
                                         opacity: this.state.opacity === index ? 1 : 0,
                                         transition: 'max-height 0.5s ease'
                                     }} className="business-experience">

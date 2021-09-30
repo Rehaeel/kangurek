@@ -4,6 +4,7 @@ import Marysia from './photos/Maria-Bandoch.jpg';
 import Gosia from './photos/Malgorzata-Lubiszewska.jpg';
 import Ala from './photos/Alicja-Wenda.jpg';
 import Wika from './photos/Wiktoria-Kendra.jpg';
+import Monia from './photos/Monika-Frontczak.jpg';
 
 export const terapeuciList = [
     {
@@ -77,5 +78,13 @@ export const terapeuciList = [
             'LOGOPEDA'
         ],
         expirience: 'Studiuje na studiach II stopnia Pedagogikę o specjalności Logopedia. Dopiero zaczyna swoją drogę zawodową, ciągle poszerza wiedzę  o nowe szkolenia i kursy. W 2020 prowadziła zajęcia profilaktyczne w żłobku. Od 2021 roku pracuje jako logopeda w Centrum „Kangurek” oraz w Gabinetach Terapeutycznych w Nakle nad Notecią. W wolnym czasie prowadzi swoją stronę logopedyczną, za pomocą której chce szerzyć wiedzę logopedyczną. Obecnie kończy 3 poziom Polskiego Języka Migowego w Biurze Wsparcia Niesłyszących- KODA.'
+    },
+    {
+        name: 'Monika Frontczak',
+        image: Monia,
+        education: [
+            "FIZJOTERAPEUTKA",
+        ],
+        expirience: 'Mgr. fizjoterapii, pracująca w klinice rehabilitacyjnej z pacjentami dorosłymi oraz dziećmi z wadami postawy. Od 2020 roku pracuje również w Centrum "Kangurek", prowadzi zajęcia ogólnorozwojowe, rehabilitację ruchową, terapię wad postawy'
     }
 ]

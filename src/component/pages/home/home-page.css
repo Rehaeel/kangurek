@@ -1,27 +1,28 @@
-#home-page-poster { 
-    width: 100vw; 
+#home-page-poster {
+    width: 100vw;
     height: 31vw;
-    background: url('./photos/Centrum-Terapii-i-Rozwoju-Dziecka-Kangurek.jpg') no-repeat;
+    background: url("./photos/Centrum-Terapii-i-Rozwoju-Dziecka-Kangurek.jpg")
+        no-repeat;
     background-size: cover;
 }
 
-.home-page-cytat { 
-    margin-right: 5%; 
+.home-page-cytat {
+    margin-right: 5%;
     text-align: end;
     color: #667;
 }
 
 .home-about-us {
-  display: grid;
-  grid-template-columns: 1fr 0.8fr;
-  margin: 0 auto;
-  align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    margin: 0 auto;
+    align-items: center;
 }
 
 .o-nas-section iframe {
     max-width: 100%;
     width: 900px;
-    transform:translateY(80px);
+    transform: translateY(80px);
     aspect-ratio: 16 / 9;
 }
 
@@ -33,25 +34,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background:radial-gradient(#3b5998, #233459) ;
+    background: radial-gradient(#3b5998, #233459);
     color: #fff;
     cursor: pointer;
 }
 
-.facebook-cta>h1 {
+.facebook-cta > h1 {
     font-size: 2em;
     text-decoration: none;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
 }
 
-.facebook-cta:hover>h1 {
+.facebook-cta:hover > h1 {
     font-size: 2.5em;
 }
 
 /**************** OFERTA ****************/
 
 .oferta-box {
-    position:relative;
+    position: relative;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
@@ -63,8 +64,8 @@
 .offer {
     position: relative;
     overflow: hidden;
-    box-shadow: 0px 20px 70px -10px rgba(0,0,0,0);
-    transition: all .5s ease;
+    box-shadow: 0px 20px 70px -10px rgba(0, 0, 0, 0);
+    transition: all 0.5s ease;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -88,7 +89,7 @@
     height: 100%;
     background-color: #fff;
     padding: 0 5%;
-    transition: all .4s ease-out;
+    transition: all 0.4s ease-out;
 }
 
 .offer:hover .overlay {
@@ -97,7 +98,7 @@
 }
 
 .offer:hover {
-    box-shadow: 0px 20px 70px -10px rgba(0,0,0,0.5);
+    box-shadow: 0px 20px 70px -10px rgba(0, 0, 0, 0.5);
 }
 
 /****************  ****************/
@@ -111,7 +112,6 @@
 /****************  ****************/
 
 @media screen and (max-width: 980px) {
-
     .home-about-us {
         grid-template-columns: 1fr;
     }
@@ -125,26 +125,29 @@
         order: 2;
     }
 
+    .offer:hover .overlay {
+        top: -100%;
+        opacity: 0;
+    }
 }
 
 /**************** TABLET ****************/
 
-@media screen  and (max-width: 980px) {
+@media screen and (max-width: 980px) {
     .oferta-box {
         grid-template-columns: 1fr 1fr;
     }
 
     .o-nas-section iframe {
-        transform:translateY(40px);
+        transform: translateY(40px);
     }
 }
 
 @media screen and (max-width: 765px) {
-    #home-page-poster { 
-    width: 100vw; 
-    height: 78.7vw;
-    background: url('./photos/kangurek-mobile.jpg') no-repeat;
-    background-size: cover;
+    #home-page-poster {
+        width: 100vw;
+        height: 78.7vw;
+        background: url("./photos/kangurek-mobile.jpg") no-repeat;
+        background-size: cover;
+    }
 }
-}
-
