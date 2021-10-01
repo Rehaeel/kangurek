@@ -11,7 +11,7 @@
     z-index: 999;
 }
 
-.menu * { 
+.menu * {
     color: #fff;
     text-decoration: none;
 }
@@ -31,7 +31,7 @@
 }
 
 .menu-button {
-    position:absolute;
+    position: absolute;
     right: 8%;
     font-size: 1.8em;
     cursor: pointer;
@@ -44,13 +44,15 @@
     padding: 0;
 }
 
-.menu-tabs>a p,
-.menu-tabs>p {
+.menu-tabs > a p,
+.menu-tabs > p {
     display: inline-block;
     padding: 0.5em 1.6em;
 }
 
-.menu-tabs>a {z-index:999;}
+.menu-tabs > a {
+    z-index: 999;
+}
 
 .menu-tabs p {
     background-color: hsl(41, 100%, 44%);
@@ -58,10 +60,12 @@
     margin-block-end: 0em;
 }
 
-.menu-tabs p:hover {background-color: hsl(41, 100%, 50%);} 
+.menu-tabs p:hover {
+    background-color: hsl(41, 100%, 50%);
+}
 
-.menu-tabs>a:nth-of-type(2)>p:after {
-    content: 'v';
+.menu-tabs > a:nth-of-type(2) > p:after {
+    content: "v";
     font-size: 1em;
     display: inline-block;
     transform: translate(10px, -2px);
@@ -75,9 +79,9 @@
     transform: translateX(40px);
     background: var(--orange-color);
     opacity: 0;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
     z-index: 1;
-    border-top:2px solid hsl(41, 100%, 30%);
+    border-top: 2px solid hsl(41, 100%, 30%);
     padding: 20px 30px;
 }
 
@@ -86,12 +90,14 @@
     top: 50px;
 }
 
-.menu-oferta p {padding: 10px;}
+.menu-oferta p {
+    padding: 10px;
+}
 
 /********** klub kangurka *********/
 
-.menu-oferta>a:first-of-type p:after {
-content: 'v';
+.menu-oferta > a:first-of-type p:after {
+    content: "v";
     font-size: 1em;
     display: inline-block;
     transform: translate(10px, -2px);
@@ -100,19 +106,21 @@ content: 'v';
 }
 
 .klub-kangurka {
-opacity: 0;
-max-height: 0;
-transition: all .5s ease;
-overflow: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.5s ease;
+    overflow: hidden;
 }
 
 .klub-kangurka-opened {
-opacity: 1;
-max-height: 100px;
-padding-left: 20px;
+    opacity: 1;
+    max-height: 100px;
+    padding-left: 20px;
 }
 
-.menu-selected p{background:hsl(41, 100%, 47%)}
+.menu-selected p {
+    background: hsl(41, 100%, 47%);
+}
 
 /********** menu width *********/
 
@@ -131,53 +139,60 @@ padding-left: 20px;
 /********** mobile *********/
 
 @media screen and (max-width: 980px) {
-    .menu-button {display: block !important;}
-    
+    .menu-button {
+        display: block !important;
+    }
+
     .menu-tabs {
         position: fixed;
         top: 50px;
         left: -100%;
         display: flex;
         flex-direction: column;
-        background-color: #fff;
+        background-color: hsl(41, 100%, 44%);
         overflow-y: auto;
         height: calc(100vh - 50px);
         width: 100%;
-        transition: all .5s ease;
+        transition: all 0.5s ease;
     }
 
-    .otwarte-menu {left: 0;}
+    .otwarte-menu {
+        left: 0;
+    }
 
     .menu-tabs p {
-        background-color: #fff;
-        color: #333;
+        background-color: hsl(41, 100%, 44%);
+        color: #fff;
         width: 100%;
     }
 
-    .menu-tabs>a:nth-of-type(2)>p:after {color: #333;}
+    .menu-tabs > a:nth-of-type(2) > p:after {
+        color: #fff;
+    }
 
     .oferta-opened {
         display: block;
         top: 0;
-        z-index:999;
+        z-index: 999;
     }
 
-    .otwarte-menu a:nth-of-type(even)>p {
-        background-color: hsl(0, 0%, 95%);   
-     }
+    .otwarte-menu a:nth-of-type(odd) > p {
+        background-color: hsl(41, 100%, 40%);
+    }
 
-     .otwarte-menu>a>p {
-         font-weight: 900;
-         font-size: 110%;
-     }
-    
+    .otwarte-menu > a > p {
+        font-weight: 900;
+        font-size: 110%;
+    }
+
     .menu-oferta {
         position: relative;
         top: 0;
         display: block;
         transform: translateX(0);
-        background-color: #fff;
-        padding: 5px 30px;
+        background-color: var(--orange-color);
+        padding: 0;
+        padding-left: 50px;
         opacity: 1;
         border-top: none;
     }
@@ -185,10 +200,10 @@ padding-left: 20px;
     .klub-kangurka {
         opacity: 1;
         max-height: 100px;
-        padding-left: 30px;
+        padding-left: 50px;
     }
-    
-.menu-oferta>a:first-of-type p:after {
- color: #333;   
-}
+
+    .menu-oferta > a:first-of-type p:after {
+        color: #333;
+    }
 }
