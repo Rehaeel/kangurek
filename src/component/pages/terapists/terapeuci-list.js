@@ -30,12 +30,13 @@ export const terapeuciList = [
                     Dobry kontakt z dziećmi autystycznymi i niemówiącymi.
                 </p>
                 <p>
-                    Od 1998 roku pracuje jako nauczyciel w grupie
+                    Od 1998 roku pracowała jako nauczyciel w grupie
                     rewalidacyjno-wychowawczej oraz w klasie z uczniami z
                     autyzmem w Ośrodku Szkolno Wychowawczym nr 3 w Bydgoszczy.
-                    Od 2013 roku prowadzi terapię integracji sensorycznej w
+                    Od 2013 roku prowadziła terapię integracji sensorycznej w
                     Centrum Wspierania Rozwoju SENSO w Osielsku oraz w Centrum
-                    Terapii i Rehabilitacji SENSIS w Bydgoszczy.
+                    Terapii i Rehabilitacji SENSIS w Bydgoszczy. Od 2017 roku
+                    pracuje w Centrum Kangurek.
                 </p>
                 <p>
                     Nauczyciel akademicki z zakresu{" "}
@@ -46,7 +47,7 @@ export const terapeuciList = [
                     Pracowni Edukacji i Coachingu.
                 </p>
                 <p>
-                    W-ce prezes stowarzyszenia Ruch na Rzecz Godności Osób
+                    Była w-ce prezes stowarzyszenia Ruch na Rzecz Godności Osób
                     Niepełnosprawnych WYZWANIE.
                 </p>
             </>
@@ -69,9 +70,9 @@ export const terapeuciList = [
                 </p>
                 <p>
                     Od 2018 logopeda w Centrum Kangurek oraz Poradni
-                    Psychologiczno- Pedagogicznej. Bierze udział w projekcie
-                    rządowym „Za życiem” pracuje z małymi dziećmi zagrożony
-                    niepełnosprawnością.
+                    Psychologiczno- Pedagogicznej nr 1. Bierze udział w
+                    projekcie rządowym „Za życiem” pracuje z małymi dziećmi
+                    zagrożony niepełnosprawnością.
                 </p>
                 <p>
                     2017 pracowała w przedszkolu Motylek jako terapeuta
@@ -95,7 +96,11 @@ export const terapeuciList = [
     {
         name: "Małgorzata Lubiszewska",
         image: Gosia,
-        education: ["OLIGOFRENOPEDAGOG", "PEDAGOG WYCHOWANIA MUZYCZNEGO"],
+        education: [
+            "OLIGOFRENOPEDAGOG",
+            "PEDAGOG WYCHOWANIA MUZYCZNEGO",
+            "MUZYKOTERAPEUTA",
+        ],
         expirience: "Pracuje obecnie w SOSW 3",
     },
     {
