@@ -21,14 +21,7 @@ import SensomotorycznaTerapiaWidzenia from "./component/pages/offer/sensomotoryc
 import ScrollToTop from "./component/scroll-to-top";
 
 export default class App extends React.Component {
-    updateVH() {
-        let vh = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty("--vh", `${vh}px`);
-    }
-
-    componentDidMount() {
-        this.updateVH();
-    }
+    
 
     render() {
         return (

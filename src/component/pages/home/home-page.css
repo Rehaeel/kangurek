@@ -109,7 +109,7 @@
     }
 }
 
-/****************  ****************/
+/**************** TABLET ****************/
 
 @media screen and (max-width: 980px) {
     .home-about-us {
@@ -119,6 +119,7 @@
     .home-about-us img {
         padding: 30px 0;
         order: 1;
+        width: 100%;
     }
 
     .home-about-us p {
@@ -129,11 +130,7 @@
         top: -100%;
         opacity: 0;
     }
-}
 
-/**************** TABLET ****************/
-
-@media screen and (max-width: 980px) {
     .oferta-box {
         grid-template-columns: 1fr 1fr;
     }
@@ -142,6 +139,8 @@
         transform: translateY(40px);
     }
 }
+
+/**************** MOBILE ****************/
 
 @media screen and (max-width: 765px) {
     #home-page-poster {
