@@ -143,6 +143,16 @@
         display: block !important;
     }
 
+    .menu-tabs > a:nth-of-type(2) > p:after {
+        content: "";
+        display: none;
+    }
+
+    .menu-oferta > a:first-of-type p:after {
+        content: "";
+        display: none;
+    }
+
     .menu-tabs {
         position: fixed;
         top: 50px;
@@ -176,12 +186,15 @@
         z-index: 999;
     }
 
-    .otwarte-menu a:nth-of-type(odd) > p {
+    .otwarte-menu > a:nth-child(odd) > p {
+        background-color: hsl(41, 100%, 40%);
+    }
+
+    .menu-oferta > a:nth-child(odd) > p {
         background-color: hsl(41, 100%, 40%);
     }
 
     .otwarte-menu > a > p {
-        font-weight: 900;
         font-size: 110%;
     }
 
@@ -192,18 +205,31 @@
         transform: translateX(0);
         background-color: var(--orange-color);
         padding: 0;
-        padding-left: 50px;
         opacity: 1;
         border-top: none;
+        font-size: 110%;
     }
 
     .klub-kangurka {
         opacity: 1;
         max-height: 100px;
-        padding-left: 50px;
+        padding-left: 0px;
+        background-color: var(--orange-color);
+    }
+
+    .menu-oferta > a > p {
+        padding: 0.5em 1.6em;
+    }
+
+    .klub-kangurka > a > p {
+        padding-left: 30px;
     }
 
     .menu-oferta > a:first-of-type p:after {
         color: #333;
+    }
+
+    .menu-selected p {
+        background: var(--text-color) !important;
     }
 }
