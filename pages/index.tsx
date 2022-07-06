@@ -110,10 +110,12 @@ const Home: NextPage = () => {
 						title='YouTube video player'
 						frameBorder='0'
 						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-						allowFullScreen></iframe>
+						allowFullScreen
+						className='aspect-video w-full max-w-[600px] self-center'></iframe>
 				</div>
-
-				<Kontakt />
+				<div className='w-full md:w-11/12'>
+					<Kontakt />
+				</div>
 			</PageContent>
 		</>
 	);
