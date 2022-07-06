@@ -39,7 +39,6 @@ const TerapeuciPage: NextPage<TerapeuciProps> = (props) => {
 				columnClassName='pl-0 sm:ml-[30px] bg-clip-padding'
 				breakpointCols={breakpointColumnsObj}>
 				{terapeuci.map((terapeuta, index) => {
-					console.log(terapeuta.image);
 					return (
 						<div
 							key={index}
