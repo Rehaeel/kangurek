@@ -3,10 +3,8 @@ import Link from 'next/link';
 import telephone from '../../../public/images/pages/kontakt/tel.svg';
 import mail from '../../../public/images/pages/kontakt/mail.svg';
 import pin from '../../../public/images/pages/kontakt/map.svg';
-import terminal from '../../../public/images/pages/kontakt/Konto-bankowe.jpg';
 import PageContent from '../../universal/page-content';
 import { useState } from 'react';
-import iframePlaceholder from '../../../public/images/pages/kontakt/iframePlaceholder.jpg';
 
 const Kontakt: React.FC = () => {
 	const [isIframeLodaded, setIsIframeLodaded] = useState(false);
@@ -65,7 +63,7 @@ const Kontakt: React.FC = () => {
 					{!isIframeLodaded && (
 						<div className='absolute z-10 h-full w-full blur filter'>
 							<Image
-								src={iframePlaceholder}
+								src='/images/pages/kontakt/iframePlaceholder.jpg'
 								alt='iframePlaceholder'
 								layout='fill'
 								objectFit='cover'
@@ -86,7 +84,12 @@ const Kontakt: React.FC = () => {
 				</div>
 			</div>
 			<div className='mt-10 flex w-full items-center justify-around md:justify-center md:gap-7'>
-				<Image src={terminal} alt='number konta bankowego' />
+				<Image
+					src='/images/pages/kontakt/Konto-bankowe.jpg'
+					alt='number konta bankowego'
+					width={100}
+					height={150}
+				/>
 				<div className='text-right text-xl font-bold md:flex md:gap-3'>
 					<p>
 						<strong className='text-right font-extrabold'>

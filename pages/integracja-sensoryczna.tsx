@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import OfferWrapper from '../components/universal/offer-wrapper';
-import SI from '../public/images/pages/integracja-sensoryczna/Integracja_Sensoryczna_zakladka_kangurek.jpg';
 import photo from '../public/images/pages/integracja-sensoryczna/SI.jpg';
 
 const IntegracjaSensorycznaPage: NextPage = () => {
@@ -21,7 +20,9 @@ const IntegracjaSensorycznaPage: NextPage = () => {
 				/>
 			</Head>
 
-			<OfferWrapper title='Integracja Sensoryczna (SI)' image={SI}>
+			<OfferWrapper
+				title='Integracja Sensoryczna (SI)'
+				image='/images/pages/integracja-sensoryczna/Integracja_Sensoryczna_zakladka_kangurek.jpg'>
 				<b className='font-black underline'>
 					Integracja sensoryczna (SI)
 				</b>
@@ -69,6 +70,8 @@ const IntegracjaSensorycznaPage: NextPage = () => {
 						src={photo}
 						alt='integracja sensoryczna'
 						objectFit='contain'
+						height={260}
+						width={260}
 					/>
 				</div>
 				<p>

@@ -1,7 +1,5 @@
 import Image from 'next/image';
 import OfferWrapper from '../components/universal/offer-wrapper';
-import tp from '../public/images/pages/terapia-pedagogiczna/Terapia_pedagogiczna_zakladka_kangurek.jpg';
-import teraphy from '../public/images/pages/terapia-pedagogiczna/Terapia-pedagogiczna-1.jpg';
 import { NextPage } from 'next';
 import Head from 'next/head';
 
@@ -20,7 +18,9 @@ const TerapiaPedagogicznaPage: NextPage = () => {
 				/>
 			</Head>
 
-			<OfferWrapper title='terapia pedagogiczna' image={tp}>
+			<OfferWrapper
+				title='terapia pedagogiczna'
+				image='/images/pages/terapia-pedagogiczna/Terapia_pedagogiczna_zakladka_kangurek.jpg'>
 				<p>
 					<b>Terapia pedagogiczna</b>
 				</p>
@@ -62,9 +62,11 @@ const TerapiaPedagogicznaPage: NextPage = () => {
 						</p>
 					</div>
 					<Image
-						src={teraphy}
+						src='/images/pages/terapia-pedagogiczna/Terapia-pedagogiczna-1.jpg'
 						alt='terapia pedagogiczna'
 						objectFit='contain'
+						width={390}
+						height={260}
 					/>
 				</div>
 			</OfferWrapper>

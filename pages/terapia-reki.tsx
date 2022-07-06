@@ -1,6 +1,4 @@
 import OfferWrapper from '../components/universal/offer-wrapper';
-import headerImg from '../public/images/pages/terapia-reki/Terapia_reki_zakladka_kangurek.jpg';
-import img from '../public/images/pages/terapia-reki/Terapia_reki.jpg';
 import Image from 'next/image';
 import { NextPage } from 'next';
 import Head from 'next/head';
@@ -20,7 +18,9 @@ const TerapiaRekiPage: NextPage = () => {
 				/>
 			</Head>
 
-			<OfferWrapper title='terapia ręki' image={headerImg}>
+			<OfferWrapper
+				title='terapia ręki'
+				image='/images/pages/terapia-reki/Terapia_reki_zakladka_kangurek.jpg'>
 				<div className='grid grid-cols-1 items-center gap-4 sm:gap-7 md:grid-cols-2'>
 					<div className='flex w-full flex-col gap-5'>
 						<b className='underline'>Terapia ręki</b>
@@ -35,7 +35,13 @@ const TerapiaRekiPage: NextPage = () => {
 							<li>niedokładnie rysują szlaczki, piszą literki</li>
 						</ul>
 					</div>
-					<Image src={img} alt='terapia ręki' objectFit='contain' />
+					<Image
+						src='/images/pages/terapia-reki/Terapia_reki.jpg'
+						alt='terapia ręki'
+						objectFit='contain'
+						width={390}
+						height={260}
+					/>
 				</div>
 				<div className='grid grid-cols-1 gap-4 sm:gap-7 md:grid-cols-2'>
 					<div className='flex flex-col gap-5'>

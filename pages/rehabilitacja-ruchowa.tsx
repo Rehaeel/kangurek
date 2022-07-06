@@ -1,7 +1,6 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
 import OfferWrapper from '../components/universal/offer-wrapper';
-import rh from '../public/images/pages/rehabilitacja-ruchowa/Zajecia_ogolnorozwojowe_zakladka_kangurek.jpg';
 
 const RehabilitacjaRuchowaPage: NextPage = () => {
 	return (
@@ -18,7 +17,9 @@ const RehabilitacjaRuchowaPage: NextPage = () => {
 				/>
 			</Head>
 
-			<OfferWrapper title='rehabilitacja ruchowa' image={rh}>
+			<OfferWrapper
+				title='rehabilitacja ruchowa'
+				image='/images/pages/rehabilitacja-ruchowa/Zajecia_ogolnorozwojowe_zakladka_kangurek.jpg'>
 				<b className='underline'>Rehabilitacja ruchowa</b>
 
 				<p>

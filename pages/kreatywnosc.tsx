@@ -1,6 +1,4 @@
 import OfferWrapper from '../components/universal/offer-wrapper';
-import headerImg from '../public/images/pages/kreatywnosc/Kreatywnosc_zakladka_kangurek.jpg';
-import img from '../public/images/pages/kreatywnosc/Kreatywnosc.jpg';
 import Image from 'next/image';
 import { NextPage } from 'next';
 import Head from 'next/head';
@@ -20,7 +18,9 @@ const KreatywnoscPage: NextPage = () => {
 				/>
 			</Head>
 
-			<OfferWrapper title='kreatywność' image={headerImg}>
+			<OfferWrapper
+				title='kreatywność'
+				image='/images/pages/kreatywnosc/Kreatywnosc_zakladka_kangurek.jpg'>
 				<div className='grid grid-cols-1 gap-4 sm:gap-7 lg:grid-cols-2'>
 					<div className='flex flex-col gap-5 sm:gap-7'>
 						<b className='underline'>Kreatywność</b>
@@ -44,7 +44,13 @@ const KreatywnoscPage: NextPage = () => {
 							decoupage.
 						</p>
 					</div>
-					<Image src={img} alt='kreatywność' objectFit='contain' />
+					<Image
+						src='/images/pages/kreatywnosc/Kreatywnosc.jpg'
+						alt='kreatywność'
+						objectFit='contain'
+						width={390}
+						height={260}
+					/>
 				</div>
 			</OfferWrapper>
 		</>

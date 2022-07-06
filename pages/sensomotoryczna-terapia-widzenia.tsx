@@ -2,8 +2,6 @@ import { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import OfferWrapper from '../components/universal/offer-wrapper';
-import stwHeaderImg from '../public/images/pages/sensomotoryczna-terapia-widzenia/Sensomotoryczna_terapia_widzenia_zakladka_kangurek.jpg';
-import stwImage from '../public/images/pages/sensomotoryczna-terapia-widzenia/STW_chlopiec.jpg';
 
 const SensomotorycznaTerapiaWidzenia: NextPage = () => {
 	return (
@@ -22,7 +20,7 @@ const SensomotorycznaTerapiaWidzenia: NextPage = () => {
 
 			<OfferWrapper
 				title='Sensomotoryczna Terapia Widzenia (STW)'
-				image={stwHeaderImg}>
+				image='/images/pages/sensomotoryczna-terapia-widzenia/Sensomotoryczna_terapia_widzenia_zakladka_kangurek.jpg'>
 				<b className='font-black'>
 					Sensomotoryczna terapia widzenia (STW)
 				</b>
@@ -64,9 +62,11 @@ const SensomotorycznaTerapiaWidzenia: NextPage = () => {
 						</ul>
 					</div>
 					<Image
-						src={stwImage}
+						src='/images/pages/sensomotoryczna-terapia-widzenia/STW_chlopiec.jpg'
 						alt='sensomotoryczna terapia widzenia (STW)'
 						objectFit='contain'
+						width={350}
+						height={260}
 					/>
 				</div>
 			</OfferWrapper>

@@ -1,6 +1,4 @@
 import OfferWrapper from '../components/universal/offer-wrapper';
-import headerImg from '../public/images/pages/kynoterapia/Dogoterapia_zakladka_kangurek.jpg';
-import img from '../public/images/pages/kynoterapia/Dogoterapia.jpg';
 import Image from 'next/image';
 import { NextPage } from 'next';
 import Head from 'next/head';
@@ -20,7 +18,9 @@ const KynoterapiaPage: NextPage = () => {
 				/>
 			</Head>
 
-			<OfferWrapper title='Kynoterapia' image={headerImg}>
+			<OfferWrapper
+				title='Kynoterapia'
+				image='/images/pages/kynoterapia/Dogoterapia.jpg'>
 				<div className='sm:gap-700 grid grid-cols-1 items-center gap-4 lg:grid-cols-2'>
 					<div className='flex flex-col gap-5 lg:gap-7'>
 						<b className='underline'>Kynoterapia (dogoterapia),</b>
@@ -63,9 +63,11 @@ const KynoterapiaPage: NextPage = () => {
 					</div>
 					<div className='flex flex-col gap-5 lg:gap-7'>
 						<Image
-							src={img}
+							src='/images/pages/kynoterapia/Dogoterapia.jpg'
 							alt='kynoterapia (dogoterapia)'
 							objectFit='contain'
+							width={350}
+							height={260}
 						/>
 						<div className='flex flex-col gap-3 lg:gap-5'>
 							<p>Zajęcia obejmują trzy formy pracy z psem:</p>
