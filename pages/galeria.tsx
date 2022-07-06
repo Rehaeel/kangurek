@@ -15,7 +15,7 @@ const Galeria: NextPage<{ photos: string[] }> = (props) => {
 				if (prevNum === 0) return props.photos.length - 1;
 				return prevNum - 1;
 			}),
-		[]
+		[props.photos.length]
 	);
 
 	const addOne = useCallback(() => {
@@ -23,7 +23,7 @@ const Galeria: NextPage<{ photos: string[] }> = (props) => {
 			if (prevNum === props.photos.length - 1) return 0;
 			return prevNum + 1;
 		});
-	}, []);
+	}, [props.photos.length]);
 
 	useEffect(() => {
 		const keyFuncHandler = (event: KeyboardEvent): void => {
