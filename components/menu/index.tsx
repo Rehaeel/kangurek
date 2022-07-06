@@ -14,13 +14,13 @@ const Menu: NextPage = () => {
 
 	return (
 		<menu
-			className={`${isOpen ? 'fixed pt-16' : 'sticky'} h-${
+			className={`${isOpen ? 'fixed pt-12' : 'sticky'} h-${
 				isOpen ? 'screen' : '12'
-			} top-0 z-50  flex w-full  items-center bg-orange-color  md:pt-0 lg:px-[10%]`}>
+			} top-0 z-50 flex w-full items-center bg-orange-color md:pt-0 lg:px-[10%]`}>
 			<Link href='/'>
 				<a
 					onClick={() => setIsOpen(false)}
-					className='absolute top-3 left-5 max-w-[30px] md:relative md:top-0 md:left-0'>
+					className='absolute top-2 left-5 max-w-[30px] md:relative md:top-0 md:left-0'>
 					<Image src={logo} alt='menu logo' priority />
 				</a>
 			</Link>
@@ -28,13 +28,13 @@ const Menu: NextPage = () => {
 			{isOpen ? (
 				<a
 					onClick={() => setIsOpen(false)}
-					className={`absolute right-5 top-5 cursor-pointer text-3xl text-white md:hidden`}>
+					className={`absolute right-5 top-2 cursor-pointer text-3xl text-white md:hidden`}>
 					X
 				</a>
 			) : (
 				<a
 					onClick={() => setIsOpen(true)}
-					className='absolute right-5 -top-1 cursor-pointer text-5xl font-thin text-white md:hidden'>
+					className='absolute right-5 top-0 cursor-pointer text-4xl font-thin text-white md:hidden'>
 					☰
 				</a>
 			)}
@@ -42,7 +42,7 @@ const Menu: NextPage = () => {
 			<nav
 				className={`${
 					isOpen ? 'opened-menu' : 'hidden'
-				} top-0 h-full w-full flex-row overflow-y-auto bg-orange-color text-white transition-all duration-1000 md:flex md:h-full md:items-center md:justify-end md:bg-transparent`}>
+				} top-0 h-full w-full flex-row overflow-y-auto bg-orange-color pb-10 text-white transition-all duration-1000 md:flex md:h-full md:items-center md:justify-end md:bg-transparent`}>
 				<Link
 					href='https://www.facebook.com/centrumkangurek/'
 					prefetch={false}>
@@ -50,7 +50,9 @@ const Menu: NextPage = () => {
 						onClick={() => setIsOpen(false)}
 						target='_blank'
 						className={`flex h-12 items-center bg-orange-darker-color px-6 hover:bg-orange-lighter-color md:h-full md:bg-transparent`}>
-						<div className='whitespace-nowrap'>Wydarzenia [FB]</div>
+						<div className='whitespace-nowrap text-lg md:text-base'>
+							Wydarzenia [FB]
+						</div>
 					</a>
 				</Link>
 
@@ -62,7 +64,7 @@ const Menu: NextPage = () => {
 						<a
 							onClick={() => setIsOpen(false)}
 							className='flex h-12 items-center whitespace-nowrap px-6 hover:bg-orange-lighter-color'>
-							<div className=''>
+							<div className='text-lg md:text-base'>
 								Oferta
 								<span className='hidden text-xl md:inline'>
 									&nbsp;&nbsp;&nbsp;v
