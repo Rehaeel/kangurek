@@ -7,6 +7,7 @@ import headerImg from '../public/images/pages/home/Centrum-Terapii-i-Rozwoju-Dzi
 import PageContent from '../components/universal/page-content';
 import lapki from '../public/images/pages/home/male_lapki.jpg';
 import { WindowSize } from '../utils/types';
+import Head from 'next/head';
 
 const Home: NextPage = () => {
 	const [screenWidth, setScreenWidth] = useState<number>(0);
@@ -18,6 +19,18 @@ const Home: NextPage = () => {
 
 	return (
 		<>
+			<Head>
+				<title>Centrum Kangurek</title>
+				<meta
+					name='description'
+					content='W Centrum Terapii i Rozwoju Dziecka Kangurek łączymy naukę z zabawą, pomagając w ten sposób dzieciom, które przeżywają trudności rozwojowe, edukacyjne, związane z integracją zmysłów, z koordynacją wzrokowo-ruchową. Kangurek zaprasza do wyboru szerokiego zakresu terapii i pomocy rozwojowej dla Twojego dziecka.'
+				/>
+				<meta
+					name='keywords'
+					content='integracja sensoryczna, si, centrum-kangurek'
+				/>
+			</Head>
+
 			<header className='h-auto w-full'>
 				{screenWidth > 760 ? (
 					<Image
