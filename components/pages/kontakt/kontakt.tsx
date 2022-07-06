@@ -12,7 +12,7 @@ const Kontakt: React.FC = () => {
 	const [isIframeLodaded, setIsIframeLodaded] = useState(false);
 	return (
 		<PageContent>
-			<div className='md: flex w-full flex-col items-center gap-5 sm:gap-10 md:flex-row'>
+			<div className='md: flex w-full flex-col items-center gap-12 md:flex-row md:gap-2 lg:gap-5'>
 				<div className='flex min-w-fit flex-col items-center gap-5 md:w-1/2'>
 					<h3 className='mb-8 text-3xl text-orange-color'>
 						Dane kontaktowe
