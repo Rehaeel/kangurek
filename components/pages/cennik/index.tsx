@@ -1,10 +1,10 @@
 import { tariff } from './tariff';
 
-export default function Cennik() {
+const Cennik: React.FC = () => {
 	return (
 		<>
 			<table className='border border-orange-color text-[#222]'>
-				<tr className='sticky top-12 bg-orange-color text-white border-b-2 border-orange-color/30 text-lg'>
+				<tr className='sticky top-12 border-b-2 border-orange-color/30 bg-orange-color text-lg text-white'>
 					<td className='px-[10px] py-[5px] text-lg'>Usługa</td>
 					<td className='px-[10px] py-[5px] text-lg'>
 						Czas trwania zajęć
@@ -16,21 +16,21 @@ export default function Cennik() {
 					<>
 						<tr
 							key={index}
-							className='even:bg-[#F0CC80] even:border-t even:border-y-orange-color'>
+							className='even:border-t even:border-y-orange-color even:bg-[#F0CC80]'>
 							<th colSpan={3}>{head.header}</th>
 						</tr>
 						{head.body.map((service, index) => {
 							return (
 								<tr
 									key={(index + 1) * 10}
-									className='even:bg-[#F0CC80] border-t border-y-orange-color'>
-									<td className='px-[10px] py-[5px]'>
+									className='border-t border-y-orange-color even:bg-[#F0CC80]'>
+									<td className='border-r border-r-orange-darker-color px-[10px] py-[5px]'>
 										{service.serviceName}
 									</td>
 									<td className='px-[10px] py-[5px]'>
 										{service.duration}
 									</td>
-									<td className='px-[10px] py-[5px]'>
+									<td className='border-l border-l-orange-darker-color px-[10px] py-[5px]'>
 										{service.cost}
 									</td>
 								</tr>
@@ -41,4 +41,6 @@ export default function Cennik() {
 			</table>
 		</>
 	);
-}
+};
+
+export default Cennik;
