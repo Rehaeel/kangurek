@@ -9,6 +9,7 @@ import lapki from '../public/images/pages/home/male_lapki.jpg';
 import { WindowSize } from '../utils/types';
 import Head from 'next/head';
 import Kontakt from '../components/pages/kontakt/kontakt';
+import Offer from '../components/pages/main/offer';
 
 const Home: NextPage = () => {
 	const [screenWidth, setScreenWidth] = useState<number>(0);
@@ -54,7 +55,7 @@ const Home: NextPage = () => {
 			</header>
 
 			<PageContent>
-				<div className='my-7 flex w-11/12 flex-col items-start gap-5 md:my-12 md:w-8/12'>
+				<section className='my-7 flex w-11/12 flex-col items-start gap-5 md:my-12 md:w-8/12'>
 					<h1 className='text-4xl'>O nas</h1>
 					<p className='text-lg'>
 						W CENTRUM TERAPII I ROZWOJU DZIECKA KANGUREK łączymy
@@ -112,10 +113,15 @@ const Home: NextPage = () => {
 						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
 						allowFullScreen
 						className='aspect-video w-full max-w-[600px] self-center'></iframe>
-				</div>
-				<div className='w-full md:w-11/12'>
+				</section>
+
+				<section className='flex w-full justify-center md:w-11/12'>
+					<Offer />
+				</section>
+
+				<section className='w-full md:w-11/12'>
 					<Kontakt />
-				</div>
+				</section>
 			</PageContent>
 		</>
 	);
