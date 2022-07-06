@@ -8,6 +8,7 @@ import PageContent from '../components/universal/page-content';
 import lapki from '../public/images/pages/home/male_lapki.jpg';
 import { WindowSize } from '../utils/types';
 import Head from 'next/head';
+import Kontakt from '../components/pages/kontakt/kontakt';
 
 const Home: NextPage = () => {
 	const [screenWidth, setScreenWidth] = useState<number>(0);
@@ -37,14 +38,12 @@ const Home: NextPage = () => {
 						src={headerImg}
 						alt='Integracja Sensoryczna okładka'
 						priority
-						layout='responsive'
 					/>
 				) : (
 					<Image
 						src={mobileHeaderImg}
 						alt='Integracja Sensoryczna okładka'
 						priority
-						layout='fill'
 					/>
 				)}
 				<h3 className='my-4 mr-[5%] text-right text-lg font-bold text-[#667]'>
@@ -55,55 +54,66 @@ const Home: NextPage = () => {
 			</header>
 
 			<PageContent>
-				<h1 className='text-4xl'>O nas</h1>
-				<p className='text-lg'>
-					W CENTRUM TERAPII I ROZWOJU DZIECKA KANGUREK łączymy naukę z
-					zabawą, pomagając w ten sposób dzieciom, które przeżywają
-					trudności rozwojowe, edukacyjne, związane z integracją
-					zmysłów, z koordynacją wzrokowo-ruchową.
-				</p>
-				<div className='flex gap-5 lg:gap-7'>
-					<div className='flex w-1/2 flex-col gap-4 lg:gap-7'>
-						<p className='text-left text-lg'>
-							Naszą ofertę kierujemy do dzieci:
-						</p>
-						<ul className='list-inside list-disc'>
-							<li>z zaburzeniami integracji sensorycznej</li>
+				<div className='my-7 flex w-11/12 flex-col items-start gap-5 md:my-12 md:w-8/12'>
+					<h1 className='text-4xl'>O nas</h1>
+					<p className='text-lg'>
+						W CENTRUM TERAPII I ROZWOJU DZIECKA KANGUREK łączymy
+						naukę z zabawą, pomagając w ten sposób dzieciom, które
+						przeżywają trudności rozwojowe, edukacyjne, związane z
+						integracją zmysłów, z koordynacją wzrokowo-ruchową.
+					</p>
+					<div className='flex flex-col gap-5 md:flex-row lg:gap-7'>
+						<div className='order-2 flex flex-col gap-4 md:order-1 md:w-1/2 lg:gap-7'>
+							<p className='text-left text-lg'>
+								Naszą ofertę kierujemy do dzieci:
+							</p>
+							<ul className='list-inside list-disc'>
+								<li>z zaburzeniami integracji sensorycznej</li>
 
-							<li>z zaburzeniami mowy, słuchu, wzroku</li>
+								<li>z zaburzeniami mowy, słuchu, wzroku</li>
 
-							<li>
-								z problemami szkolnymi (koncentracją, czytaniem,
-								pisaniem, liczeniem)
-							</li>
+								<li>
+									z problemami szkolnymi (koncentracją,
+									czytaniem, pisaniem, liczeniem)
+								</li>
 
-							<li>z zaburzoną koordynacją ruchową</li>
+								<li>z zaburzoną koordynacją ruchową</li>
 
-							<li>z nadpobudliwością psychoruchową</li>
-						</ul>
+								<li>z nadpobudliwością psychoruchową</li>
+							</ul>
 
-						<p>
-							Bazując na naszym sporym doświadczeniu w pracy z
-							dziećmi prowadzimy również szkolenia i warsztaty dla
-							nauczycieli i rodziców.
-						</p>
-						<p>
-							Ponadto organizujemy kursy dla matek z małymi
-							dziećmi.
-						</p>
-						<p>
-							Cechuje nas miłe, sympatyczne usposobienie, chęć
-							niesienia pomocy, rzetelność i profesjonalizm
-						</p>
-						<p>Zapraszamy</p>
+							<p>
+								Bazując na naszym sporym doświadczeniu w pracy z
+								dziećmi prowadzimy również szkolenia i warsztaty
+								dla nauczycieli i rodziców.
+							</p>
+							<p>
+								Ponadto organizujemy kursy dla matek z małymi
+								dziećmi.
+							</p>
+							<p>
+								Cechuje nas miłe, sympatyczne usposobienie, chęć
+								niesienia pomocy, rzetelność i profesjonalizm
+							</p>
+							<p>Zapraszamy</p>
+						</div>
+						<div className='order-1 flex items-center justify-center md:order-2 md:w-1/2'>
+							<Image
+								src={lapki}
+								alt='Integracja Sensoryczna w praktyce'
+							/>
+						</div>
 					</div>
-					<div className='flex w-1/2 items-center justify-center'>
-						<Image
-							src={lapki}
-							alt='Integracja Sensoryczna w praktyce'
-						/>
-					</div>
+
+					<iframe
+						src='https://www.youtube.com/embed/P6esjoeunP0'
+						title='YouTube video player'
+						frameBorder='0'
+						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+						allowFullScreen></iframe>
 				</div>
+
+				<Kontakt />
 			</PageContent>
 		</>
 	);
