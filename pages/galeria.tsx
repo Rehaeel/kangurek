@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import PageContent from '../components/universal/page-content';
 import { getGaleriaImgFiles } from '../utils/helpers-functions';
 import Modal from '../components/universal/modal';
@@ -9,17 +9,21 @@ const Galeria: NextPage<{ photos: string[] }> = (props) => {
 	const [photoNumber, setPhotoNumber] = useState(0);
 	const [showPhoto, setShowPhoto] = useState(false);
 
-	const subtractOne = () =>
-		setPhotoNumber((prevNum) => {
-			if (prevNum === 0) return props.photos.length - 1;
-			return prevNum - 1;
-		});
+	const subtractOne = useCallback(
+		() =>
+			setPhotoNumber((prevNum) => {
+				if (prevNum === 0) return props.photos.length - 1;
+				return prevNum - 1;
+			}),
+		[]
+	);
 
-	const addOne = () =>
+	const addOne = useCallback(() => {
 		setPhotoNumber((prevNum) => {
 			if (prevNum === props.photos.length - 1) return 0;
 			return prevNum + 1;
 		});
+	}, []);
 
 	useEffect(() => {
 		const keyFuncHandler = (event: KeyboardEvent): void => {
@@ -31,7 +35,7 @@ const Galeria: NextPage<{ photos: string[] }> = (props) => {
 		document?.addEventListener('keydown', keyFuncHandler);
 
 		() => document?.removeEventListener('keydown', keyFuncHandler);
-	}, []);
+	}, [subtractOne, addOne]);
 
 	return (
 		<PageContent>
