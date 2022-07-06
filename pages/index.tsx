@@ -20,11 +20,21 @@ const Home: NextPage = () => {
 		<>
 			<header className='h-auto w-full'>
 				{screenWidth > 760 ? (
-					<Image src={headerImg} priority layout='responsive' />
+					<Image
+						src={headerImg}
+						alt='Integracja Sensoryczna okładka'
+						priority
+						layout='responsive'
+					/>
 				) : (
-					<Image src={mobileHeaderImg} priority layout='fill' />
+					<Image
+						src={mobileHeaderImg}
+						alt='Integracja Sensoryczna okładka'
+						priority
+						layout='fill'
+					/>
 				)}
-				<h3 className='text-right mr-[5%] text-[#667] text-lg font-bold my-4'>
+				<h3 className='my-4 mr-[5%] text-right text-lg font-bold text-[#667]'>
 					„Czego nie ma najpierw w zmysłach, tego nie ma później w
 					umyśle” <br />
 					~B. Pasca
@@ -40,7 +50,7 @@ const Home: NextPage = () => {
 					zmysłów, z koordynacją wzrokowo-ruchową.
 				</p>
 				<div className='flex gap-5 lg:gap-7'>
-					<div className='w-1/2 flex flex-col gap-4 lg:gap-7'>
+					<div className='flex w-1/2 flex-col gap-4 lg:gap-7'>
 						<p className='text-left text-lg'>
 							Naszą ofertę kierujemy do dzieci:
 						</p>
@@ -74,8 +84,11 @@ const Home: NextPage = () => {
 						</p>
 						<p>Zapraszamy</p>
 					</div>
-					<div className='w-1/2 flex justify-center items-center'>
-						<Image src={lapki} />
+					<div className='flex w-1/2 items-center justify-center'>
+						<Image
+							src={lapki}
+							alt='Integracja Sensoryczna w praktyce'
+						/>
 					</div>
 				</div>
 			</PageContent>

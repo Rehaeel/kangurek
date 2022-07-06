@@ -21,7 +21,7 @@ const Menu: NextPage = () => {
 				<a
 					onClick={() => setIsOpen(false)}
 					className='absolute top-3 left-5 max-w-[30px] md:relative md:top-0 md:left-0'>
-					<Image src={logo} priority />
+					<Image src={logo} alt='menu logo' priority />
 				</a>
 			</Link>
 

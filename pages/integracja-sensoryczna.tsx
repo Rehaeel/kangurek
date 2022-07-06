@@ -1,5 +1,6 @@
 import { NextPage } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 import OfferWrapper from '../components/universal/offer-wrapper';
 import SI from '../public/images/pages/integracja-sensoryczna/Integracja_Sensoryczna_zakladka_kangurek.jpg';
 import photo from '../public/images/pages/integracja-sensoryczna/SI.jpg';
@@ -55,9 +56,9 @@ const IntegracjaSensorycznaPage: NextPage = () => {
 			</div>
 			<p>
 				Dla dzieci do lat 3 opracowaliśmy specjalny program{' '}
-				<a href='/klub-kangurka' className='text-orange-color'>
-					KLUB KANGURKA
-				</a>{' '}
+				<Link href='/klub-kangurka'>
+					<a className='text-orange-color'>KLUB KANGURKA</a>
+				</Link>{' '}
 				wspierający rozwój procesu integracji sensorycznej.
 			</p>
 			<p>

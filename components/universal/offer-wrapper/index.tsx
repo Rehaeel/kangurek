@@ -8,7 +8,13 @@ const OfferWrapper: React.FC<Props> = ({ title, image, children }) => {
 				<h1 className='header-color offer-wrapper-header-shadow z-10 text-center text-3xl font-extralight  uppercase md:text-4xl lg:text-6xl lg:font-bold'>
 					{title}
 				</h1>
-				<Image priority src={image} layout='fill' objectFit='cover' />
+				<Image
+					priority
+					alt='okładka strony oferty'
+					src={image}
+					layout='fill'
+					objectFit='cover'
+				/>
 			</header>
 			<div className='my-11 mx-auto flex w-11/12 flex-col items-start gap-8 sm:w-10/12 md:w-9/12'>
 				{children}

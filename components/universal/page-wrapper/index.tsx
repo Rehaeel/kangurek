@@ -12,6 +12,7 @@ const PageWrapper: FC<Props> = ({ title, image, children }) => {
 					</h1>
 					<Image
 						priority
+						alt='okładka strony'
 						src={image}
 						layout='fill'
 						objectFit='cover'
