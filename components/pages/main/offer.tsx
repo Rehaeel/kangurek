@@ -8,7 +8,7 @@ const Offer: React.FC = () => {
 			{offerList.map((offer) => {
 				const { description, href, image } = offer;
 				return (
-					<Link href={href}>
+					<Link href={href} key={image}>
 						<a>
 							<div className='group relative mx-[5%] my-[2%] max-w-[260px] overflow-hidden text-[#333] no-underline'>
 								<Image
