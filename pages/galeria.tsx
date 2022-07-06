@@ -78,10 +78,10 @@ const Galeria: NextPage<{ photos: string[] }> = (props) => {
 						<>
 							<p
 								onClick={subtractOne}
-								className='absolute left-5 z-20 animate-pulse cursor-pointer rounded-lg bg-gray-700/50 py-0 px-3 text-5xl text-white transition-all duration-300 hover:scale-110'>
+								className='absolute left-0 z-30 animate-pulse cursor-pointer rounded-lg bg-gray-700/50 py-0 px-3 text-5xl text-white transition-all duration-300 hover:scale-110 md:left-5'>
 								{'<'}
 							</p>
-							<div className='relative z-20 h-[80%] w-[80%]'>
+							<div className='relative z-20 h-[80%] w-[95%] md:w-[80%]'>
 								<Image
 									src={`/images/pages/galeria/${props.photos[photoNumber]}`}
 									alt='zdjęcie podglądu'
@@ -92,7 +92,7 @@ const Galeria: NextPage<{ photos: string[] }> = (props) => {
 
 							<p
 								onClick={addOne}
-								className='absolute right-5 z-20 animate-pulse cursor-pointer rounded-lg bg-gray-700/50 py-0 px-3 text-5xl text-white transition-all duration-300 hover:scale-110'>
+								className='absolute right-0 z-30 animate-pulse cursor-pointer rounded-lg bg-gray-700/50 py-0 px-3 text-5xl text-white transition-all duration-300 hover:scale-110 md:right-5'>
 								{'>'}
 							</p>
 						</>
