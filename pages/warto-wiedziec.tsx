@@ -18,7 +18,7 @@ const WartoWiedziec: NextPage = () => {
 				/>
 			</Head>
 			<PageContent>
-				<div className='my-12 flex w-8/12 flex-col items-start gap-5'>
+				<div className='my-7 flex w-11/12 flex-col items-start gap-5 md:my-12 md:w-8/12'>
 					<b className='font-extrabold'>
 						Sprawdź, czy Twoje dziecko ma zaburzenia integracji
 						sensorycznej.
