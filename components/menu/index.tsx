@@ -14,9 +14,9 @@ const Menu: NextPage = () => {
 
 	return (
 		<menu
-			className={`${isOpen ? 'fixed pt-12' : 'sticky'} h-${
-				isOpen ? 'screen' : '12'
-			} top-0 z-50 flex w-full items-center bg-orange-color md:pt-0 lg:px-[10%]`}>
+			className={`${
+				isOpen ? 'fixed max-h-screen' : 'sticky max-h-12'
+			} transition-max-h top-0 z-50 flex h-screen w-full items-center bg-orange-color pt-12 duration-500 md:pt-0 lg:px-[10%]`}>
 			<Link href='/'>
 				<a
 					onClick={() => setIsOpen(false)}
@@ -41,8 +41,8 @@ const Menu: NextPage = () => {
 
 			<nav
 				className={`${
-					isOpen ? 'opened-menu' : 'hidden'
-				} top-0 h-full w-full flex-row overflow-y-auto border-t-2 border-t-orange-darker-color bg-orange-color pb-32 text-white transition-all duration-1000 md:flex md:h-full md:items-center md:justify-end md:bg-transparent md:pb-0`}>
+					isOpen ? 'left-0 opacity-100' : '-left-full opacity-0'
+				} relative top-0 h-full w-full flex-row overflow-y-auto border-t-2 border-t-orange-darker-color bg-orange-color pb-32 text-white transition-all duration-1000 md:flex md:h-full md:items-center md:justify-end md:bg-transparent md:pb-0`}>
 				<Link
 					href='https://www.facebook.com/centrumkangurek/'
 					prefetch={false}>
