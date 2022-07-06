@@ -20,7 +20,7 @@ const KynoterapiaPage: NextPage = () => {
 
 			<OfferWrapper
 				title='Kynoterapia'
-				image='/images/pages/kynoterapia/Dogoterapia_zakladka_kangurek`.jpg'>
+				image='/images/pages/kynoterapia/Dogoterapia_zakladka_kangurek.jpg'>
 				<div className='sm:gap-700 grid grid-cols-1 items-center gap-4 lg:grid-cols-2'>
 					<div className='flex flex-col gap-5 lg:gap-7'>
 						<b className='underline'>Kynoterapia (dogoterapia),</b>
