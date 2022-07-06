@@ -34,7 +34,7 @@ const Menu: NextPage = () => {
 			) : (
 				<a
 					onClick={() => setIsOpen(true)}
-					className='absolute right-5 top-0 cursor-pointer text-4xl font-thin text-white md:hidden'>
+					className='absolute right-5 top-1 cursor-pointer text-4xl font-thin text-white md:hidden'>
 					☰
 				</a>
 			)}
