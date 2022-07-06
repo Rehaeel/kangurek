@@ -1,8 +1,10 @@
-import { StaticImageData } from 'next/image';
-
 export interface Terapeuta {
 	name: string;
-	image: StaticImageData;
+	image: string;
 	education: string[];
-	experience: string | JSX.Element;
+	experience: string[];
+}
+
+export interface TerapeuciProps {
+	terapeuci: Terapeuta[];
 }

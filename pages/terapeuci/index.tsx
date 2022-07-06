@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 import path from 'path';
-import { terapeuciList } from './terapeuci-list';
+import { terapeuciList } from '../../components/pages/terapeuci/terapeuci-list';
 import { TerapeuciProps } from './types';
 import Masonry from 'react-masonry-css';
 import Image from 'next/image';

@@ -2,11 +2,11 @@ import type { NextPage } from 'next';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { useWindowSize } from '../utils/hooks';
-import { WindowSize } from './types';
 import mobileHeaderImg from '../public/images/pages/home/kangurek-mobile.jpg';
 import headerImg from '../public/images/pages/home/Centrum-Terapii-i-Rozwoju-Dziecka-Kangurek.jpg';
 import PageContent from '../components/universal/page-content';
 import lapki from '../public/images/pages/home/male_lapki.jpg';
+import { WindowSize } from '../utils/types';
 
 const Home: NextPage = () => {
 	const [screenWidth, setScreenWidth] = useState<number>(0);

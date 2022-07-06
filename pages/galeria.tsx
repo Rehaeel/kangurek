@@ -31,7 +31,7 @@ const Galeria: NextPage<{ photos: string[] }> = (props) => {
 		document?.addEventListener('keydown', keyFuncHandler);
 
 		() => document?.removeEventListener('keydown', keyFuncHandler);
-	}, [addOne, subtractOne]);
+	}, []);
 
 	return (
 		<PageContent>
