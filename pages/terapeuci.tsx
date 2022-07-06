@@ -1,11 +1,11 @@
 import { NextPage } from 'next';
 import path from 'path';
-import { terapeuciList } from '../../components/pages/terapeuci/terapeuci-list';
-import { TerapeuciProps } from './types';
+import { terapeuciList } from '../components/pages/terapeuci/terapeuci-list';
 import Masonry from 'react-masonry-css';
 import Image from 'next/image';
 import { useState } from 'react';
-import PageContent from '../../components/universal/page-content';
+import PageContent from '../components/universal/page-content';
+import { TerapeuciProps } from '../components/pages/terapeuci/types';
 
 const TerapeuciPage: NextPage<TerapeuciProps> = (props) => {
 	const { terapeuci } = props;
