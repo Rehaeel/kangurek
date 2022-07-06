@@ -1,8 +1,8 @@
 /node_modules
-.next
-yarn.lock
-.DS_Store
-.env
-.env.local
+/.next
+/yarn.lock
+/.DS_Store
+/.env
+/.env.local
 
 /build
