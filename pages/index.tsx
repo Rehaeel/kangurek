@@ -112,7 +112,7 @@ const Home: NextPage = () => {
 						frameBorder='0'
 						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
 						allowFullScreen
-						className='-mb-12 aspect-video w-full max-w-[600px] self-center'></iframe>
+						className='-mb-12 aspect-video w-full max-w-[900px] self-center'></iframe>
 				</section>
 
 				<section
