@@ -6,8 +6,7 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint",
-		"export": "next export"
+		"export": "next build && next export && next-image-export-optimizer"
 	},
 	"dependencies": {
 		"@fontsource/lato": "^4.5.8",
