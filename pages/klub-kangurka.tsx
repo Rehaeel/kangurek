@@ -74,6 +74,8 @@ const KlubKangurkaPage: NextPage = () => {
 						<Image
 							src='/images/pages/klub-kangurka/Klub-kangurka.jpg'
 							alt='klub-kangurka'
+							width={500}
+							height={360}
 							objectFit='contain'
 						/>
 					</div>
