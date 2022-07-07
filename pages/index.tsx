@@ -112,12 +112,12 @@ const Home: NextPage = () => {
 						frameBorder='0'
 						allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
 						allowFullScreen
-						className='aspect-video w-full max-w-[600px] self-center'></iframe>
+						className='-mb-12 aspect-video w-full max-w-[600px] self-center'></iframe>
 				</section>
 
 				<section
 					id='oferta'
-					className='flex w-full justify-center md:w-11/12'>
+					className='flex w-full justify-center pt-12 md:w-11/12'>
 					<Offer />
 				</section>
 

@@ -13,6 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<meta
 					name='viewport'
 					content='width=device-width, initial-scale=1.0'></meta>
+				<meta name='author' content='Rafał Prokopiak'></meta>
 			</Head>
 			<Component {...pageProps} />
 		</Layer>
