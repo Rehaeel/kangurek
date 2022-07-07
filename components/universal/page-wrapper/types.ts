@@ -1,7 +1,5 @@
-import { StaticImageData } from 'next/image';
-
-export interface Props {
+export interface PageWrapperProps {
 	title?: string;
-	image?: StaticImageData | undefined;
+	image?: string | undefined;
 	children: JSX.Element | JSX.Element[];
 }

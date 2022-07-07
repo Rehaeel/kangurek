@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { FC } from 'react';
-import { Props } from './types';
+import { PageWrapperProps } from './types';
 
-const PageWrapper: FC<Props> = ({ title, image, children }) => {
+const PageWrapper: FC<PageWrapperProps> = ({ title, image, children }) => {
 	return (
 		<main>
 			{title && image && (
