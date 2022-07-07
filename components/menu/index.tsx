@@ -42,7 +42,7 @@ const Menu: NextPage = () => {
 			<nav
 				className={`${
 					isOpen ? 'left-0 opacity-100' : '-left-full opacity-0'
-				} relative top-0 z-[999] h-full w-full flex-row overflow-y-auto border-t-2 border-t-orange-darker-color bg-orange-color pb-32 text-white transition-all duration-1000 md:left-0 md:flex md:h-full md:items-center md:justify-end md:bg-transparent md:pb-0 md:opacity-100`}>
+				} relative top-0 h-full w-full flex-row overflow-y-auto border-t-2 border-t-orange-darker-color bg-orange-color pb-32 text-white transition-all duration-1000 md:left-0 md:flex md:h-full md:items-center md:justify-end md:overflow-y-visible md:bg-transparent md:pb-0 md:opacity-100`}>
 				<Link
 					href='https://www.facebook.com/centrumkangurek/'
 					prefetch={false}>
