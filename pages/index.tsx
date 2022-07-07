@@ -115,7 +115,9 @@ const Home: NextPage = () => {
 						className='aspect-video w-full max-w-[600px] self-center'></iframe>
 				</section>
 
-				<section className='flex w-full justify-center md:w-11/12'>
+				<section
+					id='oferta'
+					className='flex w-full justify-center md:w-11/12'>
 					<Offer />
 				</section>
 
