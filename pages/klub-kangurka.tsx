@@ -2,7 +2,6 @@ import { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import PageWrapper from '../components/universal/page-wrapper';
-import img from '../public/images/pages/klub-kangurka/Klub-kangurka.jpg';
 
 const KlubKangurkaPage: NextPage = () => {
 	return (
@@ -73,7 +72,7 @@ const KlubKangurkaPage: NextPage = () => {
 							</ul>
 						</div>
 						<Image
-							src={img}
+							src='/images/pages/klub-kangurka/Klub-kangurka.jpg'
 							alt='klub-kangurka'
 							objectFit='contain'
 						/>

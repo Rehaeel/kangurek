@@ -1,5 +1,4 @@
 import PageWrapper from '../components/universal/page-wrapper';
-import headerImage from '../public/images/pages/kontakt/Kontakt_kangurek.jpg';
 import PageContent from '../components/universal/page-content';
 import Kontakt from '../components/pages/kontakt/kontakt';
 import { NextPage } from 'next';
@@ -20,7 +19,9 @@ const KontaktPage: NextPage = () => {
 				/>
 			</Head>
 
-			<PageWrapper title='Kontakt' image={headerImage}>
+			<PageWrapper
+				title='Kontakt'
+				image='/images/pages/kontakt/Kontakt_kangurek.jpg'>
 				<PageContent>
 					<Kontakt />
 				</PageContent>

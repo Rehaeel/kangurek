@@ -2,7 +2,6 @@ import PageContent from '../components/universal/page-content';
 import Cennik from '../components/pages/cennik';
 import Button from '../components/universal/button';
 import PageWrapper from '../components/universal/page-wrapper';
-import headerImage from '../public/images/pages/cennik/Cennik_zakladka_kangurek.jpg';
 import { NextPage } from 'next';
 import Head from 'next/head';
 
@@ -21,7 +20,9 @@ const CennikPage: NextPage = () => {
 				/>
 			</Head>
 
-			<PageWrapper title='cennik' image={headerImage}>
+			<PageWrapper
+				title='cennik'
+				image='/images/pages/cennik/Cennik_zakladka_kangurek.jpg'>
 				<PageContent>
 					<Cennik />
 					<Button href='/kontakt'>
