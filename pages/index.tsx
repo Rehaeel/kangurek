@@ -2,10 +2,7 @@ import type { NextPage } from 'next';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { useWindowSize } from '../utils/hooks';
-import mobileHeaderImg from '../public/images/pages/home/kangurek-mobile.jpg';
-import headerImg from '../public/images/pages/home/Centrum-Terapii-i-Rozwoju-Dziecka-Kangurek.jpg';
 import PageContent from '../components/universal/page-content';
-import lapki from '../public/images/pages/home/male_lapki.jpg';
 import { WindowSize } from '../utils/types';
 import Head from 'next/head';
 import Kontakt from '../components/pages/kontakt/kontakt';
@@ -36,13 +33,13 @@ const Home: NextPage = () => {
 			<header className='h-auto w-full'>
 				{screenWidth > 760 ? (
 					<Image
-						src={headerImg}
+						src='/images/pages/home/Centrum-Terapii-i-Rozwoju-Dziecka-Kangurek.jpg'
 						alt='Integracja Sensoryczna okładka'
 						priority
 					/>
 				) : (
 					<Image
-						src={mobileHeaderImg}
+						src='/images/pages/home/kangurek-mobile.jpg'
 						alt='Integracja Sensoryczna okładka'
 						priority
 					/>
@@ -100,7 +97,7 @@ const Home: NextPage = () => {
 						</div>
 						<div className='order-1 flex items-center justify-center md:order-2 md:w-1/2'>
 							<Image
-								src={lapki}
+								src='/images/pages/home/male_lapki.jpg'
 								alt='Integracja Sensoryczna w praktyce'
 							/>
 						</div>

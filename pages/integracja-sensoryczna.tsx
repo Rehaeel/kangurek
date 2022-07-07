@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import OfferWrapper from '../components/universal/offer-wrapper';
-import photo from '../public/images/pages/integracja-sensoryczna/SI.jpg';
 
 const IntegracjaSensorycznaPage: NextPage = () => {
 	return (
@@ -67,7 +66,7 @@ const IntegracjaSensorycznaPage: NextPage = () => {
 						</ul>
 					</div>
 					<Image
-						src={photo}
+						src='/images/pages/integracja-sensoryczna/SI.jpg'
 						alt='integracja sensoryczna'
 						objectFit='contain'
 						height={260}

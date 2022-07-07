@@ -1,5 +1,4 @@
 import { NextPage } from 'next';
-import path from 'path';
 import { terapeuciList } from '../components/pages/terapeuci/terapeuci-list';
 import Masonry from 'react-masonry-css';
 import Image from 'next/image';
