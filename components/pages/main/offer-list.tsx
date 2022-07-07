@@ -59,8 +59,8 @@ export const offerList: Offer[] = [
 		),
 	},
 	{
-		href: '/terapia-pedagogiczna',
-		image: imgFolderPrefix + 'Terapia-Pedagogiczna.jpg',
+		href: '/terapia-reki',
+		image: imgFolderPrefix + 'Terapia-Reki.jpg',
 		description: (
 			<>
 				<b>Terapia ręki</b> to zajęcia prowadzone specjalnymi metodami w
