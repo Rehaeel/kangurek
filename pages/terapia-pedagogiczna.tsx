@@ -2,19 +2,30 @@ import Image from 'next/image';
 import OfferWrapper from '../components/universal/offer-wrapper';
 import { NextPage } from 'next';
 import Head from 'next/head';
+import { DOMAIN_NAME } from '../utils/constants';
+import { useRouter } from 'next/router';
+
+const title: string = 'Terapia pedagogiczna';
+const description: string =
+	'Zajęcia z terapii pedagogicznej służą wspomaganiu rozwoju dzieci z różnymi trudnościami, które wpływają niekorzystnie na proces zdobywania umiejętności szkolnych. Często przyczyny będące podłożem trudności dzieci są trudne do zdiagnozowania lub bardzo złożone, dzieci samodzielnie nie są w stanie poradzić sobie z narastającymi problemami. Braki, które pojawiają się na początku drogi edukacyjnej, narastają, kumulują się, obejmują coraz szersze obszary. W efekcie stają się przyczyną dodatkowych zaburzeń np. emocjonalnych.';
 
 const TerapiaPedagogicznaPage: NextPage = () => {
+	const router = useRouter();
+	
 	return (
 		<>
 			<Head>
-				<title>Terapia pedagogiczna</title>
-				<meta
-					name='description'
-					content='Zajęcia z terapii pedagogicznej służą wspomaganiu rozwoju dzieci z różnymi trudnościami, które wpływają niekorzystnie na proces zdobywania umiejętności szkolnych. Często przyczyny będące podłożem trudności dzieci są trudne do zdiagnozowania lub bardzo złożone, dzieci samodzielnie nie są w stanie poradzić sobie z narastającymi problemami. Braki, które pojawiają się na początku drogi edukacyjnej, narastają, kumulują się, obejmują coraz szersze obszary. W efekcie stają się przyczyną dodatkowych zaburzeń np. emocjonalnych.'
-				/>
+				<title>{title}</title>
+				<meta name='description' content={description} />
 				<meta
 					name='keywords'
 					content='terapia pedagogiczna, integracja sensoryczna, centrum-kangurek'
+				/>
+				<meta property='og:title' content={title} />
+				<meta property='og:description' content={description} />
+				<meta
+					property='og:url'
+					content={`${DOMAIN_NAME}/${router.pathname}`}
 				/>
 			</Head>
 
