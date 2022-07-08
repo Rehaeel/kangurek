@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<meta name='author' content='Rafał Prokopiak' />
 				<meta
 					property='og:image'
-					content='/images/pages/cennik/Cennik_zakladka_kangurek.jpg'
+					content={`${window.location.hostname}/images/logo.svg`}
 				/>
 			</Head>
 			<Component {...pageProps} />
