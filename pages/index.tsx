@@ -121,7 +121,7 @@ const Home: NextPage = () => {
 					<Offer />
 				</section>
 
-				<section className='w-full md:w-11/12'>
+				<section className='w-11/12'>
 					<Kontakt />
 				</section>
 			</PageContent>
