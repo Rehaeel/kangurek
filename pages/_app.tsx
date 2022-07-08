@@ -19,6 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 					property='og:image'
 					content='https://kangurek2.vercel.app/images/logo.svg'
 				/>
+				<meta property='og:type' content='website' />
 			</Head>
 			<Component {...pageProps} />
 		</Layer>
