@@ -20,6 +20,7 @@ const OfferWrapper: React.FC<Props> = ({ title, image, children }) => {
 					objectFit='cover'
 					width={1920}
 					height={380}
+					loading='eager'
 				/>
 			</header>
 			<div className='my-11 mx-auto flex w-11/12 flex-col items-start gap-8 sm:w-10/12 md:w-9/12'>
