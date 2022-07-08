@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<meta name='author' content='Rafał Prokopiak' />
 				<meta
 					property='og:image'
-					content='https://www.kangurek2.vercel.app/images/logo.png'
+					content='https://kangurek2.vercel.app/images/logo.png'
 				/>
 				<meta property='og:type' content='company' />
 			</Head>
