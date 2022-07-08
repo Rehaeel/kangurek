@@ -1,20 +1,31 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import OfferWrapper from '../components/universal/offer-wrapper';
+import { DOMAIN_NAME } from '../utils/constants';
+
+const title: string = 'Sensomotoryczna Terapia Widzenia';
+const description: string =
+	'STW to program łączący statyczną i dynamiczną terapię funkcji wzrokowych. Wykorzystuje integrację bodźców wzrokowych, słuchowych i ruchowych. Ćwiczenia wzrokowe są wykonywane zarówno w pozycjach statycznych jak i w ruchu, angażując do pracy układ przedsionkowy i proprioceptywny. Dzięki temu następuje właściwa integracja bodźców wzrokowych z pozostałymi zmysłami. Metodę Sensomotorycznej terapii widzenia można stosować podczas klasycznych zajęć integracji sensorycznej, terapii pedagogicznej lub jako niezależną formę terapii. Na zajęciach wykorzystuje się stymulatory, które pozwalają na lepszą integrację wzrokowo- słuchową. Taka umiejętność stanowi podstawę uczenia się.';
 
 const SensomotorycznaTerapiaWidzenia: NextPage = () => {
+	const router = useRouter();
+
 	return (
 		<>
 			<Head>
-				<title>Sensomotoryczna Terapia Widzenia</title>
-				<meta
-					name='description'
-					content='STW to program łączący statyczną i dynamiczną terapię funkcji wzrokowych. Wykorzystuje integrację bodźców wzrokowych, słuchowych i ruchowych. Ćwiczenia wzrokowe są wykonywane zarówno w pozycjach statycznych jak i w ruchu, angażując do pracy układ przedsionkowy i proprioceptywny. Dzięki temu następuje właściwa integracja bodźców wzrokowych z pozostałymi zmysłami. Metodę Sensomotorycznej terapii widzenia można stosować podczas klasycznych zajęć integracji sensorycznej, terapii pedagogicznej lub jako niezależną formę terapii. Na zajęciach wykorzystuje się stymulatory, które pozwalają na lepszą integrację wzrokowo- słuchową. Taka umiejętność stanowi podstawę uczenia się.'
-				/>
+				<title>{title}</title>
+				<meta name='description' content={description} />
 				<meta
 					name='keywords'
 					content='sensomotoryczna terapia widzenia, stw, integracja sensoryczna, centrum-kangurek'
+				/>
+				<meta property='og:title' content={title} />
+				<meta property='og:description' content={description} />
+				<meta
+					property='og:url'
+					content={`${DOMAIN_NAME}/${router.pathname}`}
 				/>
 			</Head>
 
