@@ -48,14 +48,14 @@ const TerapeuciPage: NextPage<TerapeuciProps> = (props) => {
 			<PageContent>
 				<h1 className='mt-6 font-bold md:mt-8'>Terapeuci</h1>
 				<Masonry
-					className='-ml-[30px] flex w-auto'
-					columnClassName='pl-0 sm:ml-[30px] bg-clip-padding'
+					className='mx-[2%] flex w-auto xl:mx-0 xl:-ml-[30px]'
+					columnClassName='pl-0 md:ml-[30px] bg-clip-padding'
 					breakpointCols={breakpointColumnsObj}>
 					{terapeuci.map((terapeuta, index) => {
 						return (
 							<div
 								key={index}
-								className='relative mb-[30px] flex h-fit w-full max-w-[500px] flex-col items-center gap-5 rounded-[50px] border-2 border-[#c6c6c6] bg-[#fcfcfc] p-[20px] text-left sm:p-[30px]'>
+								className='relative my-5 flex h-fit w-full max-w-[500px] flex-col items-center gap-5 rounded-[50px] border-2 border-[#c6c6c6] bg-[#fcfcfc] p-[20px] text-left sm:p-[30px] md:my-0 md:mb-[30px]'>
 								<Image
 									priority
 									src={terapeuta.image}
