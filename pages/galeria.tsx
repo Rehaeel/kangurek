@@ -5,8 +5,15 @@ import PageContent from '../components/universal/page-content';
 import { getGaleriaImgFiles } from '../utils/helpers-functions';
 import Modal from '../components/universal/modal';
 import Head from 'next/head';
+import { DOMAIN_NAME } from '../utils/constants';
+import { useRouter } from 'next/router';
+
+const title: string = 'Galeria';
+const description: string =
+	'Galeria zdjęć z zajęć z dziećmi. Spójrz czego możesz się spodziewać.';
 
 const Galeria: NextPage<{ photos: string[] }> = (props) => {
+	const router = useRouter();
 	const [photoNumber, setPhotoNumber] = useState(0);
 	const [showPhoto, setShowPhoto] = useState(false);
 
@@ -41,14 +48,17 @@ const Galeria: NextPage<{ photos: string[] }> = (props) => {
 	return (
 		<>
 			<Head>
-				<title>Galeria</title>
-				<meta
-					name='description'
-					content='Galeria zdjęć z zajęć z dziećmi. Spójrz czego możesz się spodziewać.'
-				/>
+				<title>{title}</title>
+				<meta name='description' content={description} />
 				<meta
 					name='keywords'
 					content='galeria, integracja sensoryczna, centrum-kangurek'
+				/>
+				<meta property='og:title' content={title} />
+				<meta property='og:description' content={description} />
+				<meta
+					property='og:url'
+					content={`${DOMAIN_NAME}/${router.pathname}`}
 				/>
 			</Head>
 
