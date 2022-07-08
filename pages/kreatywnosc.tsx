@@ -2,19 +2,30 @@ import OfferWrapper from '../components/universal/offer-wrapper';
 import Image from 'next/image';
 import { NextPage } from 'next';
 import Head from 'next/head';
+import { DOMAIN_NAME } from '../utils/constants';
+import { useRouter } from 'next/router';
+
+const title: string = 'Kreatywność';
+const description: string =
+	'Nasze zajęcia łączą muzykoterapię, metodę Sensoplastyki, Klanzę, Pedagogikę Zabawy, Metodę Dobrego Startu oraz wszystkie techniki plastyczne: malarskie, rysunku, modelowania, kolażu, batiku, decoupage.';
 
 const KreatywnoscPage: NextPage = () => {
+	const router = useRouter();
+
 	return (
 		<>
 			<Head>
-				<title>Kreatywność</title>
-				<meta
-					name='description'
-					content='Nasze zajęcia łączą muzykoterapię, metodę Sensoplastyki, Klanzę, Pedagogikę Zabawy, Metodę Dobrego Startu oraz wszystkie techniki plastyczne: malarskie, rysunku, modelowania, kolażu, batiku, decoupage.'
-				/>
+				<title>{title}</title>
+				<meta name='description' content={description} />
 				<meta
 					name='keywords'
 					content='kreatywność, integracja sensoryczna, centrum-kangurek'
+				/>
+				<meta property='og:title' content={title} />
+				<meta property='og:description' content={description} />
+				<meta
+					property='og:url'
+					content={`${DOMAIN_NAME}/${router.pathname}`}
 				/>
 			</Head>
 
