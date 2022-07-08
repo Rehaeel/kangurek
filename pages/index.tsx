@@ -10,8 +10,15 @@ import headerImgMobile from '../public/images/pages/home/kangurek-mobile.jpg';
 import Head from 'next/head';
 import Kontakt from '../components/pages/kontakt/kontakt';
 import Offer from '../components/pages/main/offer';
+import { DOMAIN_NAME } from '../utils/constants';
+import { useRouter } from 'next/router';
+
+const title: string = 'Centrum Kangurek';
+const description: string =
+	'W Centrum Terapii i Rozwoju Dziecka Kangurek łączymy naukę z zabawą, pomagając w ten sposób dzieciom, które przeżywają trudności rozwojowe, edukacyjne, związane z integracją zmysłów, z koordynacją wzrokowo-ruchową. Kangurek zaprasza do wyboru szerokiego zakresu terapii i pomocy rozwojowej dla Twojego dziecka.';
 
 const Home: NextPage = () => {
+	const router = useRouter();
 	const [screenWidth, setScreenWidth] = useState<number>(0);
 	const { width }: WindowSize = useWindowSize();
 
@@ -22,14 +29,17 @@ const Home: NextPage = () => {
 	return (
 		<>
 			<Head>
-				<title>Centrum Kangurek</title>
-				<meta
-					name='description'
-					content='W Centrum Terapii i Rozwoju Dziecka Kangurek łączymy naukę z zabawą, pomagając w ten sposób dzieciom, które przeżywają trudności rozwojowe, edukacyjne, związane z integracją zmysłów, z koordynacją wzrokowo-ruchową. Kangurek zaprasza do wyboru szerokiego zakresu terapii i pomocy rozwojowej dla Twojego dziecka.'
-				/>
+				<title>{title}</title>
+				<meta name='description' content={description} />
 				<meta
 					name='keywords'
 					content='integracja sensoryczna, si, centrum-kangurek'
+				/>
+				<meta property='og:title' content={title} />
+				<meta property='og:description' content={description} />
+				<meta
+					property='og:url'
+					content={`${DOMAIN_NAME}/${router.pathname}`}
 				/>
 			</Head>
 
