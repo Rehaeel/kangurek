@@ -16,6 +16,8 @@ const PageWrapper: FC<PageWrapperProps> = ({ title, image, children }) => {
 						src={image}
 						layout='fill'
 						objectFit='cover'
+						width={1920}
+						height={320}
 					/>
 				</header>
 			)}
