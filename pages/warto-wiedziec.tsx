@@ -1,20 +1,31 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import React from 'react';
 import PageContent from '../components/universal/page-content';
+import { DOMAIN_NAME } from '../utils/constants';
+
+const title: string = 'Warto wiedzieć';
+const description: string =
+	'Co warto wiedzieć przed kontaktem z Centrum Kangurek? Baza wiedzy, gdzie dowiesz się więcej.';
 
 const WartoWiedziec: NextPage = () => {
+	const router = useRouter();
+
 	return (
 		<>
 			<Head>
-				<title>Warto wiedzieć</title>
-				<meta
-					name='description'
-					content='Co warto wiedzieć przed kontaktem z Centrum Kangurek? Baza wiedzy, gdzie dowiesz się więcej.'
-				/>
+				<title>{title}</title>
+				<meta name='description' content={description} />
 				<meta
 					name='keywords'
 					content='baza wiedzy, integracja sensoryczna, centrum-kangurek'
+				/>
+				<meta property='og:title' content={title} />
+				<meta property='og:description' content={description} />
+				<meta
+					property='og:url'
+					content={`${DOMAIN_NAME}/${router.pathname}`}
 				/>
 			</Head>
 			<PageContent>
