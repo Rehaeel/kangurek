@@ -2,19 +2,30 @@ import OfferWrapper from '../components/universal/offer-wrapper';
 import Image from 'next/image';
 import { NextPage } from 'next';
 import Head from 'next/head';
+import { DOMAIN_NAME } from '../utils/constants';
+import { useRouter } from 'next/router';
+
+const title: string = 'Terapia ręki';
+const description: string =
+	'Zajęcia terapii ręki łączą w sobie integrację sensoryczną, elementy zajęć ogólnorozwojowych, terapię widzenia, kreatywność, zabawy paluszkowe, ćwiczenia z zakresu samoobsługi.';
 
 const TerapiaRekiPage: NextPage = () => {
+	const router = useRouter();
+	
 	return (
 		<>
 			<Head>
-				<title>Terapia ręki</title>
-				<meta
-					name='description'
-					content='Zajęcia terapii ręki łączą w sobie integrację sensoryczną, elementy zajęć ogólnorozwojowych, terapię widzenia, kreatywność, zabawy paluszkowe, ćwiczenia z zakresu samoobsługi.'
-				/>
+				<title>{title}</title>
+				<meta name='description' content={description} />
 				<meta
 					name='keywords'
 					content='terapia ręki, integracja sensoryczna, centrum-kangurek'
+				/>
+				<meta property='og:title' content={title} />
+				<meta property='og:description' content={description} />
+				<meta
+					property='og:url'
+					content={`${DOMAIN_NAME}/${router.pathname}`}
 				/>
 			</Head>
 
