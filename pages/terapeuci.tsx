@@ -46,7 +46,10 @@ const TerapeuciPage: NextPage<TerapeuciProps> = (props) => {
 					name='keywords'
 					content='terapeuci, integracja sensoryczna, centrum-kangurek'
 				/>
-				<meta property='og:title' content={title} />
+				<meta
+					property='og:title'
+					content={`Centrum Kangurek - ${title}`}
+				/>
 				<meta property='og:description' content={description} />
 				<meta
 					property='og:url'

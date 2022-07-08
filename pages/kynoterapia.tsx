@@ -21,7 +21,10 @@ const KynoterapiaPage: NextPage = () => {
 					name='keywords'
 					content='dogoterapia, kynoterapia, integracja sensoryczna, centrum-kangurek'
 				/>
-				<meta property='og:title' content={title} />
+				<meta
+					property='og:title'
+					content={`Centrum Kangurek - ${title}`}
+				/>
 				<meta property='og:description' content={description} />
 				<meta
 					property='og:url'

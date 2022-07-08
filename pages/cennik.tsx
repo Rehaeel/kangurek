@@ -16,13 +16,16 @@ const CennikPage: NextPage = () => {
 	return (
 		<>
 			<Head>
-				<title>{`Centrum Kangurek - ${title}`}</title>
+				<title>{title}</title>
 				<meta name='description' content={description} />
 				<meta
 					name='keywords'
 					content='cennik, integracja sensoryczna, centrum-kangurek'
 				/>
-				<meta property='og:title' content={title} />
+				<meta
+					property='og:title'
+					content={`Centrum Kangurek - ${title}`}
+				/>
 				<meta property='og:description' content={description} />
 				<meta
 					property='og:url'

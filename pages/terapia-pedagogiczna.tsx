@@ -11,7 +11,7 @@ const description: string =
 
 const TerapiaPedagogicznaPage: NextPage = () => {
 	const router = useRouter();
-	
+
 	return (
 		<>
 			<Head>
@@ -21,7 +21,10 @@ const TerapiaPedagogicznaPage: NextPage = () => {
 					name='keywords'
 					content='terapia pedagogiczna, integracja sensoryczna, centrum-kangurek'
 				/>
-				<meta property='og:title' content={title} />
+				<meta
+					property='og:title'
+					content={`Centrum Kangurek - ${title}`}
+				/>
 				<meta property='og:description' content={description} />
 				<meta
 					property='og:url'

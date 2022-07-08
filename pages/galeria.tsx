@@ -54,7 +54,10 @@ const Galeria: NextPage<{ photos: string[] }> = (props) => {
 					name='keywords'
 					content='galeria, integracja sensoryczna, centrum-kangurek'
 				/>
-				<meta property='og:title' content={title} />
+				<meta
+					property='og:title'
+					content={`Centrum Kangurek - ${title}`}
+				/>
 				<meta property='og:description' content={description} />
 				<meta
 					property='og:url'

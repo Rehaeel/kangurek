@@ -21,7 +21,10 @@ const WartoWiedziec: NextPage = () => {
 					name='keywords'
 					content='baza wiedzy, integracja sensoryczna, centrum-kangurek'
 				/>
-				<meta property='og:title' content={title} />
+				<meta
+					property='og:title'
+					content={`Centrum Kangurek - ${title}`}
+				/>
 				<meta property='og:description' content={description} />
 				<meta
 					property='og:url'

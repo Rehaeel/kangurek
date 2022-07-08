@@ -35,7 +35,10 @@ const Home: NextPage = () => {
 					name='keywords'
 					content='integracja sensoryczna, si, centrum-kangurek'
 				/>
-				<meta property='og:title' content={title} />
+				<meta
+					property='og:title'
+					content={`Centrum Kangurek - ${title}`}
+				/>
 				<meta property='og:description' content={description} />
 				<meta
 					property='og:url'
