@@ -2,19 +2,30 @@ import OfferWrapper from '../components/universal/offer-wrapper';
 import Image from 'next/image';
 import { NextPage } from 'next';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { DOMAIN_NAME } from '../utils/constants';
+
+const title: string = 'Terapia logopedyczna';
+const description: string =
+	'Wczesna diagnoza problemów logopedycznych pozwala w porę dostrzec trudności dziecka i szybciej oraz skuteczniej je zniwelować zanim dziecko rozpocznie naukę w szkole.';
 
 const TerapiaLogopedycznaPage: NextPage = () => {
+	const router = useRouter();
+
 	return (
 		<>
 			<Head>
-				<title>Terapia logopedyczna</title>
-				<meta
-					name='description'
-					content='Wczesna diagnoza problemów logopedycznych pozwala w porę dostrzec trudności dziecka i szybciej oraz skuteczniej je zniwelować zanim dziecko rozpocznie naukę w szkole.'
-				/>
+				<title>{title}</title>
+				<meta name='description' content={description} />
 				<meta
 					name='keywords'
 					content='terapia logopedyczna, integracja sensoryczna, centrum-kangurek'
+				/>
+				<meta property='og:title' content={title} />
+				<meta property='og:description' content={description} />
+				<meta
+					property='og:url'
+					content={`${DOMAIN_NAME}/${router.pathname}`}
 				/>
 			</Head>
 
