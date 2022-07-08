@@ -71,7 +71,9 @@ const TerapeuciPage: NextPage<TerapeuciProps> = (props) => {
 									{terapeuta.education.map(
 										(educationList, index) => {
 											return (
-												<li key={index}>
+												<li
+													key={index}
+													className='text-sm md:text-base'>
 													{educationList}
 												</li>
 											);
@@ -86,13 +88,13 @@ const TerapeuciPage: NextPage<TerapeuciProps> = (props) => {
 										transition: 'max-height 0.5s ease',
 									}}
 									className='flex flex-col gap-4 overflow-hidden transition-all duration-500'>
-									<h4 className='text-xl font-extrabold underline'>
+									<h4 className='text-base font-extrabold underline md:text-lg'>
 										DOŚWIADCZENIE ZAWODOWE
 									</h4>
 									{terapeuta.experience.map((e, i) => (
 										<p
 											key={i}
-											className='text-lg font-thin'>
+											className='text-sm font-thin md:text-base'>
 											{e}
 										</p>
 									))}
