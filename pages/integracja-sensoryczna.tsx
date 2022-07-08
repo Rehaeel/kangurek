@@ -2,20 +2,30 @@ import { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import OfferWrapper from '../components/universal/offer-wrapper';
+import { DOMAIN_NAME } from '../utils/constants';
+
+const title: string = 'Integracja Sensoryczna';
+const description: string =
+	'Zakłócenia na poziomie organizacji i odbioru wrażeń zmysłowych mogą skutkować nieadekwatnym zachowaniem dziecka, trudnościami w uczeniu się, a także powodować zaburzenia funkcji ruchowych. Interweniujemy terapeutycznie wtedy, gdy luka między tym, czego by się oczekiwało od dziecka na danym etapie wiekowym w zakresie SI a tym, co ono prezentuje jest na tyle duża, że dziecku nie udaje się go wyrównać w trakcie zabaw i innych czynności naturalnych.';
 
 const IntegracjaSensorycznaPage: NextPage = () => {
+	const router = useRouter();
 	return (
 		<>
 			<Head>
-				<title>Integracja Sensoryczna</title>
-				<meta
-					name='description'
-					content='Zakłócenia na poziomie organizacji i odbioru wrażeń zmysłowych mogą skutkować nieadekwatnym zachowaniem dziecka, trudnościami w uczeniu się, a także powodować zaburzenia funkcji ruchowych. Interweniujemy terapeutycznie wtedy, gdy luka między tym, czego by się oczekiwało od dziecka na danym etapie wiekowym w zakresie SI a tym, co ono prezentuje jest na tyle duża, że dziecku nie udaje się go wyrównać w trakcie zabaw i innych czynności naturalnych.'
-				/>
+				<title>{title}</title>
+				<meta name='description' content={description} />
 				<meta
 					name='keywords'
 					content='integracja sensoryczna, si, centrum-kangurek'
+				/>
+				<meta property='og:title' content={title} />
+				<meta property='og:description' content={description} />
+				<meta
+					property='og:url'
+					content={`${DOMAIN_NAME}/${router.pathname}`}
 				/>
 			</Head>
 
