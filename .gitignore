@@ -1,7 +1,7 @@
 /node_modules
 /.next
 /yarn.lock
-/.DS_Store
+.DS_Store
 /.env
 /.env.local
 /out
