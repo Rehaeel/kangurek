@@ -2,19 +2,30 @@ import OfferWrapper from '../components/universal/offer-wrapper';
 import Image from 'next/image';
 import { NextPage } from 'next';
 import Head from 'next/head';
+import { DOMAIN_NAME } from '../utils/constants';
+import { useRouter } from 'next/router';
+
+const title: string = 'Kynoterapia (dogoterapia)';
+const description: string =
+	'Kynoterapia, inaczej dogoterapia, jest to metoda, wspierająca wszechstronny rozwój dziecka przy wykorzystaniu specjalnie szkolonego psa. Poprzez np.: głaskanie, karmienie, naśladowanie zachowań zwierzaka, prowadzenie go na smyczy, wydawanie komend i wspólnej zabawy osiągamy zamierzone, terapeutyczne cele.';
 
 const KynoterapiaPage: NextPage = () => {
+	const router = useRouter();
+
 	return (
 		<>
 			<Head>
-				<title>Kynoterapia (dogoterapia)</title>
-				<meta
-					name='description'
-					content='Kynoterapia, inaczej dogoterapia, jest to metoda, wspierająca wszechstronny rozwój dziecka przy wykorzystaniu specjalnie szkolonego psa. Poprzez np.: głaskanie, karmienie, naśladowanie zachowań zwierzaka, prowadzenie go na smyczy, wydawanie komend i wspólnej zabawy osiągamy zamierzone, terapeutyczne cele.'
-				/>
+				<title>{title}</title>
+				<meta name='description' content={description} />
 				<meta
 					name='keywords'
 					content='dogoterapia, kynoterapia, integracja sensoryczna, centrum-kangurek'
+				/>
+				<meta property='og:title' content={title} />
+				<meta property='og:description' content={description} />
+				<meta
+					property='og:url'
+					content={`${DOMAIN_NAME}/${router.pathname}`}
 				/>
 			</Head>
 
