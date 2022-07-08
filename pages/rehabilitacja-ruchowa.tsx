@@ -1,19 +1,30 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import OfferWrapper from '../components/universal/offer-wrapper';
+import { DOMAIN_NAME } from '../utils/constants';
+
+const title: string = 'Rehabilitacja ruchowa';
+const description: string =
+	'Głównym celem rehabilitacji ruchowej jest przywrócenie maksymalnie możliwej sprawności fizycznej i komfortu życia dziecka. Ruch jest niezbędnym elementem życia każdego człowieka, buduje masą mięśniową, a zarazem sprawność fizyczną. Opóźnienia w rozwoju motorycznym często sygnalizują opóźnienia w rozwoju poznawczym, emocjonalnym i społecznym. Prawidłowy rozwój motoryczny obejmuje właściwy rozwój lokomocji, postawy oraz manipulacji. Dzieci uwielbiają doznania ruchowe już od momentu narodzin. Dziecko, które ma zapewnioną odpowiednią dawkę ruchu, mają większe predyspozycje do prawidłowego rozwoju umysłowego na miarę swoich możliwości.';
 
 const RehabilitacjaRuchowaPage: NextPage = () => {
+	const router = useRouter();
+
 	return (
 		<>
 			<Head>
-				<title>Rehabilitacja ruchowa</title>
-				<meta
-					name='description'
-					content='Głównym celem rehabilitacji ruchowej jest przywrócenie maksymalnie możliwej sprawności fizycznej i komfortu życia dziecka. Ruch jest niezbędnym elementem życia każdego człowieka, buduje masą mięśniową, a zarazem sprawność fizyczną. Opóźnienia w rozwoju motorycznym często sygnalizują opóźnienia w rozwoju poznawczym, emocjonalnym i społecznym. Prawidłowy rozwój motoryczny obejmuje właściwy rozwój lokomocji, postawy oraz manipulacji. Dzieci uwielbiają doznania ruchowe już od momentu narodzin. Dziecko, które ma zapewnioną odpowiednią dawkę ruchu, mają większe predyspozycje do prawidłowego rozwoju umysłowego na miarę swoich możliwości.'
-				/>
+				<title>{title}</title>
+				<meta name='description' content={description} />
 				<meta
 					name='keywords'
 					content='rehabilitacja ruchowa, integracja sensoryczna, centrum-kangurek'
+				/>
+				<meta property='og:title' content={title} />
+				<meta property='og:description' content={description} />
+				<meta
+					property='og:url'
+					content={`${DOMAIN_NAME}/${router.pathname}`}
 				/>
 			</Head>
 
