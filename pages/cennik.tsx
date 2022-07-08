@@ -4,19 +4,33 @@ import Button from '../components/universal/button';
 import PageWrapper from '../components/universal/page-wrapper';
 import { NextPage } from 'next';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { DOMAIN_NAME } from '../utils/constants';
+
+const title: string = 'Cennik';
+const description: string =
+	'Sprawdź aktualne ceny zajęć, terapii i innych usług oferowanych przez Centrum Kangurek';
 
 const CennikPage: NextPage = () => {
+	const router = useRouter();
 	return (
 		<>
 			<Head>
-				<title>Cennik</title>
-				<meta
-					name='description'
-					content='Sprawdź aktualne ceny zajęć, terapii i innych usług oferowanych przez Centrum Kangurek'
-				/>
+				<title>{title}</title>
+				<meta name='description' content={description} />
 				<meta
 					name='keywords'
 					content='cennik, integracja sensoryczna, centrum-kangurek'
+				/>
+				<meta property='og:title' content={title} />
+				<meta property='og:description' content={description} />
+				<meta
+					property='og:image'
+					content='/images/pages/cennik/Cennik_zakladka_kangurek.jpg'
+				/>
+				<meta
+					property='og:url'
+					content={`${DOMAIN_NAME}/${router.pathname}`}
 				/>
 			</Head>
 
