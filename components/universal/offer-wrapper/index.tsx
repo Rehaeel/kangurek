@@ -1,7 +1,11 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import { Props } from './types';
 
 const OfferWrapper: React.FC<Props> = ({ title, image, children }) => {
+	const router = useRouter();
+	const siteName = router.pathname.slice(1).replace('-', ' ');
+
 	return (
 		<main>
 			<header className='relative flex h-64 w-full flex-col items-center justify-center sm:h-72 md:h-96'>
@@ -10,10 +14,12 @@ const OfferWrapper: React.FC<Props> = ({ title, image, children }) => {
 				</h1>
 				<Image
 					priority
-					alt='okładka strony oferty'
+					alt={`okładka strony - ${siteName}`}
 					src={image}
 					layout='fill'
 					objectFit='cover'
+					width={1920}
+					height={380}
 				/>
 			</header>
 			<div className='my-11 mx-auto flex w-11/12 flex-col items-start gap-8 sm:w-10/12 md:w-9/12'>
