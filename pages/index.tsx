@@ -52,14 +52,12 @@ const Home: NextPage = () => {
 						src={headerImg}
 						alt='Integracja Sensoryczna okładka'
 						priority
-						loading='eager'
 					/>
 				) : (
 					<Image
 						src={headerImgMobile}
 						alt='Integracja Sensoryczna okładka'
 						priority
-						loading='eager'
 					/>
 				)}
 				<h3 className='my-4 mr-[5%] text-right text-lg font-bold text-[#667]'>
