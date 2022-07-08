@@ -17,7 +17,7 @@ const Offer: React.FC = () => {
 									width={260}
 									height={320}
 								/>
-								<div className='absolute -top-[103%] left-0 flex h-full w-full items-center justify-center border border-black/25 bg-white p-5 opacity-0 transition-all duration-300 group-hover:top-0 group-hover:opacity-100'>
+								<div className='absolute -top-[103%] left-0 flex h-full w-full items-center justify-center border border-black/25 bg-white px-5 py-2 opacity-0 transition-all duration-300 group-hover:top-0 group-hover:opacity-100'>
 									<p>{description}</p>
 								</div>
 							</div>
