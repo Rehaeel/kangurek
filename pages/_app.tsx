@@ -12,8 +12,13 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<link rel='shortcut icon' href='/images/logo.svg' />
 				<meta
 					name='viewport'
-					content='width=device-width, initial-scale=1.0'></meta>
-				<meta name='author' content='Rafał Prokopiak'></meta>
+					content='width=device-width, initial-scale=1.0'
+				/>
+				<meta name='author' content='Rafał Prokopiak' />
+				<meta
+					property='og:image'
+					content='/images/pages/cennik/Cennik_zakladka_kangurek.jpg'
+				/>
 			</Head>
 			<Component {...pageProps} />
 		</Layer>

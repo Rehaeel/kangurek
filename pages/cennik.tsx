@@ -16,7 +16,7 @@ const CennikPage: NextPage = () => {
 	return (
 		<>
 			<Head>
-				<title>{title}</title>
+				<title>{`Centrum Kangurek - ${title}`}</title>
 				<meta name='description' content={description} />
 				<meta
 					name='keywords'
@@ -24,10 +24,6 @@ const CennikPage: NextPage = () => {
 				/>
 				<meta property='og:title' content={title} />
 				<meta property='og:description' content={description} />
-				<meta
-					property='og:image'
-					content='/images/pages/cennik/Cennik_zakladka_kangurek.jpg'
-				/>
 				<meta
 					property='og:url'
 					content={`${DOMAIN_NAME}/${router.pathname}`}
