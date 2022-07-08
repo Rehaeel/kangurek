@@ -6,9 +6,15 @@ import { useState } from 'react';
 import PageContent from '../components/universal/page-content';
 import { TerapeuciProps } from '../components/pages/terapeuci/types';
 import Head from 'next/head';
+import { DOMAIN_NAME } from '../utils/constants';
+import { useRouter } from 'next/router';
+
+const title: string = 'Terapeuci';
+const description: string = 'Lista terapeutów pracujących w centrum kangurek';
 
 const TerapeuciPage: NextPage<TerapeuciProps> = (props) => {
 	const { terapeuci } = props;
+	const router = useRouter();
 	const [tabMaxHeight, setTabMaxHeight] = useState<number | null>(null);
 	const [tabOpacity, setTabOpacity] = useState<number | null>(null);
 	const [showMore, setShowMore] = useState<number | null>(null);
@@ -34,14 +40,17 @@ const TerapeuciPage: NextPage<TerapeuciProps> = (props) => {
 	return (
 		<>
 			<Head>
-				<title>Terapeuci</title>
-				<meta
-					name='description'
-					content='Lista terapeutów pracujących w centrum kangurek'
-				/>
+				<title>{title}</title>
+				<meta name='description' content={description} />
 				<meta
 					name='keywords'
 					content='terapeuci, integracja sensoryczna, centrum-kangurek'
+				/>
+				<meta property='og:title' content={title} />
+				<meta property='og:description' content={description} />
+				<meta
+					property='og:url'
+					content={`${DOMAIN_NAME}/${router.pathname}`}
 				/>
 			</Head>
 
