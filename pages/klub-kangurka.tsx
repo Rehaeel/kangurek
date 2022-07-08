@@ -1,20 +1,31 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import PageWrapper from '../components/universal/page-wrapper';
+import { DOMAIN_NAME } from '../utils/constants';
+
+const title: string = 'Klub Kangurka';
+const description: string =
+	'Nasze zajęcia mają charakter wspierający oraz profilaktyczny. Wspomagają rozwój niemowląt i małych dzieci do 3 roku życia w oparciu o metodę integracji sensorycznej i W. Sherborne. Stymulując zmysły dzieci wspieramy prawidłowy rozwój procesu integracji sensorycznej.';
 
 const KlubKangurkaPage: NextPage = () => {
+	const router = useRouter();
+
 	return (
 		<>
 			<Head>
-				<title>Klub Kangurka</title>
-				<meta
-					name='description'
-					content='Nasze zajęcia mają charakter wspierający oraz profilaktyczny. Wspomagają rozwój niemowląt i małych dzieci do 3 roku życia w oparciu o metodę integracji sensorycznej i W. Sherborne. Stymulując zmysły dzieci wspieramy prawidłowy rozwój procesu integracji sensorycznej.'
-				/>
+				<title>{title}</title>
+				<meta name='description' content={description} />
 				<meta
 					name='keywords'
 					content='integracja sensoryczna, si, centrum-kangurek, klub kangurka'
+				/>
+				<meta property='og:title' content={title} />
+				<meta property='og:description' content={description} />
+				<meta
+					property='og:url'
+					content={`${DOMAIN_NAME}/${router.pathname}`}
 				/>
 			</Head>
 
