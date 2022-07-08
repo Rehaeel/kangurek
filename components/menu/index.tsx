@@ -17,7 +17,7 @@ const Menu: NextPage = () => {
 			className={`${
 				isOpen ? 'fixed max-h-screen' : 'sticky max-h-12'
 			} transition-max-h top-0 z-50 flex h-screen w-full items-center bg-orange-color pt-12 duration-500 md:max-h-12 md:pt-0 lg:px-[10%]`}>
-			<Link href='/'>
+			<Link href='/' prefetch={false}>
 				<a
 					onClick={() => setIsOpen(false)}
 					className='absolute top-2 left-5 max-w-[30px] md:relative md:top-0 md:left-0'>
@@ -84,7 +84,8 @@ const Menu: NextPage = () => {
 							return (
 								<Link
 									href={menuItem.pathName}
-									key={menuItem.name}>
+									key={menuItem.name}
+									prefetch={false}>
 									<a
 										onClick={() => {
 											setIsOpen(false);
@@ -130,7 +131,10 @@ const Menu: NextPage = () => {
 
 				{menuList.map((menuItem) => {
 					return (
-						<Link href={menuItem.pathName} key={menuItem.name}>
+						<Link
+							href={menuItem.pathName}
+							key={menuItem.name}
+							prefetch={false}>
 							<a
 								onClick={() => setIsOpen(false)}
 								className={`${
