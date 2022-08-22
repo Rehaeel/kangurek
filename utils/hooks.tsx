@@ -3,11 +3,12 @@ import { WindowSize } from './types';
 import ReactGA from 'react-ga';
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
-export const useWindowSize = (): WindowSize => {
+export const useWindowSize = (): number => {
 	const [windowSize, setWindowSize] = useState<WindowSize>({
 		width: undefined,
 		height: undefined,
 	});
+
 	useEffect(() => {
 		function handleResize() {
 			setWindowSize({
@@ -19,7 +20,14 @@ export const useWindowSize = (): WindowSize => {
 		handleResize();
 		return () => window.removeEventListener('resize', handleResize);
 	}, []);
-	return windowSize;
+
+	const [screenWidth, setScreenWidth] = useState<number>(0);
+
+	useEffect(() => {
+		if (windowSize.width) setScreenWidth(windowSize.width);
+	}, [windowSize]);
+
+	return screenWidth;
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -36,3 +44,5 @@ export const useGetGoogleAnalyticsPath = () => {
 		ReactGA.pageview(window.location.pathname);
 	}, []);
 };
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
