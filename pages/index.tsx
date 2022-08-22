@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import { useWindowSize } from '../utils/hooks';
+import { useGetGoogleAnalyticsPath, useWindowSize } from '../utils/hooks';
 import PageContent from '../components/universal/page-content';
 import { WindowSize } from '../utils/types';
 import lapki from '../public/images/pages/home/male_lapki.jpg';
@@ -19,6 +19,7 @@ const description: string =
 
 const Home: NextPage = () => {
 	const router = useRouter();
+	useGetGoogleAnalyticsPath();
 	const [screenWidth, setScreenWidth] = useState<number>(0);
 	const { width }: WindowSize = useWindowSize();
 

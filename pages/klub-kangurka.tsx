@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import PageWrapper from '../components/universal/page-wrapper';
 import { DOMAIN_NAME } from '../utils/constants';
+import { useGetGoogleAnalyticsPath } from '../utils/hooks';
 
 const title: string = 'Klub Kangurka';
 const description: string =
@@ -11,6 +12,7 @@ const description: string =
 
 const KlubKangurkaPage: NextPage = () => {
 	const router = useRouter();
+	useGetGoogleAnalyticsPath();
 
 	return (
 		<>

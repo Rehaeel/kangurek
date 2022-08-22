@@ -4,6 +4,7 @@ import { NextPage } from 'next';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { DOMAIN_NAME } from '../utils/constants';
+import { useGetGoogleAnalyticsPath } from '../utils/hooks';
 
 const title: string = 'Terapia logopedyczna';
 const description: string =
@@ -11,6 +12,7 @@ const description: string =
 
 const TerapiaLogopedycznaPage: NextPage = () => {
 	const router = useRouter();
+	useGetGoogleAnalyticsPath();
 
 	return (
 		<>

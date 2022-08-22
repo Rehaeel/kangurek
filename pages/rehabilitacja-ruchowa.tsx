@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import OfferWrapper from '../components/universal/offer-wrapper';
 import { DOMAIN_NAME } from '../utils/constants';
+import { useGetGoogleAnalyticsPath } from '../utils/hooks';
 
 const title: string = 'Rehabilitacja ruchowa';
 const description: string =
@@ -10,6 +11,7 @@ const description: string =
 
 const RehabilitacjaRuchowaPage: NextPage = () => {
 	const router = useRouter();
+	useGetGoogleAnalyticsPath();
 
 	return (
 		<>

@@ -7,6 +7,7 @@ import Modal from '../components/universal/modal';
 import Head from 'next/head';
 import { DOMAIN_NAME } from '../utils/constants';
 import { useRouter } from 'next/router';
+import { useGetGoogleAnalyticsPath } from '../utils/hooks';
 
 const title: string = 'Galeria';
 const description: string =
@@ -14,6 +15,7 @@ const description: string =
 
 const Galeria: NextPage<{ photos: string[] }> = (props) => {
 	const router = useRouter();
+	useGetGoogleAnalyticsPath();
 	const [photoNumber, setPhotoNumber] = useState(0);
 	const [showPhoto, setShowPhoto] = useState(false);
 

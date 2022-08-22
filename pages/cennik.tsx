@@ -6,12 +6,14 @@ import { NextPage } from 'next';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { DOMAIN_NAME } from '../utils/constants';
+import { useGetGoogleAnalyticsPath } from '../utils/hooks';
 
 const title: string = 'Cennik';
 const description: string =
 	'Sprawdź aktualne ceny zajęć, terapii i innych usług oferowanych przez Centrum Kangurek';
 
 const CennikPage: NextPage = () => {
+	useGetGoogleAnalyticsPath();
 	const router = useRouter();
 	return (
 		<>

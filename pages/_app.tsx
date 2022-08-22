@@ -4,8 +4,11 @@ import '@fontsource/lato';
 import type { AppProps } from 'next/app';
 import Layer from '../components/layer';
 import Head from 'next/head';
+import { useInitializeGoogleAnalytics } from '../utils/hooks';
 
 function MyApp({ Component, pageProps }: AppProps) {
+	useInitializeGoogleAnalytics();
+
 	return (
 		<Layer>
 			<Head>
