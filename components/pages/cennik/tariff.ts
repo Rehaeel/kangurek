@@ -1,6 +1,6 @@
 import { Tariff } from './types';
 
-export const tariff: Array<Tariff> = [
+export const tariff: Tariff[] = [
 	{
 		header: 'Integracja Sensoryczna',
 		body: [

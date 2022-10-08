@@ -6,5 +6,5 @@ interface TarriffBody {
 
 export interface Tariff {
 	header: string;
-	body: Array<TarriffBody>;
+	body: TarriffBody[];
 }
