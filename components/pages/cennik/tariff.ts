@@ -12,7 +12,7 @@ export const tariff: Tariff[] = [
 			{
 				serviceName: 'Terapia integracji sensorycznej',
 				duration: '45 min.',
-				cost: '100 zł',
+				cost: '110 zł',
 			},
 		],
 	},
