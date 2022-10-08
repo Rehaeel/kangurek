@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		@apply text-text-color;
+		font-family: 'Lato', sans-serif;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: 'Lora', serif;
+	}
+
+	h1 {
+		@apply text-4xl;
+	}
+}
+
+@layer components {
+	.header-color {
+		color: #fff;
+	}
+
+	.offer-wrapper-header-shadow {
+		text-shadow: 2px 2px orange;
+	}
+
+	.active-page {
+		@apply bg-gray-600 text-white md:bg-active-link-color;
+	}
+}

@@ -1,9 +1,0 @@
-.site-cennik>img {
-max-width: 95%;
-}
-
-@media screen and (max-width: 980px) {
-     .site-cennik {
-         margin: 40px auto;
-     }
-}

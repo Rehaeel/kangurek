@@ -1,44 +1,36 @@
 {
-  "name": "kangurek",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "dotenv": "^10.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-ga": "^3.3.0",
-    "react-images": "^1.2.0-beta.7",
-    "react-masonry-css": "^1.0.16",
-    "react-photo-gallery": "^8.0.0",
-    "react-router-dom": "^5.3.0",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+	"name": "centrum-kangurek",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"export": "next build && next export && next-image-export-optimizer"
+	},
+	"dependencies": {
+		"@fontsource/lato": "^4.5.8",
+		"@fontsource/lora": "^4.5.10",
+		"next": "12.1.6",
+		"prettier": "^2.7.1",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"react-ga": "^3.3.1",
+		"react-masonry-css": "^1.0.16",
+		"sharp": "^0.30.7"
+	},
+	"devDependencies": {
+		"@swc/cli": "^0.1.57",
+		"@swc/core": "^1.2.244",
+		"@types/node": "^18.7.8",
+		"@types/react": "18.0.14",
+		"@types/react-dom": "18.0.5",
+		"autoprefixer": "^10.4.7",
+		"eslint": "8.18.0",
+		"eslint-config-next": "12.1.6",
+		"postcss": "^8.4.14",
+		"prettier-plugin-tailwindcss": "^0.1.11",
+		"tailwindcss": "^3.1.3",
+		"typescript": "4.7.4"
+	}
 }

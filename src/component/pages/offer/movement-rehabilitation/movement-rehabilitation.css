@@ -1,9 +1,0 @@
-.site-section-rehabilitacja-ruchowa * {
-text-align: left;
-}
-
-.site-section-rehabilitacja-ruchowa>p:last-of-type,
-.site-section-rehabilitacja-ruchowa>p:first-of-type
- {
-    text-decoration: underline;
-}
