@@ -12,7 +12,7 @@ export const tariff: Array<Tariff> = [
 			{
 				serviceName: 'Terapia integracji sensorycznej',
 				duration: '45 min.',
-				cost: '90 zł',
+				cost: '100 zł',
 			},
 		],
 	},
@@ -22,12 +22,12 @@ export const tariff: Array<Tariff> = [
 			{
 				serviceName: 'Diagnoza STW',
 				duration: '1 spotkanie',
-				cost: '200 zł',
+				cost: '300 zł',
 			},
 			{
 				serviceName: 'SENSOMOTORYCZNA TERAPIA WIDZENIA (STW)',
 				duration: '45 min.',
-				cost: '80 zł',
+				cost: '100 zł',
 			},
 		],
 	},
@@ -37,7 +37,7 @@ export const tariff: Array<Tariff> = [
 			{
 				serviceName: 'Zajęcia grupowe',
 				duration: '45 min.',
-				cost: '40 zł',
+				cost: '50 zł',
 			},
 		],
 	},
@@ -47,7 +47,7 @@ export const tariff: Array<Tariff> = [
 			{
 				serviceName: 'Zajęcia indywidualne z psem',
 				duration: '45 min.',
-				cost: '80 zł',
+				cost: '100 zł',
 			},
 		],
 	},
@@ -58,7 +58,7 @@ export const tariff: Array<Tariff> = [
 				serviceName:
 					'Zajęcia z terapii pedagogicznej lub behawioralnej ',
 				duration: '45 min.',
-				cost: '80 zł',
+				cost: '100 zł',
 			},
 		],
 	},
@@ -67,13 +67,13 @@ export const tariff: Array<Tariff> = [
 		body: [
 			{
 				serviceName: 'Diagnoza',
-				duration: '1-2 spotkania',
-				cost: '300 zł',
+				duration: '2-3 spotkania',
+				cost: '400 zł',
 			},
 			{
 				serviceName: 'Terapia ręki - zajęcia indywidualne ',
 				duration: '45 min.',
-				cost: '90 zł',
+				cost: '110 zł',
 			},
 		],
 	},
@@ -83,11 +83,16 @@ export const tariff: Array<Tariff> = [
 			{
 				serviceName: 'Diagnoza',
 				duration: '1 spotkanie',
-				cost: '120 zł',
+				cost: '150 zł',
 			},
 			{
 				serviceName: 'Terapia logopedyczna',
 				duration: '45 min.',
+				cost: '100 zł',
+			},
+			{
+				serviceName: 'Terapia logopedyczna',
+				duration: '30 min.',
 				cost: '80 zł',
 			},
 			{
@@ -104,7 +109,7 @@ export const tariff: Array<Tariff> = [
 			{
 				serviceName: 'Rehabilitacja ruchowa indywidualna',
 				duration: '45 min.',
-				cost: '80 zł',
+				cost: '100 zł',
 			},
 		],
 	},
@@ -114,17 +119,17 @@ export const tariff: Array<Tariff> = [
 			{
 				serviceName: 'Wydawanie dodatkowych opinii',
 				duration: '-',
-				cost: '80 zł',
+				cost: '100 zł',
 			},
 			{
 				serviceName: 'Konsultacje',
 				duration: '1 spotkanie',
-				cost: '150 zł',
+				cost: '180 zł',
 			},
 			{
 				serviceName: 'Praktyka z integracji sensorycznej',
-				duration: '1 miesiąc',
-				cost: '800 zł',
+				duration: '2 miesiące',
+				cost: '900 zł',
 			},
 		],
 	},
