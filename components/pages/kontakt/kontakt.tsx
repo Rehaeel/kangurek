@@ -4,10 +4,8 @@ import telephone from '../../../public/images/pages/kontakt/tel.svg';
 import mail from '../../../public/images/pages/kontakt/mail.svg';
 import pin from '../../../public/images/pages/kontakt/map.svg';
 import PageContent from '../../universal/page-content';
-import { useState } from 'react';
 
 const Kontakt: React.FC = () => {
-	const [isIframeLodaded, setIsIframeLodaded] = useState(false);
 	return (
 		<PageContent>
 			<div className='md: flex w-full flex-col items-center gap-12 md:flex-row md:gap-2 lg:gap-5'>
@@ -60,26 +58,12 @@ const Kontakt: React.FC = () => {
 					</Link>
 				</div>
 				<div className='relative flex h-[450px] w-full items-center justify-center'>
-					{!isIframeLodaded && (
-						<div className='absolute z-10 h-full w-full blur filter'>
-							<Image
-								src='/images/pages/kontakt/iframePlaceholder.jpg'
-								alt='iframePlaceholder'
-								layout='fill'
-								objectFit='cover'
-								priority
-							/>
-						</div>
-					)}
-
 					<iframe
 						title='google maps'
 						src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2393.363019917443!2d18.027789215925466!3d53.139579197879456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470313e4298cd6bd%3A0x26e0e0577a21e6d9!2sCentrum%20Kangurek%20-%20Integracja%20sensoryczna%20%7C%20Rehabilitacja%20%7C%20Terapia%20%7C%20Logopedia!5e0!3m2!1spl!2spl!4v1632430001690!5m2!1spl!2spl'
 						width='100%'
 						height='450'
 						allowFullScreen={true}
-						loading='eager'
-						onLoadCapture={(e) => setIsIframeLodaded(!!e)}
 					/>
 				</div>
 			</div>

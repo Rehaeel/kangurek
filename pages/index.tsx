@@ -63,8 +63,8 @@ const Home: NextPage = () => {
 
 			<PageContent>
 				<section className='my-7 flex w-11/12 flex-col items-start gap-5 md:my-12 md:w-8/12'>
-					<h1 className='text-4xl'>O nas</h1>
-					<p className='text-lg'>
+					<h1 className='w-full text-center text-4xl'>O nas</h1>
+					<p className='text-center text-lg'>
 						W CENTRUM TERAPII I ROZWOJU DZIECKA KANGUREK łączymy
 						naukę z zabawą, pomagając w ten sposób dzieciom, które
 						przeżywają trudności rozwojowe, edukacyjne, związane z
