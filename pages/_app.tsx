@@ -4,11 +4,9 @@ import '@fontsource/lato';
 import type { AppProps } from 'next/app';
 import Layer from '../components/layer';
 import Head from 'next/head';
-import { useInitializeGoogleAnalytics } from '../utils/hooks';
+import Script from 'next/script';
 
 function MyApp({ Component, pageProps }: AppProps) {
-	useInitializeGoogleAnalytics();
-
 	return (
 		<Layer>
 			<Head>
@@ -24,6 +22,22 @@ function MyApp({ Component, pageProps }: AppProps) {
 				/>
 				<meta property='og:type' content='company' />
 			</Head>
+
+			<Script
+				strategy='lazyOnload'
+				src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_API}`}
+			/>
+
+			<Script strategy='lazyOnload' id='ga-dataLayer'>
+				{`
+					  window.dataLayer = window.dataLayer || [];
+					  function gtag(){dataLayer.push(arguments);}
+					  gtag('js', new Date());
+					  gtag('config', '${process.env.GOOGLE_API}');
+					  
+				`}
+			</Script>
+
 			<Component {...pageProps} />
 		</Layer>
 	);

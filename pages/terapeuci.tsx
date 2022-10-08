@@ -8,7 +8,6 @@ import { TerapeuciProps } from '../components/pages/terapeuci/types';
 import Head from 'next/head';
 import { DOMAIN_NAME } from '../utils/constants';
 import { useRouter } from 'next/router';
-import { useGetGoogleAnalyticsPath } from '../utils/hooks';
 
 const title: string = 'Terapeuci';
 const description: string = 'Lista terapeutów pracujących w centrum kangurek';
@@ -16,7 +15,7 @@ const description: string = 'Lista terapeutów pracujących w centrum kangurek';
 const TerapeuciPage: NextPage<TerapeuciProps> = (props) => {
 	const { terapeuci } = props;
 	const router = useRouter();
-	useGetGoogleAnalyticsPath();
+
 	const [tabMaxHeight, setTabMaxHeight] = useState<number | null>(null);
 	const [tabOpacity, setTabOpacity] = useState<number | null>(null);
 	const [showMore, setShowMore] = useState<number | null>(null);

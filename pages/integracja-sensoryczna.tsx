@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import OfferWrapper from '../components/universal/offer-wrapper';
 import { DOMAIN_NAME } from '../utils/constants';
-import { useGetGoogleAnalyticsPath } from '../utils/hooks';
 
 const title: string = 'Integracja Sensoryczna';
 const description: string =
@@ -13,7 +12,6 @@ const description: string =
 
 const IntegracjaSensorycznaPage: NextPage = () => {
 	const router = useRouter();
-	useGetGoogleAnalyticsPath();
 
 	return (
 		<>

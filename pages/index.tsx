@@ -17,7 +17,6 @@ const description: string =
 
 const Home: NextPage = () => {
 	const router = useRouter();
-	H.useGetGoogleAnalyticsPath();
 	const screenWidth = H.useWindowSize();
 
 	return (

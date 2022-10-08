@@ -5,7 +5,6 @@ import { NextPage } from 'next';
 import Head from 'next/head';
 import { DOMAIN_NAME } from '../utils/constants';
 import { useRouter } from 'next/router';
-import { useGetGoogleAnalyticsPath } from '../utils/hooks';
 
 const title: string = 'Kontakt';
 const description: string =
@@ -13,7 +12,6 @@ const description: string =
 
 const KontaktPage: NextPage = () => {
 	const router = useRouter();
-	useGetGoogleAnalyticsPath();
 
 	return (
 		<>

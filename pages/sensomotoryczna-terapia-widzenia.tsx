@@ -4,7 +4,6 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import OfferWrapper from '../components/universal/offer-wrapper';
 import { DOMAIN_NAME } from '../utils/constants';
-import { useGetGoogleAnalyticsPath } from '../utils/hooks';
 
 const title: string = 'Sensomotoryczna Terapia Widzenia';
 const description: string =
@@ -12,7 +11,6 @@ const description: string =
 
 const SensomotorycznaTerapiaWidzenia: NextPage = () => {
 	const router = useRouter();
-	useGetGoogleAnalyticsPath();
 
 	return (
 		<>

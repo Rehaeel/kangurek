@@ -4,7 +4,6 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import PageContent from '../components/universal/page-content';
 import { DOMAIN_NAME } from '../utils/constants';
-import { useGetGoogleAnalyticsPath } from '../utils/hooks';
 
 const title: string = 'Warto wiedzieć';
 const description: string =
@@ -12,7 +11,6 @@ const description: string =
 
 const WartoWiedziec: NextPage = () => {
 	const router = useRouter();
-	useGetGoogleAnalyticsPath();
 
 	return (
 		<>
