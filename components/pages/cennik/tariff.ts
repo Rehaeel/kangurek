@@ -5,80 +5,19 @@ export const tariff: Tariff[] = [
 		header: 'Integracja Sensoryczna',
 		body: [
 			{
-				serviceName: 'Diagnoza zaburzeń integracji sensorycznej',
+				serviceName: 'Diagnoza zaburzeń',
 				duration: '2-3 spotkania',
-				cost: '400 zł',
+				cost: '550 zł',
 			},
 			{
-				serviceName: 'Terapia integracji sensorycznej',
+				serviceName: 'Terapia',
 				duration: '45 min.',
-				cost: '110 zł',
+				cost: '120 zł',
 			},
 		],
 	},
 	{
-		header: 'SENSOMOTORYCZNA TERAPIA WIDZENIA (STW)',
-		body: [
-			{
-				serviceName: 'Diagnoza STW',
-				duration: '1 spotkanie',
-				cost: '300 zł',
-			},
-			{
-				serviceName: 'SENSOMOTORYCZNA TERAPIA WIDZENIA (STW)',
-				duration: '45 min.',
-				cost: '100 zł',
-			},
-		],
-	},
-	{
-		header: 'KREATYWNOŚĆ',
-		body: [
-			{
-				serviceName: 'Zajęcia grupowe',
-				duration: '45 min.',
-				cost: '50 zł',
-			},
-		],
-	},
-	{
-		header: 'KYNOTERAPIA (DOGOTERAPIA)',
-		body: [
-			{
-				serviceName: 'Zajęcia indywidualne z psem',
-				duration: '45 min.',
-				cost: '100 zł',
-			},
-		],
-	},
-	{
-		header: 'TERAPIA PEDAGOGICZNA',
-		body: [
-			{
-				serviceName:
-					'Zajęcia z terapii pedagogicznej lub behawioralnej ',
-				duration: '45 min.',
-				cost: '100 zł',
-			},
-		],
-	},
-	{
-		header: 'TERAPIA TĘKI',
-		body: [
-			{
-				serviceName: 'Diagnoza',
-				duration: '2-3 spotkania',
-				cost: '400 zł',
-			},
-			{
-				serviceName: 'Terapia ręki - zajęcia indywidualne ',
-				duration: '45 min.',
-				cost: '110 zł',
-			},
-		],
-	},
-	{
-		header: 'TERAPIA LOGOPEDYCZNA',
+		header: 'Neurologopedia',
 		body: [
 			{
 				serviceName: 'Diagnoza',
@@ -86,50 +25,89 @@ export const tariff: Tariff[] = [
 				cost: '150 zł',
 			},
 			{
-				serviceName: 'Terapia logopedyczna',
-				duration: '45 min.',
+				serviceName: 'Terapia',
+				duration: '45 min',
+				cost: '120 zł',
+			},
+			{
+				serviceName: 'Terapia',
+				duration: '30 min',
+				cost: '100 zł',
+			},
+		],
+	},
+	{
+		header: 'Terapia Pedagogiczna',
+		body: [
+			{
+				serviceName: 'Indywidualna',
+				duration: '45 min',
+				cost: '110 zł',
+			},
+			{
+				serviceName: 'Grupowa',
+				duration: '45 min',
+				cost: '60 zł',
+			},
+		],
+	},
+	{
+		header: 'Terapia Ręki',
+		body: [
+			{
+				serviceName: 'Diagnoza',
+				duration: '2 spotkania',
+				cost: '400 zł',
+			},
+			{
+				serviceName: 'Terapia',
+				duration: '45 min',
+				cost: '120 zł',
+			},
+		],
+	},
+	{
+		header: 'Rehabilitacja ruchowa',
+		body: [
+			{
+				serviceName: 'Indywidualna',
+				duration: '45 min',
+				cost: '110 zł',
+			},
+		],
+	},
+	{
+		header: 'Zajęcia z psem',
+		body: [
+			{
+				serviceName: 'Indywidualne',
+				duration: '45 min',
 				cost: '100 zł',
 			},
 			{
-				serviceName: 'Terapia logopedyczna',
-				duration: '30 min.',
-				cost: '80 zł',
+				serviceName: 'Grupowe',
+				duration: '45 min',
+				cost: '60 zł',
 			},
+		],
+	},
+	{
+		header: 'Dodatkowe usługi',
+		body: [
 			{
-				serviceName:
-					'Wystawianie zaświadczeń na studia o braku przeciwskazań do wykonywania zawodu nauczyciela/logopedy',
+				serviceName: 'Konsultacja',
 				duration: '1 spotkanie',
-				cost: '100 zł',
+				cost: '200 zł',
 			},
-		],
-	},
-	{
-		header: 'REHABILITACJA RUCHOWA',
-		body: [
-			{
-				serviceName: 'Rehabilitacja ruchowa indywidualna',
-				duration: '45 min.',
-				cost: '100 zł',
-			},
-		],
-	},
-	{
-		header: 'DODATKOWE USŁUGI',
-		body: [
 			{
 				serviceName: 'Wydawanie dodatkowych opinii',
 				duration: '-',
-				cost: '100 zł',
-			},
-			{
-				serviceName: 'Konsultacje',
-				duration: '1 spotkanie',
-				cost: '180 zł',
+				cost: '150 zł',
 			},
 			{
 				serviceName: 'Praktyka z integracji sensorycznej',
 				duration: '2 miesiące',
-				cost: '900 zł',
+				cost: '1200 zł',
 			},
 		],
 	},
