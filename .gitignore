@@ -5,5 +5,7 @@
 /.env
 /.env.local
 /out
+.idea
+.next
 
 /build
