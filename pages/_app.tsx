@@ -19,15 +19,8 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="https://kangurek2.vercel.app/images/logo.png"
         />
         <meta property="og:type" content="company" />
-      </Head>
-
-      <Script
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_API}`}
-      />
-
-      <Script strategy='lazyOnload' id='facebook-code'>
-        {`
+        <script>
+          {`
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
           n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -39,8 +32,13 @@ function MyApp({ Component, pageProps }: AppProps) {
           fbq('init', '617685440434672');
           fbq('track', 'PageView');
         `}
+        </script>
+      </Head>
 
-      </Script>
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_API}`}
+      />
 
       <Script strategy="lazyOnload" id="ga-dataLayer">
         {`
