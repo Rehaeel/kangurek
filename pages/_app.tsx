@@ -39,6 +39,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       window.fbq('init', `${process.env.NEXT_PUBLIC_FACEBOOK_API}`);
       window.fbq('track', 'PageView');
+      console.log(process.env.NEXT_PUBLIC_FACEBOOK_API);
     },[])
 
   return (
