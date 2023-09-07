@@ -37,9 +37,12 @@ function MyApp({ Component, pageProps }: AppProps) {
         s.parentNode.insertBefore(t,s)
       })(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js');
 
-      window.fbq('init', '617685440434672');
-      window.fbq('track', 'PageView');
-      console.log(process.env.NEXT_PUBLIC_GOOGLE_API);
+      // @ts-ignore
+      fbq('init', process.env.NEXT_PUBLIC_FACEBOOK_ID);
+      // @ts-ignore
+      fbq('track', 'PageView');
+
+      console.log(process.env.NEXT_PUBLIC_FACEBOOK_ID);
     },[])
 
   return (
