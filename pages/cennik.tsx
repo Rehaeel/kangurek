@@ -38,7 +38,8 @@ const CennikPage: NextPage = () => {
 				image='/images/pages/cennik/Cennik_zakladka_kangurek.jpg'>
 				<PageContent>
 					<Cennik />
-					<Button href='/kontakt' onClick={()=> fbq('track', 'Kontakt', {source: 'Cennik'})}>
+
+					<Button href='/kontakt' onClick={()=> window.fbq('track', 'Kontakt', {source: 'Cennik'})}>
 						Zadzwoń i umów się na wizytę!
 					</Button>
 				</PageContent>
