@@ -1,3 +1,4 @@
+// @ts-nocheck
 import "../styles/globals.css";
 import "@fontsource/lora";
 import "@fontsource/lato";
@@ -5,46 +6,8 @@ import type { AppProps } from "next/app";
 import Layer from "../components/layer";
 import Head from "next/head";
 import Script from "next/script";
-import { useEffect } from "react";
-
-declare global {
-    interface Window {
-        fbq: (a:any, b:any, c?: any) => void;
-    }
-}
 
 function MyApp({ Component, pageProps }: AppProps) {
-
-    useEffect(()=> {
-      // @ts-ignore
-      (function(f:any,b:any,e:any,v:any,n:any,t:any,s:any) {
-        if(f.fbq)return;
-        n = f.fbq = function(){
-          n.callMethod ?
-            n.callMethod.apply(n,arguments) : n.queue.push(arguments)
-        };
-
-        if(!f._fbq) f._fbq=n;
-
-        n.push=n;
-        n.loaded=!0;
-        n.version='2.0';
-        n.queue=[];
-        t = b.createElement(e);
-        t.async=!0;
-        t.src=v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)
-      })(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js');
-
-      // @ts-ignore
-      fbq('init', process.env.NEXT_PUBLIC_FACEBOOK_ID);
-      // @ts-ignore
-      fbq('track', 'PageView');
-
-      console.log(process.env.NEXT_PUBLIC_FACEBOOK_ID);
-    },[])
-
   return (
     <Layer>
       <Head>
@@ -62,6 +25,22 @@ function MyApp({ Component, pageProps }: AppProps) {
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_API}`}
       />
+
+      <Script strategy='lazyOnload' id='facebook-code'>
+        {`
+        !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '${process.env.NEXT_PUBLIC_FACEBOOK_ID}');
+          fbq('track', 'PageView');
+        `}
+
+      </Script>
 
       <Script strategy="lazyOnload" id="ga-dataLayer">
         {`
