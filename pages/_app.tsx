@@ -29,8 +29,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           t.src=v;s=b.getElementsByTagName(e)[0];
           s.parentNode.insertBefore(t,s)}(window, document,'script',
           'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '617685440434672');
+          fbq('init', '${process.env.NEXT_PUBLIC_FACEBOOK_ID}');
           fbq('track', 'PageView');
+          console.log(${process.env.NEXT_PUBLIC_FACEBOOK_ID});
         `}
         </script>
       </Head>
