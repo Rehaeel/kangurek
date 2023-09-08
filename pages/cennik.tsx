@@ -39,7 +39,7 @@ const CennikPage: NextPage = () => {
 				<PageContent>
 					<Cennik />
 
-					<Button href='/kontakt'>
+					<Button href='/kontakt' onClick={()=> fbq("track", "Kontakt", { source: "Cennik" })}>
 						Zadzwoń i umów się na wizytę!
 					</Button>
 				</PageContent>
