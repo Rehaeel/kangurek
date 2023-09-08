@@ -31,7 +31,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           'https://connect.facebook.net/en_US/fbevents.js');
           fbq('init', '${process.env.NEXT_PUBLIC_FACEBOOK_ID}');
           fbq('track', 'PageView');
-          console.log(${process.env.NEXT_PUBLIC_FACEBOOK_ID});
         `}
         </script>
       </Head>
