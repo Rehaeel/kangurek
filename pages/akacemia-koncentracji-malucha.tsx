@@ -123,14 +123,15 @@ const AkademiaKoncentracjiMaluchaPage: NextPage<Props> = (props) => {
         </h3>
         <div>
           <p>
-            Cotygodniowe zajęcia dostosowane do wieku i możliwości dziecka. Gry,
-            zabawy umysłowe i kreatywne odbywające się w przyjaznej, domowej
-            atmosferze. Zapewniamy niezbędne materiały.
+            ☀️ Cotygodniowe zajęcia dostosowane do wieku i możliwości dziecka.
+            Gry, zabawy umysłowe i kreatywne odbywające się w przyjaznej,
+            domowej atmosferze. Zapewniamy niezbędne materiały.
           </p>
           <p>
-            Wplatamy elementy terapii integracji sensorycznej dla prawidłowego
-            funkcjonowania zmysłów. Przekażemy Tobie Rodzicu dodatkowe
-            ćwiczenia, które możesz wykonywać ze swoim Maluchem w domu.
+            ☀️ Wplatamy elementy terapii integracji sensorycznej dla
+            prawidłowego funkcjonowania zmysłów. Przekażemy Tobie Rodzicu
+            dodatkowe ćwiczenia, które możesz wykonywać ze swoim Maluchem w
+            domu.
           </p>
         </div>
       </div>
@@ -139,6 +140,7 @@ const AkademiaKoncentracjiMaluchaPage: NextPage<Props> = (props) => {
         <u className="text-lg md:text-xl">
           Zajęcia odbywają się od października do czerwca
         </u>
+        <p>Wolne miejsce w Akademii na zajęciach o godzinie:</p>
         <div className="grid w-fit grid-cols-[auto_1fr]">
           <span className="border-r py-1 px-2">Poniedziałek</span>
           <span className="border-l py-1 px-2">17:30 - 18:15</span>
