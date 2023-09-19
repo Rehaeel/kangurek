@@ -6,6 +6,7 @@ import { NextPage } from 'next';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { DOMAIN_NAME } from '../utils/constants';
+import { fbEvent } from '../utils/fpixel';
 
 const title: string = 'Cennik';
 const description: string =
@@ -13,6 +14,7 @@ const description: string =
 
 const CennikPage: NextPage = () => {
 	const router = useRouter();
+
 	return (
 		<>
 			<Head>
@@ -39,7 +41,13 @@ const CennikPage: NextPage = () => {
 				<PageContent>
 					<Cennik />
 
-					<Button href='/kontakt' onClick={()=> fbq("track", "Kontakt", { source: "Cennik" })}>
+					<Button
+						href='/kontakt'
+						onClick={() =>
+							fbEvent('Contact', {
+								source: 'Cennik',
+							})
+						}>
 						Zadzwoń i umów się na wizytę!
 					</Button>
 				</PageContent>
