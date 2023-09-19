@@ -22,6 +22,19 @@ const AkademiaKoncentracjiMaluchaPage: NextPage<Props> = (props) => {
             Kangurek dla dzieci w wieku przedszkolnym i wczesnoszkolnym.
           </p>
         </div>
+
+        <div className="flex items-center justify-center">
+          <iframe
+            width={400}
+            height={700}
+            src="https://www.youtube.com/embed/VOzQ7O--Sjo?si=xbXo0111Yf3GG8Jz"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+
         <Button href="tel:+48505776121">ZADZWOŃ</Button>
       </div>
 
