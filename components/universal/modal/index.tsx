@@ -21,4 +21,4 @@ const Modal = (props: ModalProps) => {
   );
 };
 
-export default Modal;
+export default Modal as unknown as Element;
