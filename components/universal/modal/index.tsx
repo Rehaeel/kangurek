@@ -1,12 +1,35 @@
-import ReactDOM from "react-dom";
 import { ModalProps } from "./types";
+import { useEffect, useRef } from "react";
 
 const Modal = (props: ModalProps) => {
   const { children, isOpen, setIsOpen } = props;
-  if (!isOpen) return null;
 
-  return ReactDOM.createPortal(
-    <div className="fixed top-0 left-0 z-50 h-screen w-screen bg-gray-900/80">
+  const dialogRef = useRef<HTMLDialogElement>(null);
+
+  useEffect(() => {
+    if (isOpen) {
+      dialogRef.current?.showModal();
+    } else {
+      dialogRef.current?.close();
+    }
+  }, [isOpen]);
+
+  const onBackdropClick = (e: React.MouseEvent<HTMLDialogElement>) => {
+    const modal = dialogRef.current as HTMLDialogElement;
+    const modalDimensions = modal.getBoundingClientRect();
+
+    if (
+      e.clientX < modalDimensions.left ||
+      e.clientX > modalDimensions.right ||
+      e.clientY < modalDimensions.top ||
+      e.clientY > modalDimensions.bottom
+    ) {
+      setIsOpen(false);
+    }
+  };
+
+  return (
+    <dialog ref={dialogRef} onClick={onBackdropClick}>
       <div className="relative flex h-full w-full items-center justify-center">
         <p
           onClick={() => setIsOpen(false)}
@@ -16,9 +39,8 @@ const Modal = (props: ModalProps) => {
         </p>
         {children}
       </div>
-    </div>,
-    document.body
+    </dialog>
   );
 };
 
-export default Modal as unknown as Element;
+export default Modal;
