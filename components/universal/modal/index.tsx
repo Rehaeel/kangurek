@@ -29,7 +29,12 @@ const Modal = (props: ModalProps) => {
   };
 
   return (
-    <dialog ref={dialogRef} onClick={onBackdropClick}>
+    <dialog
+      ref={dialogRef}
+      onClick={onBackdropClick}
+      id="dialog-modal"
+      className="m-w-full fixed z-50 h-screen w-screen bg-gray-900/80"
+    >
       <div className="relative flex h-full w-full items-center justify-center">
         <p
           onClick={() => setIsOpen(false)}
