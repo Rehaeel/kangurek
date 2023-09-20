@@ -1,6 +1,7 @@
 import Button from "../components/universal/button";
 import Link from "next/link";
 import { NextPage } from "next";
+import Script from "next/script";
 
 type Props = {};
 
@@ -196,8 +197,11 @@ const AkademiaKoncentracjiMaluchaPage: NextPage<Props> = (props) => {
         data-formz-slug="HN4aIPU5"
         data-formz-type="simple"
       ></div>
-      {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-      <script src="https://formaloo.me/istatic/js/main.js"></script>
+
+      <Script
+        src={"https://formaloo.me/istatic/js/main.js"}
+        strategy="lazyOnload"
+      />
     </div>
   );
 };
