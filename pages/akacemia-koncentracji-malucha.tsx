@@ -28,7 +28,7 @@ const AkademiaKoncentracjiMaluchaPage: NextPage<Props> = (props) => {
           <iframe
             width={400}
             height={700}
-            src="https://www.youtube.com/embed/VOzQ7O--Sjo?si=xbXo0111Yf3GG8Jz"
+            src="https://www.youtube.com/embed/kY4-per-7H0?si=2Q6aAX8-mi470tnk"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
