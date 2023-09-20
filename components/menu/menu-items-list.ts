@@ -13,7 +13,7 @@ export const offerList: Array<MenuItem> = [
   { name: "Klub Kangurka", pathName: "/klub-kangurka" },
   {
     name: "Akademia Koncentracji Malucha",
-    pathName: "/akacemia-koncentracji-malucha",
+    pathName: "/akademia-koncentracji-malucha",
   },
   {
     name: "Sensomotoryczna terapia widzenia",
