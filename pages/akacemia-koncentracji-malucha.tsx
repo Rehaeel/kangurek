@@ -192,14 +192,12 @@ const AkademiaKoncentracjiMaluchaPage: NextPage<Props> = (props) => {
       </div>
 
       <div
-        data-widget-form="formaloo-widget"
-        data-prop-slug="HN4aIPU5"
-        data-prop-type="drawer"
-        dir="ltr"
-        style={{ fontSize: 14, lineHeight: "normal" }}
-      />
-      {/*<script type="text/props">{ "once_per_user": false }</script>*/}
-      <script async src="https://widget.formaloo.me/script.js"></script>
+        id="formz-wrapper"
+        data-formz-slug="HN4aIPU5"
+        data-formz-type="simple"
+      ></div>
+      {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+      <script src="https://formaloo.me/istatic/js/main.js"></script>
     </div>
   );
 };
