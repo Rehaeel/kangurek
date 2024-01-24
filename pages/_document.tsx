@@ -1,15 +1,13 @@
-import { Html, Head, Main, NextScript } from "next/document";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
-  return (
-    <Html lang="pl-PL">
-      <Head />
-      <body>
-        <SpeedInsights />
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  );
+	return (
+		<Html lang='pl-PL'>
+			<Head />
+			<body>
+				<Main />
+				<NextScript />
+			</body>
+		</Html>
+	);
 }
