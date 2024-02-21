@@ -77,7 +77,7 @@ export const tariff: Tariff[] = [
   // 	],
   // },
   {
-    header: "Logopedyczna",
+    header: "Logopedia",
     body: [
       {
         serviceName: "Terapia",
