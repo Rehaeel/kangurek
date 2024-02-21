@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
   return (
@@ -7,13 +9,13 @@ const Footer: React.FC = () => {
       </p>
       <p className="text-sm text-gray-500  sm:text-base md:text-lg">
         Powered by{" "}
-        <a
+        <Link
           href="https://www.facebook.com/profile.php?id=100001098131095"
           target="_blank"
           rel="noreferrer"
         >
           Rafał Prokopiak
-        </a>
+        </Link>
       </p>
     </footer>
   );
