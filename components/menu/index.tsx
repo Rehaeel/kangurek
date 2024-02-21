@@ -96,8 +96,7 @@ const Menu: NextPage = () => {
                     route === menuItem.pathName
                       ? "active-page"
                       : "odd:bg-orange-darker-color md:odd:bg-transparent"
-                  } 
-                                    flex h-12 items-center overflow-hidden px-6 transition-all duration-300  hover:bg-orange-lighter-color md:hover:bg-orange-lighter-color`}
+                  } flex h-12 items-center overflow-hidden px-6 transition-all duration-300  hover:bg-orange-lighter-color md:hover:bg-orange-lighter-color`}
                 >
                   <div className="whitespace-nowrap text-lg md:text-base">
                     {menuItem.name}
@@ -118,7 +117,7 @@ const Menu: NextPage = () => {
               className={`${
                 route === menuItem.pathName
                   ? "active-page"
-                  : "even:bg-orange-darker-color md:even:bg-transparent"
+                  : "odd:bg-orange-darker-color md:odd:bg-transparent"
               } flex h-12 items-center px-6  hover:bg-orange-lighter-color md:h-full md:hover:bg-orange-lighter-color`}
             >
               <div className="whitespace-nowrap text-lg md:text-base">
