@@ -4,6 +4,7 @@ export const menuList: Array<MenuItem> = [
   { name: "Terapeuci", pathName: "/terapeuci" },
   { name: "Galeria", pathName: "/galeria" },
   { name: "Warto wiedzieć", pathName: "/warto-wiedziec" },
+  { name: "Praca", pathName: "/praca" },
   { name: "Cennik", pathName: "/cennik" },
   { name: "Kontakt", pathName: "/kontakt" },
 ];
