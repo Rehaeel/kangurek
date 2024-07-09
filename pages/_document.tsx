@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="pl-PL">
       <Head>
-        <script async type="text/javascript" src="/js/newrelic.js" />
+        <script async src="/js/newrelic.js"></script>
       </Head>
       <body>
         <Main />
