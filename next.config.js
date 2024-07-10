@@ -5,17 +5,4 @@ module.exports = {
   images: {
     unoptimized: true,
   },
-  async headers() {
-    return [
-      {
-        source: "/(.*)",
-        headers: [
-          {
-            key: "Access-Control-Allow-Origin",
-            value: `https://centrum-kangurek.pl`,
-          },
-        ],
-      },
-    ];
-  },
 };
