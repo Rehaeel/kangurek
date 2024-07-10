@@ -7,7 +7,7 @@ export default function Document() {
       <Head>
         <Script
           id="newrelic-script"
-          crossOrigin
+          crossOrigin="anonymous"
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `
