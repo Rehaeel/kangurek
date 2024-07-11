@@ -1,0 +1,11 @@
+{
+  "headers": [
+    {
+      "source": "https://js-agent.newrelic.com/nr-rum-1.261.2.min.js",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET,OPTIONS,PATCH,DELETE,POST,PUT" },
+      ]
+    }
+  ]
+}
