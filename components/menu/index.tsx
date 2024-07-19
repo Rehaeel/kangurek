@@ -107,16 +107,6 @@ const Menu: NextPage = () => {
           </div>
         </div>
 
-        <Link
-          href={"/wakacje"}
-          key={"Wakacje"}
-          prefetch
-          onClick={() => setIsOpen(false)}
-          className={`flex h-12 animate-pulse items-center bg-[#363124] px-6 hover:bg-orange-color md:h-full md:even:bg-transparent md:hover:bg-orange-color`}
-        >
-          <div className="whitespace-nowrap text-lg md:text-base">Wakacje</div>
-        </Link>
-
         {menuList.map((menuItem) => {
           return (
             <Link
@@ -127,7 +117,7 @@ const Menu: NextPage = () => {
               className={`${
                 route === menuItem.pathName
                   ? "active-page"
-                  : "even:bg-orange-darker-color md:even:bg-transparent"
+                  : "odd:bg-orange-darker-color md:odd:bg-transparent"
               } flex h-12 items-center px-6  hover:bg-orange-lighter-color md:h-full md:hover:bg-orange-lighter-color`}
             >
               <div className="whitespace-nowrap text-lg md:text-base">
