@@ -58,10 +58,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 			/>
 
 			<Script
-				strategy='afterInteractive'
 				defer
 				src='https://analytics.organise.dad/script.js'
-				data-website-id='84b574aa-66ab-47dd-b58a-22598ce09c66'
+				data-website-id='d641dd90-2c0b-46e4-a0c8-ed20432484e0'
 			/>
 
 			<Script
