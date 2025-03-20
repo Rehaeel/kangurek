@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
-import * as H from '../utils/hooks';
 import PageContent from '../components/universal/page-content';
 import lapki from '../public/images/pages/home/male_lapki.jpg';
 import headerImg from '../public/images/pages/home/Centrum-Terapii-i-Rozwoju-Dziecka-Kangurek.jpg';
@@ -17,7 +16,6 @@ const description: string =
 
 const Home: NextPage = () => {
 	const router = useRouter();
-	const screenWidth = H.useWindowSize();
 
 	return (
 		<>
@@ -40,21 +38,27 @@ const Home: NextPage = () => {
 			</Head>
 
 			<header className='h-auto w-full'>
-				{screenWidth > 760 ? (
+				<div className='desktop-image-container hidden w-full md:block'>
 					<Image
 						src={headerImg}
 						alt='Integracja Sensoryczna okładka'
 						priority
 						fetchPriority='high'
+						className='h-auto w-full'
+						style={{ width: '100%' }}
 					/>
-				) : (
+				</div>
+
+				<div className='mobile-image-container block w-full md:hidden'>
 					<Image
 						src={headerImgMobile}
 						alt='Integracja Sensoryczna okładka'
 						priority
 						fetchPriority='high'
+						className='h-auto w-full'
+						style={{ width: '100%' }}
 					/>
-				)}
+				</div>
 				<h3 className='my-4 mr-[5%] text-right text-lg font-bold text-[#667]'>
 					„Czego nie ma najpierw w zmysłach, tego nie ma później w
 					umyśle” <br />
