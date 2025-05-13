@@ -8,14 +8,6 @@ import PageContent from '../../universal/page-content';
 const Kontakt: React.FC = () => {
 	const bankAccountNumber = '11 1090 1072 0000 0001 3749 9362';
 
-	const handleAccountSelect = () => {
-		const selectedText = window?.getSelection()?.toString();
-
-		if (selectedText === bankAccountNumber) {
-			window.umami.track('bank-account-selected');
-		}
-	};
-
 	return (
 		<PageContent>
 			<div className='md: flex w-full flex-col items-center gap-12 md:flex-row md:gap-2 lg:gap-5'>
@@ -24,63 +16,46 @@ const Kontakt: React.FC = () => {
 						Dane kontaktowe
 					</h3>
 					<p>
-						tel.:{' '}
-						<Link
-							href='tel:+48505776121'
-							data-umami-event='telephone-link'
-							data-umami-event-telephone='505 776 121'>
-							505-776-121
-						</Link>{' '}
-						i{' '}
-						<Link
-							href='tel:+48600216870'
-							data-umami-event='telephone-link'
-							data-umami-event-telephone='600 216 870'>
-							600-216-870
-						</Link>
+						tel.: <Link href='tel:+48505776121'>505-776-121</Link> i{' '}
+						<Link href='tel:+48600216870'>600-216-870</Link>
 					</p>
-					<Link
-						href='tel:+48505776121'
-						data-umami-event='telephone-link'
-						data-umami-event-telephone='505 776 121'>
+					<Link href='tel:+48505776121'>
 						<Image
 							src={telephone}
 							alt='telefon'
 							width={80}
 							height={80}
+							unoptimized
+							sizes='80px'
+							quality={90}
 							className='cursor-pointer'
 						/>
 					</Link>
 					<p>
 						Mail:{' '}
-						<Link
-							href='mailto:info@centrum-kangurek.pl'
-							data-umami-event='mail-link'>
+						<Link href='mailto:info@centrum-kangurek.pl'>
 							info@centrum-kangurek.pl
 						</Link>
 					</p>
-					<Link
-						href='mailto:info@centrum-kangurek.pl'
-						data-umami-event='mail-link'>
+					<Link href='mailto:info@centrum-kangurek.pl'>
 						<Image
 							src={mail}
 							alt='mail'
 							width={80}
 							height={80}
+							unoptimized
+							sizes='80px'
+							quality={90}
 							className='cursor-pointer'
 						/>
 					</Link>
 					<p className='text-center'>
-						<Link
-							href='https://www.google.pl/maps/place/Centrum+Kangurek/@53.1317883,18.0174391,15z/data=!4m8!1m2!2m1!1scentrum+kangurek!3m4!1s0x470313e4298cd6bd:0x26e0e0577a21e6d9!8m2!3d53.139576!4d18.0299779'
-							data-umami-event='address-link'>
+						<Link href='https://www.google.pl/maps/place/Centrum+Kangurek/@53.1317883,18.0174391,15z/data=!4m8!1m2!2m1!1scentrum+kangurek!3m4!1s0x470313e4298cd6bd:0x26e0e0577a21e6d9!8m2!3d53.139576!4d18.0299779'>
 							ul. Czerkaska 11 lok.2A (piętro), <br />
 							85-637 Bydgoszcz
 						</Link>
 					</p>
-					<Link
-						href='https://www.google.pl/maps/place/Centrum+Kangurek/@53.1317883,18.0174391,15z/data=!4m8!1m2!2m1!1scentrum+kangurek!3m4!1s0x470313e4298cd6bd:0x26e0e0577a21e6d9!8m2!3d53.139576!4d18.0299779'
-						data-umami-event='address-link'>
+					<Link href='https://www.google.pl/maps/place/Centrum+Kangurek/@53.1317883,18.0174391,15z/data=!4m8!1m2!2m1!1scentrum+kangurek!3m4!1s0x470313e4298cd6bd:0x26e0e0577a21e6d9!8m2!3d53.139576!4d18.0299779'>
 						<Image
 							src={pin}
 							alt='adress'
@@ -106,9 +81,6 @@ const Kontakt: React.FC = () => {
 			<div className='mt-10 flex w-full items-center justify-around md:justify-center md:gap-7'>
 				<Image
 					src='/images/pages/kontakt/Konto-bankowe.jpg'
-					unoptimized
-					sizes='100px'
-					quality={85}
 					alt='number konta bankowego'
 					width={100}
 					height={150}
@@ -125,12 +97,7 @@ const Kontakt: React.FC = () => {
 							</span>
 						</strong>{' '}
 					</p>
-					<p
-						className='font-thin'
-						onMouseUp={handleAccountSelect}
-						onTouchEnd={handleAccountSelect}>
-						{bankAccountNumber}
-					</p>
+					<p className='font-thin'>{bankAccountNumber}</p>
 				</div>
 			</div>
 		</PageContent>
