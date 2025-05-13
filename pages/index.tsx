@@ -35,6 +35,20 @@ const Home: NextPage = () => {
 					property='og:url'
 					content={`${DOMAIN_NAME}/${router.pathname}`}
 				/>
+				{/* Preload critical images */}
+				<link
+					rel="preload"
+					href={headerImg.src}
+					as="image"
+					type="image/jpeg"
+				/>
+				<link
+					rel="preload"
+					href={headerImgMobile.src}
+					as="image"
+					type="image/jpeg"
+					media="(max-width: 768px)"
+				/>
 			</Head>
 
 			<header className='h-auto w-full'>

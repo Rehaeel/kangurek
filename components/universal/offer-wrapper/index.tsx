@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 import { Props } from './types';
 
 const OfferWrapper: React.FC<Props> = ({ title, image, children }) => {
@@ -7,6 +8,17 @@ const OfferWrapper: React.FC<Props> = ({ title, image, children }) => {
 	const siteName = router.pathname.slice(1).replace('-', ' ');
 
 	return (
+		<>
+		<Head>
+			{/* Preload the image provided to OfferWrapper */}
+			<link
+				rel="preload"
+				href={image}
+				as="image"
+				type="image/jpeg"
+				fetchPriority="high"
+			/>
+		</Head>
 		<main>
 			<header className='relative flex h-64 w-full flex-col items-center justify-center sm:h-72 md:h-96'>
 				<h1 className='header-color offer-wrapper-header-shadow z-10 text-center text-3xl font-extralight  uppercase md:text-4xl lg:text-6xl lg:font-bold'>
@@ -30,6 +42,7 @@ const OfferWrapper: React.FC<Props> = ({ title, image, children }) => {
 				{children}
 			</div>
 		</main>
+		</>
 	);
 };
 

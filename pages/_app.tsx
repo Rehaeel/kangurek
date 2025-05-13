@@ -37,6 +37,22 @@ function MyApp({ Component, pageProps }: AppProps) {
 					content='https://kangurek2.vercel.app/images/logo.png'
 				/>
 				<meta property='og:type' content='company' />
+				
+				{/* Preload critical resources */}
+				<link
+					rel="preload"
+					href="/images/home.png"
+					as="image"
+					type="image/png"
+					fetchPriority="high"
+				/>
+				<link
+					rel="preload"
+					href="/images/logo.svg"
+					as="image"
+					type="image/svg+xml"
+					fetchPriority="high"
+				/>
 			</Head>
 
 			<Script
