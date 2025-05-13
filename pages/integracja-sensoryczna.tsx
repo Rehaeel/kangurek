@@ -82,9 +82,12 @@ const IntegracjaSensorycznaPage: NextPage = () => {
 					<Image
 						src='/images/pages/integracja-sensoryczna/SI.jpg'
 						alt='integracja sensoryczna'
-						objectFit='contain'
+						unoptimized
+						sizes="260px"
+						quality={85}
 						height={260}
 						width={260}
+						style={{ objectFit: 'contain' }}
 					/>
 				</div>
 				<p>

@@ -13,12 +13,17 @@ const OfferWrapper: React.FC<Props> = ({ title, image, children }) => {
 					{title}
 				</h1>
 				<Image
-					priority
 					alt={`okładka strony - ${siteName}`}
 					src={image}
-					layout='fill'
-					objectFit='cover'
-					fetchPriority='high'
+					fill
+					sizes="(max-width: 768px) 100vw, 1200px"
+					quality={85}
+					style={{
+						objectFit: 'cover',
+						objectPosition: 'center'
+					}}
+					priority
+					unoptimized
 				/>
 			</header>
 			<div className='mx-auto my-11 flex w-11/12 flex-col items-start gap-8 sm:w-10/12 md:w-9/12'>

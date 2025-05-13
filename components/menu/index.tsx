@@ -21,7 +21,14 @@ const Menu: NextPage = () => {
 				prefetch={false}
 				onClick={() => setIsOpen(false)}
 				className='absolute left-5 top-2 max-w-[30px] md:relative md:left-0 md:top-0'>
-				<Image src={logo} alt='menu logo' priority />
+				<Image 
+				src={logo} 
+				alt='menu logo' 
+				priority 
+				unoptimized 
+				sizes="30px" 
+				quality={90} 
+			/>
 			</Link>
 
 			{isOpen ? (

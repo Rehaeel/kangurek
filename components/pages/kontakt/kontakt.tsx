@@ -86,6 +86,9 @@ const Kontakt: React.FC = () => {
 							alt='adress'
 							width={80}
 							height={80}
+							unoptimized
+							sizes='80px'
+							quality={90}
 							className='cursor-pointer'
 						/>
 					</Link>
@@ -103,9 +106,15 @@ const Kontakt: React.FC = () => {
 			<div className='mt-10 flex w-full items-center justify-around md:justify-center md:gap-7'>
 				<Image
 					src='/images/pages/kontakt/Konto-bankowe.jpg'
+					unoptimized
+					sizes='100px'
+					quality={85}
 					alt='number konta bankowego'
 					width={100}
 					height={150}
+					unoptimized
+					sizes='100px'
+					quality={85}
 				/>
 				<div className='text-right text-xl font-bold md:flex md:gap-3'>
 					<p>

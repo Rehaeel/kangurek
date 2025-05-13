@@ -43,7 +43,9 @@ const Home: NextPage = () => {
 						src={headerImg}
 						alt='Integracja Sensoryczna okładka'
 						priority
-						fetchPriority='high'
+						unoptimized
+						sizes="(max-width: 768px) 100vw, 1200px"
+						quality={85}
 						className='h-auto w-full'
 						style={{ width: '100%' }}
 					/>
@@ -54,7 +56,9 @@ const Home: NextPage = () => {
 						src={headerImgMobile}
 						alt='Integracja Sensoryczna okładka'
 						priority
-						fetchPriority='high'
+						unoptimized
+						sizes="100vw"
+						quality={85}
 						className='h-auto w-full'
 						style={{ width: '100%' }}
 					/>
@@ -114,6 +118,9 @@ const Home: NextPage = () => {
 							<Image
 								src={lapki}
 								alt='Integracja Sensoryczna w praktyce'
+								unoptimized
+								sizes="(max-width: 768px) 100vw, 600px"
+								quality={85}
 							/>
 						</div>
 					</div>
