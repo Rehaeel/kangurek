@@ -1,9 +1,23 @@
 import Image from 'next/image';
+import Head from 'next/head';
 import { FC } from 'react';
 import { PageWrapperProps } from './types';
 
 const PageWrapper: FC<PageWrapperProps> = ({ title, image, children }) => {
 	return (
+		<>
+		{title && image && (
+			<Head>
+				{/* Preload the image provided to PageWrapper */}
+				<link
+					rel="preload"
+					href={image}
+					as="image"
+					type="image/jpeg"
+					fetchPriority="high"
+				/>
+			</Head>
+		)}
 		<main>
 			{title && image && (
 				<header className='relative flex h-60 w-full flex-col items-center justify-center sm:h-72 md:h-80'>
@@ -12,11 +26,13 @@ const PageWrapper: FC<PageWrapperProps> = ({ title, image, children }) => {
 					</h1>
 					<Image
 						priority
-						fetchPriority='high'
 						alt='okładka strony'
 						src={image}
-						layout='fill'
-						objectFit='cover'
+						fill
+						sizes="(max-width: 768px) 100vw, 1200px"
+						quality={85}
+						unoptimized
+						style={{ objectFit: 'cover' }}
 					/>
 				</header>
 			)}
@@ -24,6 +40,7 @@ const PageWrapper: FC<PageWrapperProps> = ({ title, image, children }) => {
 				{children}
 			</section>
 		</main>
+		</>
 	);
 };
 
